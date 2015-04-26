@@ -18,7 +18,7 @@ time, mark, audio, video {
     font-size: 100%;
     font-weight: inherit;
     font-style: inherit;
-    font-family: inherit;
+    font-family: "Open Sans", sans-serif;
     vertical-align: baseline; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{ display: block; }
@@ -49,6 +49,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 a{
     text-decoration: none;
+    color: #4FC3F7;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s; }
@@ -175,3 +176,81 @@ input,
 button{ float: left; }
 
 label{ clear: left; }
+/* ================================================================== */
+/* === Responsive styles ============================================ */
+/* ================================================================== */
+
+/* Smartphones */
+@media only screen and (max-width: 469px) {
+  h1 {
+    font-size: 42px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Large smartphones */
+@media only screen and (min-width: 470px) and (max-width: 699px) {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+/* Tablets and landscape large smartphones */
+@media only screen and (min-width: 700px) and (max-width: 1279px) {
+  h1 {
+    font-size: 52px;
+  }
+  h2 {
+    font-size: 42px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+/* Desktop screens */
+@media only screen and (min-width: 1280px) and (max-width: 1499px){
+  h1 {
+    font-size: 82px;
+  }
+  h2 {
+    font-size: 52px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+/* Large screen */
+@media only screen and (min-width: 1500px) and (max-width: 1799px){
+  h1 {
+    font-size: 82px;
+  }
+  h2 {
+    font-size: 52px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
+
+/* Very large screen */
+@media only screen and (min-width: 1800px){
+  h1 {
+    font-size: 92px;
+  }
+  h2 {
+    font-size: 52px;
+  }
+  p {
+    font-size: 22px;
+  }
+}

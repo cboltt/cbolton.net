@@ -1,0 +1,16 @@
+/* TEAM */
+  Made by: Radu Chelariu
+  Contact: sickdesigner [ at ] me.com
+  Twitter: @sickdesigner
+  From: Cluj-Napoca, Cluj, Romania
+              
+/* THANKS */
+  Bug reporting: Liviu Dobre
+  From: Cluj-Napoca, Cluj, Romania
+                                                    
+/* SITE */
+  Last update: 2013/07/07
+  Language: English
+  Standards: HTML5, CSS3
+  Components: jQuery                          
+  Software: SublimeText2

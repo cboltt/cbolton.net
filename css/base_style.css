@@ -49,7 +49,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 a{
     text-decoration: none;
-    color: #4FC3F7;
+    font-weight: 700;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s; }
@@ -183,7 +183,10 @@ label{ clear: left; }
 /* Smartphones */
 @media only screen and (max-width: 469px) {
   h1 {
-    font-size: 42px;
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
   }
   p {
     font-size: 16px;
@@ -193,23 +196,23 @@ label{ clear: left; }
 /* Large smartphones */
 @media only screen and (min-width: 470px) and (max-width: 699px) {
   h1 {
-    font-size: 42px;
-  }
-  h2 {
     font-size: 32px;
   }
+  h2 {
+    font-size: 26px;
+  }
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
 /* Tablets and landscape large smartphones */
 @media only screen and (min-width: 700px) and (max-width: 1279px) {
   h1 {
-    font-size: 52px;
+    font-size: 42px;
   }
   h2 {
-    font-size: 42px;
+    font-size: 32px;
   }
   p {
     font-size: 18px;

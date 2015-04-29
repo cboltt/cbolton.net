@@ -41,7 +41,12 @@
   max-width: 600px;
   color: #FFF;
 }
-
+.intro-paragraph a.cta{
+  margin: 20px 0;
+  background: #FFF;
+  color: #333;
+  font-size: 85%;
+}
 
 footer {
   margin: 0 auto;

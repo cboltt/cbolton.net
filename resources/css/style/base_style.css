@@ -241,7 +241,7 @@ label{ clear: left; }
 /* Desktop screens */
 @media only screen and (min-width: 1280px) and (max-width: 1499px){
   h1 {
-    font-size: 82px;
+    font-size: 72px;
   }
   h2 {
     font-size: 52px;

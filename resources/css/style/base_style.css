@@ -60,6 +60,25 @@ a:hover{
 a:active{  }
 a:visited{  }
 
+.cta-container {
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+}
+a.cta {
+  display: inline-block;
+  padding: 7px 20px;
+  font-weight: 100;
+  text-align: center;
+  border-radius: 3px;
+
+  box-shadow: 0px 1px 10px #7B1FA2;
+}
+a.cta:hover {
+  font-weight: 700;
+  text-decoration: none;
+}
+
 address{  }
 
 aside{  }

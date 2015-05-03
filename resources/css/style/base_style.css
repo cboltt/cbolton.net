@@ -86,9 +86,14 @@ aside{  }
 b, strong{ font-weight: 700; }
 
 body{
-    background: #D500F9;
     font-size: 0.1rem;
     line-height: 1; }
+    .purple {
+      background: #D500F9;
+    }
+    .green {
+      background: #37BC61;
+    }
 
 blockquote, q{ quotes: "" ""; }
 blockquote:before, blockquote:after, q:before,  q:after{ content: ""; }

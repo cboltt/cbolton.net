@@ -10,7 +10,7 @@
   padding: 40px 0;
 }
 .introduction a {
-  color: #FFF;
+  color: #333;
 }
 .intro-title {
   margin: 0 auto;
@@ -37,12 +37,12 @@
   margin: 30px auto;
   padding: 0 10px;
   max-width: 700px;
-  color: #FFF;
+  color: #333;
 }
 .intro-paragraph a.cta{
   margin: 20px 0;
-  background: #FFF;
-  color: #333;
+  background: #D500F9;
+  color: #FFF;
   font-size: 85%;
 }
 

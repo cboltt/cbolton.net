@@ -30,7 +30,7 @@
   .intro-title .text {
     text-align: center;
     font-weight: 100;
-    color: #FFF;
+    color: #333;
   }
 .intro-paragraph {
   display: block;
@@ -56,10 +56,10 @@ footer {
 .social a {
   margin: 0 20px;
   text-decoration: none;
-  color: #AA00FF;
+  color: #EEE;
 }
   .social a:hover {
-    color: #FFF;
+    color: #AAA;
   }
 
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD:resources/css/style/style.less
 
 /* Variables */
 @color-white: #FFFEFF;
@@ -435,3 +436,291 @@ footer {
     font-size: 72px;
   }
 }
+=======
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: "Open Sans", sans-serif;
+    vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{ display: block; }
+
+/* Custom fonts */
+@font-face {}
+
+/* Universal */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased; }
+
+/* General styles */
+::-moz-selection {  }
+::selection {  }
+
+:required{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none; }
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s; }
+
+a:hover{
+  text-decoration: underline;
+}
+a:active{  }
+a:visited{  }
+
+.cta-container {
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+}
+a.cta {
+  display: inline-block;
+  padding: 7px 20px;
+  font-weight: 100;
+  text-align: center;
+  border-radius: 3px;
+
+  box-shadow: 0px 1px 10px #AAA;
+}
+a.cta:hover {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+address{  }
+
+aside{  }
+
+b, strong{ font-weight: 700; }
+
+body{
+    font-size: 0.1rem;
+    line-height: 1; }
+    .purple {
+      background: #D500F9;
+    }
+    .white {
+      background: #FFF;
+    }
+    .green {
+      background: #37BC61;
+    }
+
+blockquote, q{ quotes: "" ""; }
+blockquote:before, blockquote:after, q:before,  q:after{ content: ""; }
+
+button,
+button, input[type="button"]{
+    border: 0 none;
+    cursor: pointer; }
+
+button:hover{  }
+button:active{  }
+
+caption, th, td{
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle; }
+
+em, i{ font-style: italic; }
+
+h1, h2, h3, h4, h5, h6{
+    -moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga", "dlig";
+    -webkit-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig"; }
+
+h1{ font-size: 0.89rem; }
+h2{ font-size: 0.55rem; }
+h3{ font-size: 0.34rem; }
+h4{ font-size: 0.21rem; }
+h5{ font-weight: 700; }
+h6{ font-weight: 700; }
+
+html{ font-size: 100px; }
+
+img{ -ms-interpolation-mode: bicubic; }
+
+input, select, textarea{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    clear: both;
+    float: left;  }
+
+input[type=radio]{  }
+input[type=checkbox]{  }
+
+label{  }
+
+li{  }
+
+nav{  }
+
+p{
+    /* START Hyphenation */
+
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+    word-break: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+
+    -webkit-hyphenate-before: 2;
+    -webkit-hyphenate-after: 3;
+    hyphenate-lines: 3;
+    /* END Hyphenation */
+
+    font-size: 0.13rem;
+    line-height: 1.4em;
+    margin:0 0 1em 0; }
+
+pre, code{ font-family: Monaco, Courier, monospace; }
+
+pre{
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    word-wrap: break-word; }
+
+select{  }
+select option{  }
+
+table{
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show; }
+
+textarea{ resize: none; }
+
+u{ text-decoration: underline; }
+
+ul, ol{  }
+
+/* Custom styles */
+aside, div, dl, fieldset, footer, form, header, iframe, nav, ul, ol, section, table{ width: 100%; }
+
+label,
+input,
+button{ float: left; }
+
+label{ clear: left; }
+/* ================================================================== */
+/* === Responsive styles ============================================ */
+/* ================================================================== */
+
+/* Smartphones */
+@media only screen and (max-width: 469px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Large smartphones */
+@media only screen and (min-width: 470px) and (max-width: 699px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Tablets and landscape large smartphones */
+@media only screen and (min-width: 700px) and (max-width: 1279px) {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+/* Desktop screens */
+@media only screen and (min-width: 1280px) and (max-width: 1499px){
+  h1 {
+    font-size: 72px;
+  }
+  h2 {
+    font-size: 52px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+/* Large screen */
+@media only screen and (min-width: 1500px) and (max-width: 1799px){
+  h1 {
+    font-size: 82px;
+  }
+  h2 {
+    font-size: 52px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
+
+/* Very large screen */
+@media only screen and (min-width: 1800px){
+  h1 {
+    font-size: 92px;
+  }
+  h2 {
+    font-size: 52px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
+>>>>>>> master:resources/css/style/base_style.css

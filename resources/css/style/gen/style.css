@@ -393,6 +393,10 @@ footer {
   text-align: center;
   position: relative;
 }
+.love {
+  padding: 20px 0 10px;
+  color: #37474f;
+}
 .social a {
   margin: 0 20px;
   text-decoration: none;
@@ -415,6 +419,9 @@ footer {
   p {
     font-size: 16px;
   }
+  .love span {
+    font-size: 12px;
+  }
   .social a {
     font-size: 42px;
   }
@@ -432,6 +439,9 @@ footer {
   }
   p {
     font-size: 16px;
+  }
+  .love span {
+    font-size: 12px;
   }
   .social a {
     font-size: 42px;
@@ -451,6 +461,9 @@ footer {
   p {
     font-size: 18px;
   }
+  .love span {
+    font-size: 14px;
+  }
   .social a {
     font-size: 46px;
   }
@@ -469,6 +482,9 @@ footer {
   p {
     font-size: 18px;
   }
+  .love span {
+    font-size: 14px;
+  }
   .social a {
     font-size: 62px;
   }
@@ -484,6 +500,9 @@ footer {
   p {
     font-size: 20px;
   }
+  .love span {
+    font-size: 16px;
+  }
   .social a {
     font-size: 72px;
   }
@@ -498,6 +517,9 @@ footer {
   }
   p {
     font-size: 20px;
+  }
+  .love span {
+    font-size: 16px;
   }
   .social a {
     font-size: 72px;

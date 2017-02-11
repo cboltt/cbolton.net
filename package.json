@@ -1,0 +1,19 @@
+{
+  "name": "CodeAndConfusion",
+  "version": "1.0.0",
+  "description": "Chris Bolton's personal website",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbolton97/cbolton97.github.io.git"
+  },
+  "author": "Chris Bolton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cbolton97/cbolton97.github.io/issues"
+  },
+  "homepage": "https://github.com/cbolton97/cbolton97.github.io#readme"
+}

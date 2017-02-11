@@ -7,10 +7,14 @@ export default class App extends Component {
 
     return (
       <div className='App'>
-        <Link to='/'>Home</Link>
-
         { children }
       </div>
     );
   }
 }
+App.propTypes = {
+  children: React.PropTypes.node,
+};
+App.defaultProps = {
+  children: '',
+};

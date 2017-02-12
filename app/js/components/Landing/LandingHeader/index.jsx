@@ -16,8 +16,8 @@ export default class LandingHeader extends Component {
     } = this.props;
 
     const linkItems = links.map((link, idx) =>
-      <li>
-        <a key={ idx } href={ link.url } target='_blank' { ...classes('link') }>
+      <li key={ idx }>
+        <a href={ link.url } target='_blank' { ...classes('link') }>
           { link.text }
         </a>
       </li>,

@@ -1,30 +1,20 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 
 import LandingHeader from '../../components/Landing/LandingHeader';
+import Projects from '../../components/Landing/Projects';
+
+import landingData from '../../../data/landing.json';
 
 export default class Landing extends Component {
   render() {
     const { children } = this.props;
-
-    const socialLinks = [
-      {
-        text: 'LinkedIn',
-        href: 'http://google.ca',
-      },
-      {
-        text: 'Email',
-        href: 'http://google.ca',
-      },
-      {
-        text: 'Github',
-        href: 'http://google.ca',
-      },
-    ];
+    const socialLinks = landingData.socialLinks;
+    const projects = landingData.projects;
 
     return (
       <div className='Landing'>
         <LandingHeader links={ socialLinks } />
+        <Projects projectsData={ projects } />
         { children }
       </div>
     );

@@ -1,0 +1,60 @@
+{
+  "socialLinks": [
+    {
+      "text": "test",
+      "url": "test2"
+    },
+    {
+      "text": "test2",
+      "url": "test2"
+    },
+    {
+      "text": "test3",
+      "url": "test3"
+    }
+  ],
+  "projects": [
+    {
+      "title": "UBC BizTech",
+      "description": "Building a campus-wide community of makers and innovators that connects students to opportunities.",
+      "ctaText": "Learn more about the student group I organize",
+      "ctaUrl": "http://ow.ly/y3M53075F4A"
+    },
+    {
+      "title": "YWCA Culture Shift",
+      "description": "How does technology contribute to toxic environments for youth? More importantly, how do we change it?",
+      "ctaText": "Get updates on the multi-year project",
+      "ctaUrl": "https://ywcavan.org/programs/combating-sexualization/cultureshift"
+    },
+    {
+      "title": "WS Companion",
+      "description": "An app for Windsor Secondary students, by Windsor Secondary students.",
+      "ctaText": "Read more about the project in the Vancouver Sun",
+      "ctaUrl": "http://www.vancouversun.com/life/North+teen+harnesses+power+technology+good+rather+than+evil/9707063/story.html"
+    },
+    {
+      "title": "TEDxGranville",
+      "description": "How do raise the next generation of digital innovators?",
+      "ctaText": "Watch my TEDx Talk on Youtube",
+      "ctaUrl": "https://www.youtube.com/watch?v=1YPx4b623d4"
+    },
+    {
+      "title": "Ecopac Social Business",
+      "description": "Developing a social entreprise strategy in a day isn't easy. Watch me pitch the idea at the 2015 JA Innovation Jam",
+      "ctaText": "Click here to watch the pitch",
+      "ctaUrl": "http://google.com"
+    },
+    {
+      "title": "myKoala",
+      "description": "Connect with local non-profits that you care about.",
+      "ctaText": "Check out the project on DevPost",
+      "ctaUrl": "http://devpost.com/software/mykoala"
+    },
+    {
+      "title": "Project Seed",
+      "description": "A device that provides a crucial communcation avenue, even for those without the internet",
+      "ctaText": "Discover the project on Github",
+      "ctaUrl": "https://github.com/alisha/seed"
+    }
+  ]
+}

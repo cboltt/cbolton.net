@@ -9,7 +9,7 @@ export default class LandingHeader extends Component {
     } = this.props;
 
     const linkItems = links.map((link, idx) =>
-      <a key={ idx } href={ link.href }>
+      <a key={ idx } href={ link.url }>
         <li>
           { link.text }
         </li>
@@ -18,8 +18,8 @@ export default class LandingHeader extends Component {
     return (
       <div className='LandingHeader'>
         <h1>
-          <span className='first'>Chris</span>
-          <span className='last'>Bolton</span>
+          <span className='first-line'>Chris</span>
+          <span className='second-line'>Bolton</span>
         </h1>
         {subtitle ?
           '<span>{subtitle}</span>' : ''
@@ -32,6 +32,6 @@ export default class LandingHeader extends Component {
   }
 }
 LandingHeader.propTypes = {
-  subtitle: React.PropTypes.text,
+  subtitle: React.PropTypes.string,
   links: React.PropTypes.array.isRequired,
 }

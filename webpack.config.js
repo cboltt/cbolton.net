@@ -20,22 +20,26 @@ module.exports = {
     root: path.resolve(__dirname, './app/js'),
   },
 
-  devtool: 'inline-source-map', // or 'source-map'
+  devtool: 'inline-source-map',
 
   module: {
     loaders: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loaders: ["react-hot", "babel-loader"],
+        loaders: ["react-hot-loader", "babel-loader"],
       },
       {
         test: /\.html$/,
-        loader: "file?name=[name].[ext]",
+        loader: "file-loader?name=[name].[ext]",
       },
       {
         test: /\.scss$/,
         loader: 'style!css?sourceMap!postcss!sass?sourceMap',
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader',
       },
     ],
   },

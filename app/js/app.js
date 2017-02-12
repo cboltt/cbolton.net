@@ -4,6 +4,8 @@ import Landing from 'views/Landing';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+/* import '../scss/normalize.scss';
+import '../scss/skeleton.scss'; */
 import '../scss/app.scss';
 
 ReactDOM.render(

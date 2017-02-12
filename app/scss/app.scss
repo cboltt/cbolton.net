@@ -1,4 +1,28 @@
-.LandingHeader h1 {
-  color: green;
-  display: flex;
+.c-landingHeader {
+
+  &__title {
+    text-transform: uppercase;
+    color: green;
+
+    &--line {
+      display: block;
+
+      &.first {
+
+      }
+      &.second {
+        margin-left: 1em;
+      }
+    }
+  }
+
+  &__links {
+    padding: 0;
+
+    & li {
+      display: inline;
+      margin: 0 10px 0 0;
+      list-style: none;
+    }
+  }
 }

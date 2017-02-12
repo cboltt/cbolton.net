@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import BEMHelper from 'react-bem-helper';
+
+const classes = new BEMHelper({
+  name: 'landingHeader',
+  prefix: 'c-',
+});
+
 
 export default class LandingHeader extends Component {
   render() {
@@ -9,22 +16,22 @@ export default class LandingHeader extends Component {
     } = this.props;
 
     const linkItems = links.map((link, idx) =>
-      <a key={ idx } href={ link.url }>
-        <li>
+      <li>
+        <a key={ idx } href={ link.url } target='_blank' { ...classes('link') }>
           { link.text }
-        </li>
-      </a>,
+        </a>
+      </li>,
     );
     return (
-      <div className='LandingHeader'>
-        <h1>
-          <span className='first-line'>Chris</span>
-          <span className='second-line'>Bolton</span>
+      <div { ...classes() }>
+        <h1 { ...classes('title') }>
+          <span { ...classes('title', 'line', 'first') }>Chris</span>
+          <span { ...classes('title', 'line', 'second') }>Bolton</span>
         </h1>
         {subtitle ?
           '<span>{subtitle}</span>' : ''
         }
-        <ul>
+        <ul { ...classes('links') }>
           {linkItems}
         </ul>
       </div>

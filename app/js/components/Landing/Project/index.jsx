@@ -1,25 +1,32 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import BEMHelper from 'react-bem-helper';
+
+const classes = new BEMHelper({
+  name: 'project',
+  prefix: 'c-',
+});
+
 
 export default class Project extends Component {
   render() {
-    const {
-      title,
-      description,
-      ctaText,
-      ctaUrl } = this.props;
-
+    const { details } = this.props;
 
     return (
-      <div className='Project'>
-        <h1>{title}</h1>
-        <p>{description}</p>
-        <div className='cta'>
-          <a href={ ctaUrl }>{ ctaText }</a>
+      <div { ...classes() }>
+        <h2 { ...classes('title') }>{details.title}</h2>
+        <p { ...classes('description') }>{details.description}</p>
+        <div { ...classes('cta') }>
+          <a href={ details.ctaUrl }>{ details.ctaText }</a>
         </div>
       </div>
     );
   }
 }
 Project.propTypes = {
+  details: React.PropTypes.shape({
+    title: React.PropTypes.string.isRequired,
+    description: React.PropTypes.string.isRequired,
+    ctaText: React.PropTypes.string.isRequired,
+    ctaUrl: React.PropTypes.string.isRequired,
+  }).isRequired,
 };

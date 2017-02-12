@@ -1,16 +1,16 @@
 {
   "socialLinks": [
     {
-      "text": "test",
-      "url": "test2"
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/in/chris-bolton-9b923945/"
     },
     {
-      "text": "test2",
-      "url": "test2"
+      "text": "Github",
+      "url": "http://github.com/cbolton97"
     },
     {
-      "text": "test3",
-      "url": "test3"
+      "text": "Email",
+      "url": "mailto:codeandconfusion@gmail.com"
     }
   ],
   "projects": [

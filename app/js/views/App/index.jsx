@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import BEMHelper from 'react-bem-helper';
+
+const classes = new BEMHelper({
+  name: 'app',
+  prefix: 'v-',
+});
 
 export default class App extends Component {
   render() {
     const { children } = this.props;
 
     return (
-      <div className='App'>
+      <div { ...classes() }>
         { children }
       </div>
     );

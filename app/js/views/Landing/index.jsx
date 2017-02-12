@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import BEMHelper from 'react-bem-helper';
 
 import LandingHeader from '../../components/Landing/LandingHeader';
 import Projects from '../../components/Landing/Projects';
 
 import landingData from '../../../data/landing.json';
+
+const classes = new BEMHelper({
+  name: 'landing',
+  prefix: 'v-',
+});
 
 export default class Landing extends Component {
   render() {
@@ -12,7 +18,7 @@ export default class Landing extends Component {
     const projects = landingData.projects;
 
     return (
-      <div className='Landing'>
+      <div { ...classes('', '', 'container') }>
         <LandingHeader links={ socialLinks } />
         <Projects projectsData={ projects } />
         { children }

@@ -26,6 +26,7 @@ a {
     font-family: sans-serif;
     letter-spacing: 0.25em;
     font-size: 2.5em;
+    transition: 0.25s;
 
 
     &--line {
@@ -51,17 +52,20 @@ a {
       display: inline;
       margin: 0 10px 0 0;
       list-style: none;
+      &:last-child {
+        margin: 0;
+      }
     }
   }
 }
 
 .c-projects-container {
   margin: 0 auto;
-  max-width: 1120px;
+  max-width: 1092px;
 }
 
 .c-projects {
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
 }
 .c-projects:after {
@@ -100,8 +104,12 @@ a {
 }
 
 // a few mobile-specific styles
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 740px) {
   .c-landingHeader__title {
     font-size: 1.5em;
+  }
+  .c-projects {
+    margin: 0 auto;
+    width: 100%;
   }
 }

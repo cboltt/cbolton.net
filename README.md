@@ -16,3 +16,6 @@ _What makes Code & Confusion great?_
 ## Links
 _Some things I found useful when making this_
 * [React starter guide](https://stanko.github.io/setting-up-webpack-babel-and-react-from-scratch/)
+* [React BEM helper](https://www.npmjs.com/package/react-bem-helper)
+* [Masonry Grid System](http://masonry.desandro.com/)
+* [Masonry React Component](https://github.com/eiriklv/react-masonry-component)

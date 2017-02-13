@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import BEMHelper from 'react-bem-helper';
 
 import LandingHeader from '../../components/Landing/LandingHeader';
+import Introduction from '../../components/Landing/Introduction';
 import Projects from '../../components/Landing/Projects';
 
 import landingData from '../../../data/landing.json';
@@ -20,6 +21,7 @@ export default class Landing extends Component {
     return (
       <div { ...classes('', '', 'container') }>
         <LandingHeader links={ socialLinks } />
+        <Introduction />
         <Projects projectsData={ projects } />
         { children }
       </div>

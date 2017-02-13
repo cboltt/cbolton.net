@@ -13,20 +13,24 @@ a {
   }
 }
 
+h1.c--title {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  transition: 0.25s;
+}
+
 // Styling based on component/view
 .v-landing {
+  margin: 0 auto;
+  max-width: 1092px;
 }
 .c-landingHeader {
   margin: 5em auto;
-  max-width: 1120px;
   text-align: center;
 
   &__title {
-    text-transform: uppercase;
-    font-family: sans-serif;
     letter-spacing: 0.25em;
     font-size: 2.5em;
-    transition: 0.25s;
 
 
     &--line {
@@ -58,10 +62,25 @@ a {
     }
   }
 }
+.c-introduction {
+  &__title {
+    margin: 10px;
+    padding: 0;
+    letter-spacing: 0.15em;
+    font-size: 1.5em;
+  }
+}
 
 .c-projects-container {
   margin: 0 auto;
-  max-width: 1092px;
+
+  &__title {
+    margin: 10px;
+    padding: 0;
+    letter-spacing: 0.15em;
+    font-size: 1.5em;
+
+  }
 }
 
 .c-projects {

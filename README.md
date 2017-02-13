@@ -6,7 +6,7 @@ Just a site that can be used to feature projects, host random experiments, and o
 # Usage
 _How the heck do I run this thing_
 
-Live project: https://codeandconfusion.com/
+Live project: http://codeandconfusion.com/
 
 To run yourself: `git clone` and `npm run start`.
 

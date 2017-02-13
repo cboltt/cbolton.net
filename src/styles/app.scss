@@ -25,7 +25,7 @@ a {
 }
 
 // Mobile-specific generic styling
-@media screen and (max-width: $one-columns) {
+@media screen and (max-width: $two-columns) {
   .c--title {
     text-align: center;
   }

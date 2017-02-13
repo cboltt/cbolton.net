@@ -4,6 +4,7 @@ import landingData from '../data/landing.json';
 export const REQUEST_LANDING_LINKS = 'REQUEST_LANDING_LINKS';
 export const REQUEST_LANDING_PARAGRAPH = 'REQUEST_LANDING_PARAGRAPH';
 export const REQUEST_PROJECTS = 'REQUEST_PROJECTS';
+export const REQUEST_TAB_COUNT = 'REQUEST_TAB_COUNT';
 
 export function requestLandingLinks() {
   const data = landingData.socialLinks;
@@ -28,6 +29,15 @@ export function requestProjects() {
 
   return {
     type: REQUEST_PROJECTS,
+    payload: data
+  }
+}
+
+export function requestTabCount() {
+  const data = request.get('https://cbolton97-washing-machine.herokuapp.com/api/tabcount');
+
+  return {
+    type: REQUEST_TAB_COUNT,
     payload: data
   }
 }

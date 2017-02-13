@@ -9,16 +9,31 @@
   }
 
   &__paragraph {
-    width: 60%;
+    float: left;
+    width: 600px;
     margin: 0 10px 40px;
     font-family: sans-serif;
     text-align: justify;
   }
+
+  &__tabCount {
+    float: left;
+    margin: -40px 0 0 75px;
+    width: auto;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
 }
 
-@media screen and (max-width: $one-columns) {
+@media screen and (max-width: $two-columns) {
   .c-introduction {
-    &__paragraph {
+    &__paragraph,
+    &__tabCount {
+      float: none;
       display: block;
       margin: 10px auto 40px;
       width: 340px;

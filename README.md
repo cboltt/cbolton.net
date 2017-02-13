@@ -50,6 +50,8 @@ _Feature coming soon!_
 ## Links and References
 _During the build process, I found these resources particularly useful:_
 
+* [Official React Docs](https://facebook.github.io/react)
+* [Guide: Setting up from scratch](https://stanko.github.io/setting-up-webpack-babel-and-react-from-scratch/)
 * [Create React App](https://github.com/facebookincubator/create-react-app)
 * [Import Glob Loader](https://www.npmjs.com/package/import-glob-loader)
 * [React BEM Helper](https://www.npmjs.com/package/react-bem-helper)
@@ -59,5 +61,5 @@ _During the build process, I found these resources particularly useful:_
 ## Appendices
 _Not everything can run so smoothly_
 
-### Appendix 1: create-react-app boiler-plate
+### Appendix 1: Create React App Boiler-plate
 In order to full grasp webpack, I wanted to start this project without implementing any boiler-plate code so I could fully understand what my code was doing. Up until [this commit](https://github.com/cbolton97/codeandconfusion/tree/7d51a7da3629e95ef17d0f8b565d16cf0203a1f0), it was working out great! At this point however, I realized that I was going to need to deploy my app to Heroku, and wanting to avoid being in configuration purgatory forever, I switched over my webpack config to that of create-react-app. This allowed me to use Heroku's react buildpack and seemlessly deploy the app to their platform.

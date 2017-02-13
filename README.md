@@ -6,7 +6,7 @@ Just a site that can be used to feature projects, host random experiments, and o
 # Usage
 _How the heck do I run this thing_
 
-Live project: https://immense-harbor-37852.herokuapp.com/
+Live project: https://codeandconfusion.com/
 
 To run yourself: `git clone` and `npm run start`.
 

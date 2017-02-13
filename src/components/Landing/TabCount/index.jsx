@@ -20,7 +20,7 @@ export default class TabCount extends Component {
           { tabCount }
         </h1>
         <p { ...classes('details') }>
-          That's how many tabs I have open at the moment. I'm a bit of a busy person.
+          That's how many tabs I have open at the moment on my laptop. I have a bit of a problem (and a lot of RAM).
         </p>
       </div>
     );

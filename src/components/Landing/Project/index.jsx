@@ -31,4 +31,4 @@ Project.propTypes = {
   }).isRequired,
 };
 
-export default Project
+export default Project;

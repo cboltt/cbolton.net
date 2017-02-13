@@ -8,7 +8,7 @@ import Landing from '../Landing';
 export default class AppRouter extends Component {
   render() {
     return (
-      <Router history={ browserHistory }>
+      <Router history={ hashHistory }>
         <Route path='/' component={ App }>
           <IndexRoute component={ Landing } />
         </Route>

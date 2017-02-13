@@ -14,8 +14,8 @@ _I already have a [personal site](http://codeandconfusion.com), so when I decide
 - [x] Utilize some great third-party components or npm modules
 - [x] Document the build process
 - [x] Store all site data in json instead of inline
-- [x] Use good linting standards
-- [ ] Use Redux and its design patterns
+- [ ] Use good linting standards
+- [x] Use Redux and its design patterns
 - [ ] Connect to an external API
 - [ ] Implement testing
 

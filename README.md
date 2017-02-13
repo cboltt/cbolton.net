@@ -56,6 +56,7 @@ _During the build process, I found these resources particularly useful:_
 * [Import Glob Loader](https://www.npmjs.com/package/import-glob-loader)
 * [React BEM Helper](https://www.npmjs.com/package/react-bem-helper)
 * [Heroku React Buildpack](https://blog.heroku.com/deploying-react-with-zero-configuration#new-zero-configuration-experience)
+* [Redux tutorial](https://blog.tighten.co/react-101-using-redux)
 
 
 ## Appendices

@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as Actions from '../../actions';
 import BEMHelper from 'react-bem-helper';
 
 import LandingHeader from '../../components/Landing/LandingHeader';
@@ -12,24 +15,41 @@ const classes = new BEMHelper({
   prefix: 'v-',
 });
 
-export default class Landing extends Component {
+class Landing extends Component {
+
+  componentDidMount() {
+    this.props.actions.requestLandingLinks();
+  }
+
   render() {
-    const { children } = this.props;
+    const {
+      landingLinks
+    } = this.props;
 
     const socialLinks = landingData.socialLinks;
     const projects = landingData.projects;
     const about = landingData.about;
 
     return (
-      <div { ...classes('', '', 'container') }>
-        <LandingHeader links={ socialLinks } />
+      <div { ...classes('') }>
+        <LandingHeader links={ landingLinks.data } />
         <Introduction paragraph={ about } />
         <Projects projectsData={ projects } />
-        { children }
       </div>
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  ...state
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  actions: bindActionCreators(Actions, dispatch)
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Landing);
+
 Landing.propTypes = {
   children: React.PropTypes.node,
 };

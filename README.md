@@ -24,7 +24,7 @@ _I already have a [personal site](http://codeandconfusion.com), so when I decide
 - [x] Use Redux and its design patterns
 - [x] Connect to an external API
 - [x] Use good linting standards
-- [ ] Implement testing
+- [x] Implement basic testing
 
 ## Features
 _What makes this site great?_
@@ -52,7 +52,9 @@ In the past, I haven't really paid attention to linting on personal projects. Fo
 **wishlist:** Load some more opinionated eslint modules (like AirBnB's), to better hone my coding style.
 
 ### Testing
-_Feature coming soon!_
+While by no means exhaustive, I wanted to implement component-level testing for this project. This allows me to ensure my components are running smoothly, while also getting used to the Jest/Enzyme environment.
+
+**wishlist:** Testing for containers that deal with Redux.
 
 
 ## Links and References
@@ -66,6 +68,7 @@ _During the build process, I found these resources particularly useful:_
 * [Heroku React Buildpack](https://blog.heroku.com/deploying-react-with-zero-configuration#new-zero-configuration-experience)
 * [Redux tutorial](https://blog.tighten.co/react-101-using-redux)
 * [Express + Postgres tutorial](http://mherman.org/blog/2016/03/13/designing-a-restful-api-with-node-and-postgres/#.WKFqKGQrJTY)
+* [Jest docs](https://facebook.github.io/jest)
 
 
 ## Appendices

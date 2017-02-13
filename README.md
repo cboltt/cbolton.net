@@ -3,6 +3,13 @@ _A personal website built in React._
 
 Just a site that can be used to feature projects, host random experiments, and other generally boring stuff :joy:.
 
+# Usage
+_How the heck do I run this thing_
+
+Live project: https://immense-harbor-37852.herokuapp.com/
+
+To run yourself: `git clone` and `npm run start`.
+
 ## Project Goals
 _I already have a [personal site](http://codeandconfusion.com), so when I decided to re-build it here, I wanted to accomplish a few things along the way._
 
@@ -16,7 +23,7 @@ _I already have a [personal site](http://codeandconfusion.com), so when I decide
 - [x] Store all site data in json instead of inline
 - [x] Use Redux and its design patterns
 - [x] Connect to an external API
-- [ ] Use good linting standards
+- [x] Use good linting standards
 - [ ] Implement testing
 
 ## Features
@@ -37,12 +44,12 @@ Stores, reducers, actions, oh my! A big reason I started this project was to see
 ### Current Browser Tab Count
 While I may not update my personal projects all the time, I still want to convey that I'm a busy person :joy:. I've been know to run up a large number of Chrome tabs when I'm in the thick of working a project (my rough high-score is about 70). By showcasing how many browser tabs I have open, I hope people get how busy I might be at a given moment. See Appendix 2 for more information about how I got my tab count.
 
-**wishlist**: The ability to automatically update the browser count instead of doing it on page load and maybe some nice animation to go along with it.
+**wishlist:** The ability to automatically update the browser count instead of doing it on page load and maybe some nice animation to go along with it.
 
 ### Linting
 In the past, I haven't really paid attention to linting on personal projects. For this site, I wanted to incorporate linting in the build process and in my IDE (I use Atom). Luckily Create React App came with some sensible defaults that just work!
 
-**wishlist** Load some more opinionated eslint modules (like AirBnB's), to better hone my coding style.
+**wishlist:** Load some more opinionated eslint modules (like AirBnB's), to better hone my coding style.
 
 ### Testing
 _Feature coming soon!_

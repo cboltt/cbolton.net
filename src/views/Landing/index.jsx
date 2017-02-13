@@ -5,7 +5,7 @@ import LandingHeader from '../../components/Landing/LandingHeader';
 import Introduction from '../../components/Landing/Introduction';
 import Projects from '../../components/Landing/Projects';
 
-import landingData from '../../../data/landing.json';
+import landingData from '../../data/landing.json';
 
 const classes = new BEMHelper({
   name: 'landing',

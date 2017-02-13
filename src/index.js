@@ -1,10 +1,10 @@
-import App from './app/views/App';
-import Landing from './app/views/Landing';
+import App from './views/App';
+import Landing from './views/Landing';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-import './scss/app.scss';
+import './styles/app.scss';
 
 ReactDOM.render(
   <Router history={ browserHistory }>

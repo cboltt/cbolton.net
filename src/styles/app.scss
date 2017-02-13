@@ -35,4 +35,5 @@ a {
 }
 
 // Import all our partials
-@import './../app/**/*.scss';
+@import '../components/**/*.scss';
+@import '../views/**/*.scss';

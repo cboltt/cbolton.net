@@ -17,24 +17,24 @@ const classes = new BEMHelper({
 
 class Landing extends Component {
 
-  componentDidMount() {
+  componentWillMount() {
     this.props.actions.requestLandingLinks();
+    this.props.actions.requestLandingParagraph();
+    this.props.actions.requestProjects();
   }
 
   render() {
     const {
-      landingLinks
+      landingLinks,
+      landingParagraph,
+      projects
     } = this.props;
-
-    const socialLinks = landingData.socialLinks;
-    const projects = landingData.projects;
-    const about = landingData.about;
 
     return (
       <div { ...classes('') }>
         <LandingHeader links={ landingLinks.data } />
-        <Introduction paragraph={ about } />
-        <Projects projectsData={ projects } />
+        <Introduction paragraph={ landingParagraph.data } />
+        <Projects projectsData={ projects.data } />
       </div>
     );
   }

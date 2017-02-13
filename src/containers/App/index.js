@@ -9,7 +9,6 @@ const classes = new BEMHelper({
 export default class App extends Component {
   render() {
     const { children } = this.props;
-
     return (
       <div { ...classes() }>
         { children }

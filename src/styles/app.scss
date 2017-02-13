@@ -24,9 +24,6 @@ a {
   transition: 0.25s;
 }
 
-
-
-
 // Mobile-specific generic styling
 @media screen and (max-width: $one-columns) {
   .c--title {
@@ -35,4 +32,5 @@ a {
 }
 
 // Import all our partials
-@import './../app/**/*.scss';
+@import '../components/**/*.scss';
+@import '../containers/**/*.scss';

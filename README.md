@@ -14,8 +14,8 @@ _I already have a [personal site](http://codeandconfusion.com), so when I decide
 - [x] Utilize some great third-party components or npm modules
 - [x] Document the build process
 - [x] Store all site data in json instead of inline
-- [x] Use good linting standards
-- [ ] Use Redux and its design patterns
+- [ ] Use good linting standards
+- [x] Use Redux and its design patterns
 - [ ] Connect to an external API
 - [ ] Implement testing
 
@@ -56,6 +56,7 @@ _During the build process, I found these resources particularly useful:_
 * [Import Glob Loader](https://www.npmjs.com/package/import-glob-loader)
 * [React BEM Helper](https://www.npmjs.com/package/react-bem-helper)
 * [Heroku React Buildpack](https://blog.heroku.com/deploying-react-with-zero-configuration#new-zero-configuration-experience)
+* [Redux tutorial](https://blog.tighten.co/react-101-using-redux)
 
 
 ## Appendices

@@ -1,16 +1,18 @@
-import App from './app/views/App';
-import Landing from './app/views/Landing';
-
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-import './scss/app.scss';
+
+import AppRouter from './containers/AppRouter';
+
+import { Provider } from 'react-redux';
+import configureStore from './store/configureStore';
+
+import './styles/app.scss';
+
+const store = configureStore();
 
 ReactDOM.render(
-  <Router history={ browserHistory }>
-    <Route path='/' component={ App }>
-      <IndexRoute component={ Landing } />
-    </Route>
-  </Router>,
-  document.getElementById('root') // eslint-disable-line
+  <Provider store={store}>
+    <AppRouter />
+  </Provider>,
+  document.getElementById('root')
 );

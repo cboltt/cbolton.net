@@ -23,11 +23,11 @@ export default class Projects extends Component {
       <Project key={ idx } details={ project } />,
     );
     return (
-      <div className='c-projects-container'>
-        <h1 className='c-projects-container__title c--title'>Projects</h1>
+      <div { ...classes() }>
+        <h1 { ...classes('title') }>Projects</h1>
         <Masonry
           options={ masonryOptions }
-          { ...classes() }
+          { ...classes('masonry') }
         >
           { projects }
         </Masonry>

@@ -1,5 +1,5 @@
-import App from './js/views/App';
-import Landing from './js/views/Landing';
+import App from './app/views/App';
+import Landing from './app/views/Landing';
 
 import React from 'react';
 import ReactDOM from 'react-dom';

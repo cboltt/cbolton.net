@@ -14,13 +14,20 @@ export default class TabCount extends Component {
       tabCount
     } = this.props;
 
+    let details = "Looks like my browser may have just restarted"
+      if(parseInt(tabCount) >= 20) {
+        details = "I have a bit of a problem (and a lot of RAM)."
+      } else {
+        details = "I'm taking it pretty easy today."
+      }
+
     return (
       <div { ...classes() }>
         <h1 { ...classes('count') }>
           { tabCount }
         </h1>
         <p { ...classes('details') }>
-          That's how many tabs I have open at the moment on my laptop. I have a bit of a problem (and a lot of RAM).
+          That's how many tabs I have open at the moment on my laptop. { details }
         </p>
       </div>
     );
@@ -31,5 +38,5 @@ TabCount.propTypes = {
 }
 
 TabCount.defaultProps = {
-  tabCount: "0"
+  tabCount: "1"
 }

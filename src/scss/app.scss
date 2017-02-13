@@ -1,5 +1,10 @@
+// Variables
 
-// Basic text styling
+// Max breakpoints for the number of masonry columns on display
+$one-columns: 743px;
+$two-columns: 1106px;
+
+// Basic text styling and generic configurations
 a {
   color: #333;
   text-decoration: none;
@@ -13,142 +18,21 @@ a {
   }
 }
 
-h1.c--title {
+.c--title {
   text-transform: uppercase;
   font-family: sans-serif;
   transition: 0.25s;
 }
 
-// Styling based on component/view
-.v-landing {
-  margin: 0 auto;
-  max-width: 1092px;
-}
-.c-landingHeader {
-  margin: 5em auto;
-  text-align: center;
-
-  &__title {
-    letter-spacing: 0.25em;
-    font-size: 2.5em;
 
 
-    &--line {
-      display: block;
 
-      &.first {
-        margin-left: -2em;
-      }
-      &.second {
-        margin-left: 1em;
-      }
-    }
-  }
-
-  &__links {
-    padding: 0;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    letter-spacing: 0.15em;
-    font-size: 1em;
-
-    & li {
-      display: inline;
-      margin: 0 10px 0 0;
-      list-style: none;
-      &:last-child {
-        margin: 0;
-      }
-    }
-  }
-}
-.c-introduction {
-  &__title {
-    margin: 10px;
-    padding: 0;
-    letter-spacing: 0.15em;
-    font-size: 1.5em;
-  }
-
-  &__paragraph {
-    width: 60%;
-    margin: 0 10px 40px;
-    font-family: sans-serif;
-    text-align: justify;
-  }
-}
-
-.c-projects-container {
-  margin: 0 auto;
-
-  &__title {
-    margin: 10px;
-    padding: 0;
-    letter-spacing: 0.15em;
-    font-size: 1.5em;
-
-  }
-}
-
-.c-projects {
-  margin: 0 auto;
-  width: 100%;
-}
-.c-projects:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.c-project {
-  width: 320px;
-  margin: 0 10px 20px 10px;
-  padding: 10px;
-  border: 2px solid #333;
-  font-family: sans-serif;
-
-  &__title {
-    margin: 0 0 5px 0;
-    font-weight: 100;
-
-    &--year {
-      margin-left: 5px;
-      font-weight: 900;
-      font-size: 0.65em;
-    }
-  }
-
-  &__description {
-    margin: 10px 0 15px 0;
-  }
-
-  &__cta {
-    text-align: center;
-    & a {
-      font-size: 0.75em;
-    }
-  }
-}
-
-// a few mobile-specific styles
-@media screen and (max-width: 740px) {
+// Mobile-specific generic styling
+@media screen and (max-width: $one-columns) {
   .c--title {
     text-align: center;
   }
-
-  .c-landingHeader__title {
-    font-size: 1.5em;
-  }
-
-  .c-introduction {
-    &__paragraph {
-      display: block;
-      margin: 10px auto 40px;
-      width: 340px;
-    }
-  }
-
-  .c-projects {
-    margin: 0 auto;
-    width: 100%;
-  }
 }
+
+// Import all our partials
+@import './../app/**/*.scss';

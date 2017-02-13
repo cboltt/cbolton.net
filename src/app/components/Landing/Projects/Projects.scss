@@ -1,0 +1,30 @@
+.c-projects-container {
+  margin: 0 auto;
+
+  &__title {
+    @extend .c--title;
+
+    margin: 10px;
+    padding: 0;
+    letter-spacing: 0.15em;
+    font-size: 1.5em;
+
+  }
+}
+
+.c-projects {
+  margin: 0 auto;
+  width: 100%;
+}
+.c-projects:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@media screen and (max-width: $one-columns) {
+  .c-projects {
+    margin: 0 auto;
+    width: 100%;
+  }
+}

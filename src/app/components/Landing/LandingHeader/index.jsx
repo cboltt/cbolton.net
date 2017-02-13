@@ -23,7 +23,7 @@ export default class LandingHeader extends Component {
     );
     return (
       <div { ...classes() }>
-        <h1 { ...classes('title', '', 'c--title') }>
+        <h1 { ...classes('title') }>
           <span { ...classes('title', 'line', 'first') }>Chris</span>
           <span { ...classes('title', 'line', 'second') }>Bolton</span>
         </h1>

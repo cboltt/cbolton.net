@@ -16,7 +16,7 @@ export default class Introduction extends Component {
 
     return (
       <div { ...classes() }>
-        <h1 { ...classes('title', '', 'c--title') }>
+        <h1 { ...classes('title') }>
           About
         </h1>
         <p { ...classes('paragraph') }>

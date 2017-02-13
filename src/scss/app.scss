@@ -69,6 +69,13 @@ h1.c--title {
     letter-spacing: 0.15em;
     font-size: 1.5em;
   }
+
+  &__paragraph {
+    width: 60%;
+    margin: 0 10px 40px;
+    font-family: sans-serif;
+    text-align: justify;
+  }
 }
 
 .c-projects-container {
@@ -124,9 +131,22 @@ h1.c--title {
 
 // a few mobile-specific styles
 @media screen and (max-width: 740px) {
+  .c--title {
+    text-align: center;
+  }
+
   .c-landingHeader__title {
     font-size: 1.5em;
   }
+
+  .c-introduction {
+    &__paragraph {
+      display: block;
+      margin: 10px auto 40px;
+      width: 340px;
+    }
+  }
+
   .c-projects {
     margin: 0 auto;
     width: 100%;

@@ -15,13 +15,15 @@ const classes = new BEMHelper({
 export default class Landing extends Component {
   render() {
     const { children } = this.props;
+
     const socialLinks = landingData.socialLinks;
     const projects = landingData.projects;
+    const about = landingData.about;
 
     return (
       <div { ...classes('', '', 'container') }>
         <LandingHeader links={ socialLinks } />
-        <Introduction />
+        <Introduction paragraph={ about } />
         <Projects projectsData={ projects } />
         { children }
       </div>

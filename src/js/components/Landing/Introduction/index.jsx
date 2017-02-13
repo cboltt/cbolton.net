@@ -19,10 +19,13 @@ export default class Introduction extends Component {
         <h1 { ...classes('title', '', 'c--title') }>
           About
         </h1>
+        <p { ...classes('paragraph') }>
+          {paragraph}
+        </p>
       </div>
     );
   }
 }
 Introduction.propTypes = {
-  paragraph: React.PropTypes.string,
+  paragraph: React.PropTypes.string.isRequired,
 }

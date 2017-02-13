@@ -21,19 +21,21 @@ class Landing extends Component {
     this.props.actions.requestLandingLinks();
     this.props.actions.requestLandingParagraph();
     this.props.actions.requestProjects();
+    this.props.actions.requestTabCount();
   }
 
   render() {
     const {
       landingLinks,
       landingParagraph,
-      projects
+      projects,
+      tabCount
     } = this.props;
 
     return (
       <div { ...classes('') }>
         <LandingHeader links={ landingLinks.data } />
-        <Introduction paragraph={ landingParagraph.data } />
+        <Introduction paragraph={ landingParagraph.data } tabCount={ tabCount.data } />
         <Projects projectsData={ projects.data } />
       </div>
     );

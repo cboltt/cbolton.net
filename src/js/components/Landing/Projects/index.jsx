@@ -24,6 +24,7 @@ export default class Projects extends Component {
     );
     return (
       <div className='c-projects-container'>
+        <h1 className='c-projects-container__title c--title'>Projects</h1>
         <Masonry
           options={ masonryOptions }
           { ...classes() }

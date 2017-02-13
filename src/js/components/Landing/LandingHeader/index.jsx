@@ -11,7 +11,6 @@ const classes = new BEMHelper({
 export default class LandingHeader extends Component {
   render() {
     const {
-      subtitle,
       links,
     } = this.props;
 
@@ -24,13 +23,10 @@ export default class LandingHeader extends Component {
     );
     return (
       <div { ...classes() }>
-        <h1 { ...classes('title') }>
+        <h1 { ...classes('title', '', 'c--title') }>
           <span { ...classes('title', 'line', 'first') }>Chris</span>
           <span { ...classes('title', 'line', 'second') }>Bolton</span>
         </h1>
-        {subtitle ?
-          '<span>{subtitle}</span>' : ''
-        }
         <ul { ...classes('links') }>
           {linkItems}
         </ul>
@@ -39,6 +35,5 @@ export default class LandingHeader extends Component {
   }
 }
 LandingHeader.propTypes = {
-  subtitle: React.PropTypes.string,
   links: React.PropTypes.array.isRequired,
 }

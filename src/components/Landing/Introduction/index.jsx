@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import BEMHelper from 'react-bem-helper';
 
+import TabCount from '../TabCount'
+
 const classes = new BEMHelper({
   name: 'introduction',
   prefix: 'c-',
@@ -22,6 +24,9 @@ export default class Introduction extends Component {
         <p { ...classes('paragraph') }>
           {paragraph}
         </p>
+        <div { ...classes('tabCount') }>
+          <TabCount />
+        </div>
       </div>
     );
   }

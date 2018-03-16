@@ -1,4 +1,4 @@
-# Code & Confusion
+# cbolton.net
 _A personal website built in React._
 
 Just a site that can be used to feature projects, host random experiments, and other generally boring stuff :joy:.
@@ -6,12 +6,12 @@ Just a site that can be used to feature projects, host random experiments, and o
 # Usage
 _How the heck do I run this thing_
 
-Live project: http://codeandconfusion.com/
+Live project: http://cbolton.net/
 
 To run yourself: `git clone` and `npm run start`.
 
 ## Project Goals
-_I already have a [personal site](http://codeandconfusion.com), so when I decided to re-build it here, I wanted to accomplish a few things along the way._
+_I already have a [personal site](http://cbolton.net), so when I decided to re-build it here, I wanted to accomplish a few things along the way._
 
 - [x] Implement a world-class build system using webpack
 - [x] Avoid the use of boiler-plate code (see Appendix 1)

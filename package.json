@@ -1,5 +1,5 @@
 {
-  "name": "codeandconfusion",
+  "name": "cbolton.net",
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
@@ -67,7 +67,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://codeandconfusion.com/",
+  "homepage": "https://cbolton.net/",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"

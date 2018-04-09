@@ -3,6 +3,7 @@ import landingData from '../data/landing.json';
 
 export const REQUEST_LANDING_LINKS = 'REQUEST_LANDING_LINKS';
 export const REQUEST_LANDING_PARAGRAPH = 'REQUEST_LANDING_PARAGRAPH';
+export const REQUEST_EXPERIENCES = 'REQUEST_EXPERIENCES';
 export const REQUEST_PROJECTS = 'REQUEST_PROJECTS';
 export const REQUEST_TAB_COUNT = 'REQUEST_TAB_COUNT';
 
@@ -20,6 +21,15 @@ export function requestLandingParagraph() {
 
   return {
     type: REQUEST_LANDING_PARAGRAPH,
+    payload: data
+  }
+}
+
+export function requestExperiences() {
+  const data = landingData.experience;
+
+  return {
+    type: REQUEST_EXPERIENCES,
     payload: data
   }
 }

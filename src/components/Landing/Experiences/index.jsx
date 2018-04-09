@@ -4,10 +4,10 @@ import Masonry from 'react-masonry-component';
 
 import InfoCard from '../InfoCard';
 
-const Projects = ({ projectsData }) => {
+const Experiences = ({ experienceData }) => {
 
   const classes = new BEMHelper({
-    name: 'projects',
+    name: 'experiences',
     prefix: 'c-',
   });
 
@@ -17,24 +17,24 @@ const Projects = ({ projectsData }) => {
     fitWidth: true,
   };
 
-  const projects = projectsData.map((project, idx) =>
-    <InfoCard key={ idx } details={ project } />,
+  const experiences = experienceData.map((experience, idx) =>
+    <InfoCard key={ idx } small details={ experience } />,
   );
 
   return (
     <div { ...classes() }>
-      <h1 { ...classes('title') }>Projects</h1>
+      <h1 { ...classes('title') }>Experience</h1>
       <Masonry
         options={ masonryOptions }
         { ...classes('masonry') }
       >
-        { projects }
+        { experiences }
       </Masonry>
     </div>
   );
 }
-Projects.propTypes = {
-  projectsData: React.PropTypes.array.isRequired,
+Experiences.propTypes = {
+  experienceData: React.PropTypes.array.isRequired,
 };
 
-export default Projects;
+export default Experiences;

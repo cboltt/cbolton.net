@@ -1,8 +1,7 @@
-.c-projects {
+.c-experiences {
   margin: 0 auto;
   width: 100%;
-  clear: both;
-  display: block;
+  height: 100%;
 
   &__title {
     @extend .c--title;
@@ -22,7 +21,7 @@
 }
 
 @media screen and (max-width: $two-columns) {
-  .c-projects {
+  .c-experiences {
     &__masonry {
       margin: 0 auto;
       width: 100%;

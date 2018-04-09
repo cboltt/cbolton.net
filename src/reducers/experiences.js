@@ -1,14 +1,14 @@
-import { REQUEST_TAB_COUNT } from '../actions';
+import { REQUEST_EXPERIENCES } from '../actions';
 
 const initialState =  {
-  data: '-1'
+  data: []
 };
 
 export default function(state = initialState, action) {
   switch(action.type) {
-    case REQUEST_TAB_COUNT:
+    case REQUEST_EXPERIENCES:
      return {
-       ...state, data: action.payload.body.data.count.toString()
+       ...state, data: action.payload
      };
    default:
      return state;

@@ -5,6 +5,10 @@
       "url": "mailto:hello@cbolton.net"
     },
     {
+      "text": "Medium",
+      "url": "http://medium.com/@cbolton97"
+    },
+    {
       "text": "LinkedIn",
       "url": "https://www.linkedin.com/in/chris-bolton-9b923945/"
     },
@@ -18,6 +22,28 @@
     "about": "A software developer by trade and a culture design nerd in practice, I love building amazing experiences on and off the internet. Seeing the impact of those experiences makes it all worthwhile.",
     "languages": "I like to build in JavaScript / TypeScript / React / GraphQL."
   },
+  "experience": [
+    {
+      "title": "Shopify",
+      "year": "2018",
+      "description": "Working at the intersection of culture, internal tools, and technology."
+    },
+    {
+      "title": "Shopify",
+      "year": "2017",
+      "description": "Building Shopify's new web frontend in TypeScript and GraphQL."
+    },
+    {
+      "title": "Mobify",
+      "year": "2016",
+      "description": "Developing a progressive web app framework and scaffolding system in React."
+    },
+    {
+      "title": "Hootsuite",
+      "year": "2014-15",
+      "description": "Learning software development as Hootsuite's first high school intern."
+    }
+  ],
   "projects": [
     {
       "title": "Commerce Undergraduate Society",
@@ -37,7 +63,7 @@
       "title": "YWCA Culture Shift",
       "year": "2017",
       "description": "How does technology contribute to toxic environments for youth? More importantly, how do we change it?",
-      "ctaText": "Get updates on the multi-year project",
+      "ctaText": "Get updates on the project",
       "ctaUrl": "https://ywcavan.org/programs/combating-sexualization/cultureshift"
     },
     {
@@ -57,7 +83,7 @@
     {
       "title": "Ecopac Social Business",
       "year": "2015",
-      "description": "Developing a social entreprise strategy in a day isn't easy. Watch me pitch the idea at the 2015 JA Innovation Jam.",
+      "description": "Developing a social entreprise strategy in a day isn't easy. Watch me pitch the idea at the 2015 JA Innovation Jam:",
       "ctaText": "Click here to watch the pitch",
       "ctaUrl": "https://www.youtube.com/watch?v=CaOV97FqyDk"
     },

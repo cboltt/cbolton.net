@@ -18,7 +18,14 @@ const TabCount = ({ tabCount }) => {
   } else if(tabCount >= 1) {
     details = "It's not too bad right now."
   } else {
-    return null;
+    return (
+      <div { ...classes() }>
+
+      <p { ...classes('details') }>
+        // loading... //
+      </p>
+    </div>
+    );
   }
 
   return (

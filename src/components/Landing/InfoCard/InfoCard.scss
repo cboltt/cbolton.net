@@ -1,8 +1,9 @@
-.c-project {
+.c-info-card {
   width: 320px;
   margin: 0 10px 20px 10px;
   padding: 10px;
   border: 2px solid #333;
+  border-radius: 2px;
   font-family: sans-serif;
 
   &__title {
@@ -25,5 +26,16 @@
     & a {
       font-size: 0.75em;
     }
+  }
+}
+.c-info-card--small { 
+  width: 238px;
+  margin: 0 5px 20px 5px;
+}
+
+@media screen and (max-width: $two-columns) {
+  .c-info-card--small { 
+    width: 320px;
+    margin: 0 10px 20px 10px;
   }
 }

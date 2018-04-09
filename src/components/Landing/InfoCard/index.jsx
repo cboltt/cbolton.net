@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import BEMHelper from 'react-bem-helper';
 
-const Project = ({ details }) => {
+const InfoCard = ({ small, details }) => {
 
   const classes = new BEMHelper({
-    name: 'project',
+    name: 'info-card',
     prefix: 'c-',
   });
 
   return (
-    <div { ...classes() }>
+    <div { ...classes('', small ? 'small' : '') }>
       <h2 { ...classes('title') }>
         {details.title}
         <span { ...classes('title', 'year') }>{details.year}</span>
@@ -21,14 +21,15 @@ const Project = ({ details }) => {
     </div>
   );
 }
-Project.propTypes = {
+InfoCard.propTypes = {
+  small: React.PropTypes.bool,
   details: React.PropTypes.shape({
     title: React.PropTypes.string.isRequired,
     year: React.PropTypes.string.isRequired,
     description: React.PropTypes.string.isRequired,
-    ctaText: React.PropTypes.string.isRequired,
-    ctaUrl: React.PropTypes.string.isRequired,
+    ctaText: React.PropTypes.string,
+    ctaUrl: React.PropTypes.string,
   }).isRequired,
 };
 
-export default Project;
+export default InfoCard;

@@ -11,8 +11,6 @@ const Introduction = ({ paragraph, languages, tabCount }) => {
     prefix: 'c-',
   });
 
-  console.log(paragraph);
-
   return (
     <div { ...classes() }>
       <h1 { ...classes('title') }>

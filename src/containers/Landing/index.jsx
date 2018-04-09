@@ -7,6 +7,7 @@ import BEMHelper from 'react-bem-helper';
 import LandingHeader from '../../components/Landing/LandingHeader';
 import Introduction from '../../components/Landing/Introduction';
 import Projects from '../../components/Landing/Projects';
+import Experiences from '../../components/Landing/Experiences';
 
 import landingData from '../../data/landing.json';
 
@@ -20,6 +21,7 @@ class Landing extends Component {
   componentWillMount() {
     this.props.actions.requestLandingLinks();
     this.props.actions.requestLandingParagraph();
+    this.props.actions.requestExperiences();
     this.props.actions.requestProjects();
     this.props.actions.requestTabCount();
   }
@@ -28,6 +30,7 @@ class Landing extends Component {
     const {
       landingLinks,
       landingParagraph,
+      experiences,
       projects,
       tabCount
     } = this.props;
@@ -39,6 +42,7 @@ class Landing extends Component {
           paragraph={ landingParagraph.data }
           tabCount={ tabCount.data } 
         />
+        <Experiences experienceData={ experiences.data } />
         <Projects projectsData={ projects.data } />
       </div>
     );

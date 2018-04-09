@@ -4,12 +4,14 @@ import BEMHelper from 'react-bem-helper';
 
 import TabCount from '../TabCount'
 
-const Introduction = ({ paragraph, tabCount }) => {
+const Introduction = ({ paragraph, languages, tabCount }) => {
 
   const classes = new BEMHelper({
     name: 'introduction',
     prefix: 'c-',
   });
+
+  console.log(paragraph);
 
   return (
     <div { ...classes() }>
@@ -17,7 +19,10 @@ const Introduction = ({ paragraph, tabCount }) => {
         About
       </h1>
       <p { ...classes('paragraph') }>
-        { paragraph }
+        { paragraph.about }
+        <br />
+        <br />
+        { paragraph.languages }
       </p>
       <div { ...classes('tabCount') }>
         <TabCount tabCount={ tabCount } />
@@ -27,7 +32,7 @@ const Introduction = ({ paragraph, tabCount }) => {
 }
 
 Introduction.propTypes = {
-  paragraph: React.PropTypes.string.isRequired,
+  paragraph: React.PropTypes.object.isRequired,
 }
 
 export default Introduction;

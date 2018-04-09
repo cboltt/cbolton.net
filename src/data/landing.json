@@ -13,7 +13,11 @@
       "url": "http://github.com/cbolton97"
     }
   ],
-  "about" : "Software has eaten the world – this site is just my proof that it has eaten me too. If we've never met, my name is Chris Bolton. I'm currently studying at UBC in business and computer science and I love exploring where technology intersects with society. To learn more about what I do and what I care about, be sure to review some of my past and present projects below. If you're up for a chat, check out the links above.",
+  "about" : 
+  {
+    "about": "A software developer by trade and a culture design nerd in practice, I love building amazing experiences on and off the internet. Seeing the impact of those experiences makes it all worthwhile.",
+    "languages": "I like to build in JavaScript / TypeScript / React / GraphQL."
+  },
   "projects": [
     {
       "title": "UBC BizTech",

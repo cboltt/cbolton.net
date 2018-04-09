@@ -35,7 +35,10 @@ class Landing extends Component {
     return (
       <div { ...classes('') }>
         <LandingHeader links={ landingLinks.data } />
-        <Introduction paragraph={ landingParagraph.data } tabCount={ tabCount.data } />
+        <Introduction 
+          paragraph={ landingParagraph.data }
+          tabCount={ tabCount.data } 
+        />
         <Projects projectsData={ projects.data } />
       </div>
     );

@@ -1,7 +1,7 @@
 import { REQUEST_LANDING_PARAGRAPH } from '../actions';
 
 const initialState =  {
-  data: ""
+  data: {}
 };
 
 export default function(state = initialState, action) {

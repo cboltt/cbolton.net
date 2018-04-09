@@ -7,10 +7,18 @@
     font-weight: 100;
     font-family: sans-serif;
 
+    color: #FFF;
+    text-shadow:
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000,
+     #444 5px 7px;
+
   }
 
   &__details {
-    margin: 55px 0 0 10px;
+    margin: 50px 0 0 10px;
     padding: 0;
     float: left;
     font-family: sans-serif;

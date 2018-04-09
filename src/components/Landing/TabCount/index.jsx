@@ -16,7 +16,7 @@ const TabCount = ({ tabCount }) => {
   if(tabCountInt >= 30) {
     details = "Looks like things are a bit busy."
   } else if(tabCount >= 1) {
-    details = "It's not too bad right now."
+    details = "It's not too bad at the moment."
   } else {
     return (
       <div { ...classes() }>

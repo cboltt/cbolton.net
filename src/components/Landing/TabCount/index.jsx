@@ -31,10 +31,11 @@ const TabCount = ({ tabCount }) => {
   return (
     <div { ...classes() }>
       <h1 { ...classes('count') }>
-        { tabCount }
+        <div { ...classes('spinner') }>{ tabCount }</div>
+        <div { ...classes('bar') }></div>
       </h1>
       <p { ...classes('details') }>
-        is how many tabs I have open on my computer. { details }
+        This is the count of how many Chrome tabs I have open on my computer. { details }
       </p>
     </div>
   );

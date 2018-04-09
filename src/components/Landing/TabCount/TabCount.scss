@@ -1,28 +1,42 @@
 .c-tabCount {
   &__count {
     float: left;
-    margin: 0;
+    margin: 10px 0 0 0;
     padding: 0;
-    font-size: 9em;
+    font-size: 7em;
     font-weight: 100;
     font-family: sans-serif;
+  }
 
+  &__spinner {
     color: #FFF;
+    
     text-shadow:
       -2px -2px 0 #000,
       2px -2px 0 #000,
       -2px 2px 0 #000,
-      2px 2px 0 #000,
-     #444 5px 7px;
+      2px 2px 0 #000;
+  
+    animation-name: spin, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+  }
 
+  &__bar {
+    margin: -10px auto;
+    width: 70%;
+    height: 7px;
+    border: 2px solid #333;
+    box-shadow:#444 3px 3px;
   }
 
   &__details {
-    margin: 50px 0 0 10px;
+    margin: 40px 0 0 20px;
     padding: 0;
     float: left;
     font-family: sans-serif;
-    width: 200px;
+    width: 195px;
     text-align: left;
   }
 
@@ -40,8 +54,51 @@
     }
 
     &__details {
-      margin: 20px 0 0 10px;
-      width: 220px;
+      width: 210px;
     }
+  }
+}
+
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(-360deg); }
+}
+@keyframes depth {
+  0 {
+    text-shadow:
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000;
+  } 
+  25% {
+    text-shadow: 
+    1px 0 #444,
+    2px 0 #444,
+    3px 0 #444,
+    4px 0 #444,
+    5px 0 #444;
+  }
+  50% {
+    text-shadow: 
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000;
+  }
+  75% { 
+    text-shadow: 
+      -1px 0 #444,
+      -2px 0 #444,
+      -3px 0 #444,
+      -4px 0 #444,
+      -5px 0 #444; 
+  }
+  100% { 
+    text-shadow:
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000;
   }
 }

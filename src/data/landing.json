@@ -20,6 +20,13 @@
   },
   "projects": [
     {
+      "title": "Commerce Undergraduate Society",
+      "year": "2018",
+      "description": "Creating a more engaged and accountabile undergraduate society.",
+      "ctaText": "Read my Report",
+      "ctaUrl": "http://http://ow.ly/2nhn30jnT4Z"
+    },
+    {
       "title": "UBC BizTech",
       "year": "2017",
       "description": "Building a campus-wide community of makers and innovators that connects students to opportunities.",
@@ -32,6 +39,13 @@
       "description": "How does technology contribute to toxic environments for youth? More importantly, how do we change it?",
       "ctaText": "Get updates on the multi-year project",
       "ctaUrl": "https://ywcavan.org/programs/combating-sexualization/cultureshift"
+    },
+    {
+      "title": "The Next Big Thing",
+      "year": "2015",
+      "description": "Shaping the next generation of entrepreneurship with help from some friends.",
+      "ctaText": "Read the press release",
+      "ctaUrl": "http://ow.ly/bqMl30jnTbM"
     },
     {
       "title": "TEDxGranville",

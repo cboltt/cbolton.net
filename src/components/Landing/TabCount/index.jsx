@@ -13,10 +13,10 @@ const TabCount = ({ tabCount }) => {
 
   let details = "Looks like my browser may have just restarted"
 
-  if(tabCountInt >= 20) {
-    details = "I have a bit of a problem (and a lot of RAM)."
+  if(tabCountInt >= 30) {
+    details = "Looks like things are a bit busy."
   } else if(tabCount >= 1) {
-    details = "I'm taking it pretty easy today."
+    details = "It's not too bad right now."
   } else {
     return null;
   }
@@ -27,7 +27,7 @@ const TabCount = ({ tabCount }) => {
         { tabCount }
       </h1>
       <p { ...classes('details') }>
-        That's how many tabs I have open at the moment on my laptop. { details }
+        is how many tabs I have open on my computer. { details }
       </p>
     </div>
   );

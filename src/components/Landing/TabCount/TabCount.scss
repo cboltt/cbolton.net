@@ -1,9 +1,9 @@
 .c-tabCount {
   &__count {
     float: left;
-    margin: 10px 0 0 0;
+    margin: -30px 0 0 0;
     padding: 0;
-    font-size: 7em;
+    font-size: 12em;
     font-weight: 100;
     font-family: sans-serif;
   }
@@ -15,6 +15,7 @@
       -2px -2px 0 #000,
       2px -2px 0 #000,
       -2px 2px 0 #000,
+      3px 3px 10px #333,
       2px 2px 0 #000;
   
     animation-name: spin, depth;
@@ -32,12 +33,14 @@
   }
 
   &__details {
-    margin: 40px 0 0 20px;
+    margin: 70px 0 0 -90px;
     padding: 0;
     float: left;
     font-family: sans-serif;
-    width: 195px;
+    width: 200px;
     text-align: left;
+    position: relative;
+    z-index: 1;
   }
 
   &:after {
@@ -50,11 +53,13 @@
 @media screen and (max-width: $two-columns) {
   .c-tabCount {
     &__count {
+      padding-left: 12%;
       font-size: 6em;
     }
 
     &__details {
-      width: 210px;
+      width: auto;
+      margin: 0;
     }
   }
 }
@@ -69,6 +74,7 @@
       -2px -2px 0 #000,
       2px -2px 0 #000,
       -2px 2px 0 #000,
+      3px 3px 10px #333,
       2px 2px 0 #000;
   } 
   25% {
@@ -84,6 +90,7 @@
       -2px -2px 0 #000,
       2px -2px 0 #000,
       -2px 2px 0 #000,
+      3px 3px 10px #333,
       2px 2px 0 #000;
   }
   75% { 
@@ -99,6 +106,7 @@
       -2px -2px 0 #000,
       2px -2px 0 #000,
       -2px 2px 0 #000,
+      3px 3px 10px #333,
       2px 2px 0 #000;
   }
 }

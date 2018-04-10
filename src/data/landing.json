@@ -76,7 +76,7 @@
     {
       "title": "TEDxGranville",
       "year": "2015",
-      "description": "How do raise the next generation of digital innovators?",
+      "description": "How do we raise the next generation of digital innovators?",
       "ctaText": "Watch my TEDx Talk on Youtube",
       "ctaUrl": "https://www.youtube.com/watch?v=1YPx4b623d4"
     },
@@ -104,7 +104,7 @@
     {
       "title": "Project Seed",
       "year": "2014",
-      "description": "A device that provides a crucial communcation avenue, even for those without the internet",
+      "description": "A device that provides a crucial communication avenue, even for those without the internet.",
       "ctaText": "Discover the project on Github",
       "ctaUrl": "https://github.com/alisha/seed"
     }

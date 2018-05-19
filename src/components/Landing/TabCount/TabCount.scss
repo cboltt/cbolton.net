@@ -33,7 +33,7 @@
   }
 
   &__details {
-    margin: 70px 0 0 -90px;
+    margin: 60px 0 0 -70px;
     padding: 0;
     float: left;
     font-family: sans-serif;
@@ -41,6 +41,13 @@
     text-align: left;
     position: relative;
     z-index: 1;
+  }
+
+  &__loading {
+    padding: 59px 0 0 90px;
+    height: 100px;
+    font-family: sans-serif;
+    text-align: center;
   }
 
   &:after {
@@ -53,13 +60,17 @@
 @media screen and (max-width: $two-columns) {
   .c-tabCount {
     &__count {
-      padding-left: 12%;
       font-size: 6em;
     }
 
     &__details {
-      width: auto;
-      margin: 0;
+      width: 65%;
+      margin: 0 0 0 10px;
+    }
+
+    &__loading {
+      padding: 20px 0 0 0;
+      height: 60px;
     }
   }
 }

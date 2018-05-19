@@ -20,7 +20,7 @@ const TabCount = ({ tabCount }) => {
   } else {
     return (
       <div { ...classes() }>
-      <p { ...classes('details') }>
+      <p { ...classes('loading') }>
         // loading... //
       </p>
     </div>
@@ -32,7 +32,7 @@ const TabCount = ({ tabCount }) => {
       <h1 { ...classes('count') }>
         <div { ...classes('spinner') }>{ tabCount }</div>
       </h1>
-      <p  { ...classes('details')}>open browser tabs. <br /> { details }</p>
+      <p  { ...classes('details')}>open browser tabs on my computer at the moment.<br />{ details }</p>
     </div>
   );
 }

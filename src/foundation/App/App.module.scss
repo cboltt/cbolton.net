@@ -1,0 +1,33 @@
+.App {
+  margin: 5em auto;
+
+  .Header {
+    margin: 1em;
+    text-align: left;
+    letter-spacing: 0.25em;
+    font-size: 5em;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+
+    color: #000;
+    background: #000;
+    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff, #aaa 5px 7px;
+
+    .First {
+      display: block;
+      margin-top: -0.1em;
+    }
+
+    .Second {
+      display: block;
+      margin-top: 1.75em;
+      margin-left: -0.25em;
+    }
+  }
+}
+
+.Link {
+  color: #61dafb;
+}

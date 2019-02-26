@@ -1,69 +1,18 @@
 import React from 'react';
 import styles from './App.module.scss';
 
+import {Title} from '../../components';
+
 export default function App() {
   return (
     <div className={styles.App}>
       <div className={styles.Header}>
         <div className={styles.Name}>
           <div className={styles.First}>
-            <div className={styles.LetterBox}>
-              <span className={styles.Letter} data-shadow="C">
-                C
-              </span>
-            </div>
-            <div className={styles.LetterBox}>
-              <span className={styles.Letter} data-shadow="h">
-                h
-              </span>
-            </div>
-            <div className={styles.LetterBox}>
-              <span className={styles.Letter} data-shadow="r">
-                r
-              </span>
-            </div>
-            <div className={styles.LetterBox}>
-              <span className={styles.Letter} data-shadow="i">
-                i
-              </span>
-            </div>
-            <div className={styles.LetterBox}>
-              <span className={styles.Letter} data-shadow="s">
-                s
-              </span>
-            </div>
+            <Title>Chris</Title>
           </div>
           <div className={styles.Second}>
-            <div className={styles.LetterBox}>
-              <span className={styles.Letter} data-shadow="B">
-                B
-              </span>
-            </div>
-            <div className={styles.LetterBox}>
-              <span className={styles.Letter} data-shadow="o">
-                o
-              </span>
-            </div>
-            <div className={styles.LetterBox}>
-              <span className={styles.Letter} data-shadow="l">
-                l
-              </span>
-            </div>
-            <div className={styles.LetterBox}>
-              <span className={styles.Letter} data-shadow="t">
-                t
-              </span>
-            </div>
-            <div className={styles.LetterBox}>
-              <span className={styles.Letter} data-shadow="o">
-                o
-              </span>
-            </div>
-            <div className={styles.LetterBox}>
-              <span className={styles.Letter} data-shadow="n">
-                n
-              </span>
-            </div>
+            <Title>Bolton</Title>
           </div>
         </div>
         <div className={styles.Links}>
@@ -89,6 +38,26 @@ export default function App() {
               </a>
             </li>
           </ul>
+        </div>
+      </div>
+      <div className={styles.BreakContainer}>
+        <div className={styles.Break}>
+          <h1>About</h1>
+          <p>
+            A software developer by trade and a culture design nerd in practice, I love building
+            amazing experiences on and off the internet. Seeing the impact of those experiences
+            makes it all worthwhile.
+          </p>
+          <p>I like to build in JavaScript / TypeScript / React / GraphQL.</p>
+        </div>
+        <div className={styles.Break}>
+          <h1>Experience</h1>
+        </div>
+        <div className={styles.Break}>
+          <h1>Projects</h1>
+        </div>
+        <div className={styles.Break}>
+          <h1>Community</h1>
         </div>
       </div>
     </div>

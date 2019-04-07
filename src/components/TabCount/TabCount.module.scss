@@ -1,0 +1,59 @@
+.Count {
+  float: left;
+  margin: -30px 0 0 0;
+  padding: 0;
+  font-size: 12em;
+  font-weight: 100;
+  font-family: sans-serif;
+}
+
+.Spinner {
+  color: #fff;
+
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 3px 3px 10px #333, 2px 2px 0 #000;
+
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 9s;
+}
+
+.Details {
+  margin: 60px 0 0 -70px;
+  padding: 0;
+  float: left;
+  font-family: sans-serif;
+  width: 200px;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+@keyframes depth {
+  0% {
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 3px 3px 10px #333,
+      2px 2px 0 #000;
+  }
+  25% {
+    text-shadow: 1px 0 #444, 2px 0 #444, 3px 0 #444, 4px 0 #444, 5px 0 #444;
+  }
+  50% {
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 3px 3px 10px #333,
+      2px 2px 0 #000;
+  }
+  75% {
+    text-shadow: -1px 0 #444, -2px 0 #444, -3px 0 #444, -4px 0 #444, -5px 0 #444;
+  }
+  100% {
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 3px 3px 10px #333,
+      2px 2px 0 #000;
+  }
+}

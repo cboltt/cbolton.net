@@ -15,10 +15,5 @@ export default function Title({children}: Props) {
     </div>
   ));
 
-  return (
-    <>
-      <h1 className={styles.AccessibleTitle}>{children}</h1>
-      {lettersMarkup}
-    </>
-  );
+  return <h1 aria-label={children}>{lettersMarkup}</h1>;
 }

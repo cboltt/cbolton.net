@@ -1,7 +1,5 @@
 import React from 'react';
 
-import {ReactComponent as Logo} from './Logo.svg';
-
 import styles from './Project.module.scss';
 
 type Props = {

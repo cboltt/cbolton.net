@@ -11,6 +11,10 @@ $background-gradient: linear-gradient(
   #dd00f3
 );
 
+.AccessibleTitle {
+  display: none;
+}
+
 .LetterBox {
   display: inline-block;
 }
@@ -28,8 +32,8 @@ $background-gradient: linear-gradient(
 .Letter:after {
   content: attr(data-shadow);
   position: absolute;
-  top: 6px;
-  left: 6px;
+  top: 4px;
+  left: 4px;
   z-index: -1;
   text-shadow: none;
   background-image: $background-gradient;
@@ -37,6 +41,11 @@ $background-gradient: linear-gradient(
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rainbow 15s ease infinite;
+
+  @media only screen and (min-width: 1000px) {
+    top: 6px;
+    left: 6px;
+  }
 }
 
 @keyframes rainbow {

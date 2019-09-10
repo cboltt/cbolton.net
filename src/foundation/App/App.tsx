@@ -26,6 +26,7 @@ export default function App() {
       <div className={styles.Section}>
         <h2 className={styles.Heading}>Projects</h2>
         <div className={styles.Projects}>
+          <Project icon="🕓" title="Homework Ops" url="https://medium.com/@cbolton97/operationalizing-homework-with-trello-and-google-calendar-195d8a150353" />
           <Project icon="B" title="Biome Search" url="https://www.trybiome.com/" color="#52D19A" />
           <Project icon="N" title="NwPlus Events" url="http://nwplus.io" color="#0AE3C6" />
           <Project

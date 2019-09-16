@@ -6,10 +6,11 @@ type Props = {
   icon: string;
   color?: string;
   title: string;
+  description: string;
   url: string;
 };
 
-export default function Project({icon, color, title, url}: Props) {
+export default function Project({icon, color, title, description, url}: Props) {
   return (
     <a className={styles.Project} href={url} target="_blank" rel="noopener noreferrer">
       <div className={styles.IconContainer} role="presentation">
@@ -17,7 +18,10 @@ export default function Project({icon, color, title, url}: Props) {
           {icon}
         </div>
       </div>
-      <h3 className={styles.Title}>{title}</h3>
+      <div className={styles.Text}>
+        <h3 className={styles.Title}>{title}</h3>
+        <p className={styles.Description}>{description}</p>
+      </div>
     </a>
   );
 }

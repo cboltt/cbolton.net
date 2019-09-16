@@ -1,3 +1,5 @@
+@import 'src/styles/_variables';
+
 $background-gradient: linear-gradient(
   0deg,
   #ff2400,
@@ -15,10 +17,10 @@ $background-gradient: linear-gradient(
   margin: 32px auto 0;
   position: relative;
   z-index: 1;
-  max-width: 1000px;
+  max-width: $layout-breakpoint;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
 
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: $layout-breakpoint) {
     margin: 64px auto 0;
   }
 }
@@ -27,14 +29,14 @@ $background-gradient: linear-gradient(
   margin-left: 8px;
   text-align: left;
 
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: $layout-breakpoint) {
     margin-left: 0;
     text-align: center;
   }
 }
 
 .Heading {
-  margin: 32px auto 8px;
+  margin: 32px 0 8px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -64,12 +66,6 @@ $background-gradient: linear-gradient(
   background-image: $background-gradient;
   background-size: 1800% 1800%;
   animation: rainbow 15s ease infinite;
-}
-
-.Projects {
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
 }
 
 @keyframes rainbow {

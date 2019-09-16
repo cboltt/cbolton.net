@@ -1,3 +1,5 @@
+@import 'src/styles/_variables';
+
 $background-gradient: linear-gradient(
   0deg,
   #ff2400,
@@ -44,7 +46,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   animation: rainbow 15s ease infinite;
 
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: $header-breakpoint) {
     top: 6px;
     left: 6px;
   }

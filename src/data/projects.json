@@ -1,0 +1,60 @@
+[
+  {
+    "icon": "🕓",
+    "title": "Homework Ops",
+    "description": "Building the ultimate school workflow with Trello and Google Calendar",
+    "url": "https://medium.com/@cbolton97/operationalizing-homework-with-trello-and-google-calendar-195d8a150353"
+  },
+  {
+    "icon": "B",
+    "title": "Biome Search",
+    "description": "Unified search arcoss all of your favourite business apps",
+    "url": "https://www.trybiome.com/",
+    "color": "#52D19A"
+  },
+  {
+    "icon": "N",
+    "title": "nwPlus Hackathons",
+    "description": "Delievering technical workshops to hundreds of hackers",
+    "url": "https://nwplus.io",
+    "color": "#0AE3C6"
+  },
+  {
+    "icon": "A",
+    "title": "Shopify Hack Days",
+    "description": "Building Shopify's internal Hackathon engine with code and culture design",
+    "url": "https://medium.com/@cbolton97/my-eight-month-shopify-sprint-e22a2b3a23d2",
+    "color": "#F9464A"
+  },
+  {
+    "icon": "💪",
+    "title": "YWCA Culture Shift",
+    "description": "Confronting gender distrimination across media, tech, and society",
+    "url": "https://ywcavan.org/programs/combating-sexualization/cultureshift/culture-shift-advisory-council"
+  },
+  {
+    "icon": "🏛",
+    "title": "Commerce Student Society",
+    "description": "Writing policy for UBC's largest undergraduate society",
+    "url": "http://cus.ca/wp-content/uploads/2018/01/Community-Report.pdf"
+  },
+  {
+    "icon": "W",
+    "title": "UBC BizTech",
+    "description": "Bringing hands-on learning and career opportunities to 400 members",
+    "url": "http://ow.ly/y3M53075F4A",
+    "color": "#ffffff"
+  },
+  {
+    "icon": "👯‍♀️",
+    "title": "BizTech Team",
+    "description": "Leading a team of 20 execs to run 19 events, all while still having fun",
+    "url": "https://medium.com/@cbolton97/making-the-dream-work-e6c883839076"
+  },
+  {
+    "icon": "💡",
+    "title": "The Next Big Thing",
+    "description": "Empowering young entreprenuers to shape the future of technology",
+    "url": "https://hootsuite.com/newsroom/press-releases/the-next-big-thing"
+  }
+]

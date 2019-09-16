@@ -1,3 +1,5 @@
+@import 'src/styles/_variables';
+
 @font-face {
   font-family: 'Icomoon';
   font-display: 'swap';
@@ -10,60 +12,78 @@
 }
 
 .Project {
-  margin: 4px;
+  margin: 16px 4px;
   display: flex;
   color: inherit;
   text-decoration: none;
   align-items: center;
-  width: 300px;
+  width: 368px;
   text-align: left;
 
-  @media only screen and (min-width: 1000px) {
-    margin: 16px;
+  @media only screen and (min-width: $layout-breakpoint) {
+    margin: 4px;
+    margin: 16px auto;
   }
 
-  &:hover:nth-child(n) {
-    .Icon {
-      animation-name: spin, depth;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-duration: 2s;
+  @media only screen and (min-width: $mobile-breakpoint) {
+    &:hover:nth-child(n) {
+      .Icon {
+        animation-name: spin, depth;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+      }
+      .Title {
+        // border-bottom: 3px solid black;
+        text-decoration: underline;
+      }
     }
-    .Title {
-      // border-bottom: 3px solid black;
-      text-decoration: underline;
-    }
-  }
-}
-
-.IconContainer {
-  margin-right: 16px;
-  width: 42px;
-  display: flex;
-  justify-content: center;
-
-  @media only screen and (min-width: 1000px) {
-    width: 64px;
   }
 }
 
 .Icon {
   font-size: 42px;
+  width: 42px;
   font-family: 'Icomoon';
+  text-align: center;
+  margin-right: 16px;
   text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 3px 3px 10px #333, 2px 2px 0 #333;
 
-  @media only screen and (min-width: 1000px) {
+  animation-name: swing;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
+
+  @media only screen and (min-width: $layout-breakpoint) {
     font-size: 64px;
+    width: 64px;
   }
 }
 
 .Title {
+  margin: 0;
   font-size: 20px;
   display: inline-block;
   border-bottom: 3px solid transparent;
 
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: $layout-breakpoint) {
     font-size: 24px;
+  }
+}
+
+.Description {
+  margin: 0;
+}
+
+@keyframes swing {
+  1% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 

@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './App.module.scss';
 
-import {Header, Project} from '../../components';
+import {Header, Projects} from '../../components';
+
+import projectData from '../../data/projects.json';
 
 export default function App() {
   return (
@@ -25,39 +27,7 @@ export default function App() {
       />
       <div className={styles.Section}>
         <h2 className={styles.Heading}>Projects</h2>
-        <div className={styles.Projects}>
-          <Project icon="🕓" title="Homework Ops" url="https://medium.com/@cbolton97/operationalizing-homework-with-trello-and-google-calendar-195d8a150353" />
-          <Project icon="B" title="Biome Search" url="https://www.trybiome.com/" color="#52D19A" />
-          <Project icon="N" title="NwPlus Events" url="http://nwplus.io" color="#0AE3C6" />
-          <Project
-            icon="A"
-            title="Shopify Hack Days"
-            url="https://medium.com/@cbolton97/my-eight-month-shopify-sprint-e22a2b3a23d2"
-            color="#F9464A"
-          />
-          <Project
-            icon="💪"
-            title="YWCA Culture Shift"
-            url="https://ywcavan.org/programs/combating-sexualization/cultureshift/culture-shift-advisory-council"
-          />
-          <Project
-            icon="🏛"
-            title="Commerce Undergrad Society"
-            url="http://cus.ca/wp-content/uploads/2018/01/Community-Report.pdf"
-          />
-          <Project icon="💽" title="UBC BizTech" url="http://ow.ly/y3M53075F4A" />
-          <Project
-            icon="👯‍♀️"
-            title="BizTech Team"
-            url="https://medium.com/@cbolton97/making-the-dream-work-e6c883839076"
-          />
-          <Project icon="🗺" title="Blueprint Conf '16" url="https://www.ubcbiztech.com/blueprint" />
-          <Project
-            icon="💡"
-            title="The Next Big Thing"
-            url="https://hootsuite.com/newsroom/press-releases/the-next-big-thing"
-          />
-        </div>
+        <Projects projects={projectData} />
       </div>
     </div>
   );

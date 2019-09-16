@@ -29,6 +29,16 @@ export default function App() {
         <h2 className={styles.Heading}>Projects</h2>
         <Projects projects={projectData} />
       </div>
+      <div className={styles.GlitchCTA}>
+        <a
+          className={styles.GlitchLink}
+          href="https://glitch.com/edit/#!/cbolton-net"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Check this site out on Glitch <br /> to view its source and remix it
+        </a>
+      </div>
     </div>
   );
 }

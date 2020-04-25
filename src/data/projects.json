@@ -2,7 +2,7 @@
   {
     "icon": "B",
     "title": "Biome Search",
-    "description": "Unified search arcoss all of your favourite business apps",
+    "description": "Unified search across all of your favourite business apps",
     "url": "https://www.trybiome.com/",
     "color": "#52D19A"
   },
@@ -40,7 +40,7 @@
   {
     "icon": "N",
     "title": "nwPlus Hackathons",
-    "description": "Delievering technical workshops to hundreds of hackers",
+    "description": "Delivering technical workshops to hundreds of hackers",
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:6589939569251229696/",
     "color": "#0AE3C6"
   },
@@ -72,7 +72,7 @@
   {
     "icon": "💡",
     "title": "The Next Big Thing",
-    "description": "Empowering young entreprenuers to shape the future of technology",
+    "description": "Empowering young entrepreneurs to shape the future of technology",
     "url": "https://hootsuite.com/newsroom/press-releases/the-next-big-thing"
   }
 ]

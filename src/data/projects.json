@@ -1,5 +1,11 @@
 [
   {
+    "icon": "🗺",
+    "title": "Mapping Myself",
+    "description": "Tracking a month of school and life with Mapbox and plain JS",
+    "url": "https://map.cbolton.net"
+  },
+  {
     "icon": "🕓",
     "title": "Homework Ops",
     "description": "Building the ultimate school workflow with Trello and Google Calendar",

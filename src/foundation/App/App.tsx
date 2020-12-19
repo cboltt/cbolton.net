@@ -13,14 +13,14 @@ export default function App() {
         subheading={{
           description: 'Building on and off the internet.',
           links: [
-            {label: 'LinkedIn', url: 'https://www.linkedin.com/in/cbolton97'},
+            {label: 'Work', url: 'https://www.linkedin.com/in/cboltt'},
             {
-              label: 'Medium',
-              url: 'http://medium.com/@cbolton97'
+              label: 'Writing',
+              url: 'http://medium.com/@cboltt'
             },
             {
-              label: 'Github',
-              url: 'http://github.com/cbolton97'
+              label: 'Code',
+              url: 'http://github.com/cboltt'
             }
           ]
         }}

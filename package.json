@@ -4,24 +4,24 @@
   "private": true,
   "homepage": "https://cbolton.net",
   "dependencies": {
-    "@types/jest": "23.3.13",
-    "@types/node": "10.12.21",
-    "@types/react": "16.8.22",
-    "@types/react-dom": "16.8.4",
-    "gh-pages": "^2.0.1",
-    "node-sass": "^4.13.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "tslint": "^5.12.1",
-    "typescript": "3.5.2"
+    "@types/jest": "26.0.19",
+    "@types/node": "14.14.16",
+    "@types/react": "17.0.0",
+    "@types/react-dom": "17.0.0",
+    "gh-pages": "^3.1.0",
+    "node-sass": "^4.14.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "tslint": "^6.1.3",
+    "typescript": "4.1.3"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^4.0.0",
-    "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "^1.16.4",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "prettier": "^2.2.1",
     "react-snap": "^1.23.0",
-    "tslint-config-prettier": "^1.17.0"
+    "tslint-config-prettier": "^1.18.0"
   },
   "scripts": {
     "predeploy": "npm run build",

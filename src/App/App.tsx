@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './App.module.scss';
 
-import {Header, Projects} from '../../components';
+import {Header, Projects} from './components';
 
-import projectData from '../../data/projects.json';
+import projectData from '../data/projects.json';
 
 export default function App() {
   return (

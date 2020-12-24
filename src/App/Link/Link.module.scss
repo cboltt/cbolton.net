@@ -1,0 +1,20 @@
+.Link {
+  text-decoration: none;
+
+  &:before {
+    margin-right: 2px;
+    content: '🔗' / '';
+  }
+
+  &:hover,
+  &:focus {
+    &:before {
+      content: '👉' / '';
+    }
+  }
+}
+
+.Label {
+  color: var(--link-color, blue);
+  text-decoration: underline;
+}

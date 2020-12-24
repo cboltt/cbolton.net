@@ -16,7 +16,7 @@ interface Props {
 export default function Projects({projects}: Props) {
   return (
     <div className={styles.Projects}>
-      {projects.map(project => (
+      {projects.map((project) => (
         <Project key={project.title} {...project} />
       ))}
     </div>

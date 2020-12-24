@@ -1,5 +1,16 @@
+@import 'src/styles/_definitions';
+
 .Projects {
   position: relative;
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @include for-two-column-up {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include for-three-column-up {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

@@ -7,28 +7,41 @@ import projectData from '../data/projects.json';
 
 export default function App() {
   return (
-    <div className={styles.App}>
-      <Header
-        marquee={['chrisbolton', 'cbolton.net']}
-        subheading={{
-          description: 'Building on and off the internet.',
-          links: [
-            {label: 'Work', url: 'https://www.linkedin.com/in/cboltt'},
+    <main className={styles.Main}>
+      <div id="Header" className={styles.Section}>
+        <Header
+          title="cbolton.net"
+          description="Chris Bolton's weird and wacky corner of the internet"
+          links={[
+            {
+              label: 'Work',
+              accessibilityLabel: 'View my work experience on Linkedin',
+              url: 'https://www.linkedin.com/in/cboltt',
+            },
             {
               label: 'Writing',
-              url: 'http://medium.com/@cboltt'
+              accessibilityLabel: 'View my writing on Medium',
+              url: 'http://medium.com/@cboltt',
             },
             {
               label: 'Code',
-              url: 'http://github.com/cboltt'
-            }
-          ]
-        }}
-      />
-      <div className={styles.Section}>
-        <h2 className={styles.Heading}>Projects</h2>
-        <Projects projects={projectData} />
+              accessibilityLabel: 'View my software projects on Github',
+              url: 'http://github.com/cboltt',
+            },
+          ]}
+          anchors={[
+            {label: 'Currently', emoji: '👀', anchor: '#Currently'},
+            {label: 'Projects', emoji: '🔨', anchor: '#Projects'},
+            {label: 'Links', emoji: '🔗', anchor: '#Links'},
+            {label: 'Contact', emoji: '💌', anchor: '#Contact'},
+          ]}
+        />
       </div>
-    </div>
+
+      <section id="Projects" className={styles.Section}>
+        <h2 className={styles.Heading}>Projects from on and off the internet</h2>
+        <Projects projects={projectData} />
+      </section>
+    </main>
   );
 }

@@ -1,4 +1,4 @@
-@import 'src/styles/_variables';
+@import 'src/styles/_definitions';
 
 @font-face {
   font-family: 'Icomoon';
@@ -12,33 +12,29 @@
 }
 
 .Project {
-  margin: 16px 4px;
-  display: flex;
+  display: grid;
   color: inherit;
-  text-decoration: none;
-  align-items: center;
-  width: 368px;
-  text-align: left;
+  grid-template-columns: 42px 1fr;
+  gap: 1rem;
 
-  @media only screen and (min-width: $layout-breakpoint) {
-    margin: 4px;
-    margin: 16px auto;
+  @include for-two-column-up {
+    grid-template-columns: 64px 1fr;
   }
 
-  @media only screen and (min-width: $mobile-breakpoint) {
-    &:hover:nth-child(n) {
-      .Icon {
-        animation-name: spin, depth;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-duration: 2s;
-      }
-      .Title {
-        // border-bottom: 3px solid black;
-        text-decoration: underline;
-      }
-    }
-  }
+  // @media only screen and (min-width: $mobile-breakpoint) {
+  //   &:hover:nth-child(n) {
+  //     .Icon {
+  //       animation-name: spin, depth;
+  //       animation-timing-function: linear;
+  //       animation-iteration-count: infinite;
+  //       animation-duration: 2s;
+  //     }
+  //     .Title {
+  //       // border-bottom: 3px solid black;
+  //       text-decoration: underline;
+  //     }
+  //   }
+  // }
 }
 
 .Icon {
@@ -46,15 +42,16 @@
   width: 42px;
   font-family: 'Icomoon';
   text-align: center;
-  margin-right: 16px;
-  text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 3px 3px 10px #333, 2px 2px 0 #333;
+  margin-top: 5px;
+  text-shadow: -2px -2px 0 #121212, 2px -2px 0 #121212, -2px 2px 0 #121212, 3px 3px 10px #121212,
+    2px 2px 0 #121212;
 
-  animation-name: swing;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-  animation-duration: 0.5s;
+  // animation-name: swing;
+  // animation-timing-function: linear;
+  // animation-iteration-count: 1;
+  // animation-duration: 0.5s;
 
-  @media only screen and (min-width: $layout-breakpoint) {
+  @include for-two-column-up {
     font-size: 64px;
     width: 64px;
   }
@@ -62,13 +59,7 @@
 
 .Title {
   margin: 0;
-  font-size: 20px;
-  display: inline-block;
-  border-bottom: 3px solid transparent;
-
-  @media only screen and (min-width: $layout-breakpoint) {
-    font-size: 24px;
-  }
+  margin-bottom: 0.25rem;
 }
 
 .Description {

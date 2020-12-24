@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:800,400');
-
 html,
 body {
   margin: 0;
   padding: 0;
-  background: white;
+  background: var(--surface-color, white);
+}
+
+h2,
+h3,
+p,
+span {
+  color: var(--content-color, black);
 }

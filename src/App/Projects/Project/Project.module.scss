@@ -16,18 +16,16 @@
     grid-template-columns: 1fr;
   }
 
-  @include for-three-column-up {
-    &:hover {
-      border-color: var(--link-color);
-      transform: scale(1.05);
+  &:hover {
+    border-color: var(--link-color);
+    transform: scale(1.05);
 
-      // targets <Icon />
-      > span:first-child {
-        animation-name: swing;
-        animation-timing-function: linear;
-        animation-iteration-count: 1;
-        animation-duration: 0.5s;
-      }
+    // targets <Icon />
+    > span:first-child {
+      animation-name: swing;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+      animation-duration: 0.5s;
     }
   }
 }

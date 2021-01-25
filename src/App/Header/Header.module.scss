@@ -8,14 +8,16 @@
   overflow: hidden;
 
   @include for-three-column-up {
+    padding-left: 1rem;
+    padding-right: 1rem;
     flex-direction: row;
     overflow: visible;
   }
 }
 
 .Title {
-  font-style: italic;
-  transform: rotate(-3deg);
+  // font-style: italic;
+  // transform: rotate(-4deg);
   margin-bottom: 1rem;
 
   @include for-three-column-up {

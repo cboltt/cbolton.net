@@ -4,12 +4,12 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: var(--surface-color, white);
+  background: var(--surface-color);
 }
 
 h2,
 h3,
 p,
 span {
-  color: var(--content-color, black);
+  color: var(--content-color);
 }

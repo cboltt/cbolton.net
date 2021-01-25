@@ -2,7 +2,7 @@
 
 .Project {
   padding: 3rem 1rem 2rem;
-  border: 3px solid var(--surface-accent-color, #eee);
+  border: 2px solid var(--border-color);
   border-radius: 1rem;
   background: var(--surface-color, white);
   text-align: center;
@@ -18,7 +18,7 @@
 
   @include for-three-column-up {
     &:hover {
-      border-color: var(--link-color, black);
+      border-color: var(--link-color);
       transform: scale(1.05);
 
       // targets <Icon />

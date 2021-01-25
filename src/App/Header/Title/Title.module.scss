@@ -28,9 +28,8 @@
   text-transform: lowercase;
   color: var(--surface-color, white);
   z-index: 1;
-  text-shadow: -1.5px -1.5px 0 var(--content-color, black),
-    1.5px -1.5px 0 var(--content-color, black), -1.5px 1.5px 0 var(--content-color, black),
-    1.5px 1.5px 0 var(--content-color, black);
+  text-shadow: -1.5px -1.5px 0 var(--content-color), 1.5px -1.5px 0 var(--content-color),
+    -1.5px 1.5px 0 var(--content-color), 1.5px 1.5px 0 var(--content-color);
 }
 
 .Letter:after {

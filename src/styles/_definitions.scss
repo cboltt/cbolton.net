@@ -1,16 +1,18 @@
 // VARIABLES
 :root {
   font-size: 20px;
-  --surface-color: #fff;
-  --surface-accent-color: #efefef;
+  --surface-color: white;
+  --surface-accent-color: #fafafa;
   --content-color: black;
   --link-color: blue;
+  --border-color: #ddd;
 
   @media (prefers-color-scheme: dark) {
     --surface-color: #202020;
     --surface-accent-color: #121212;
     --content-color: white;
     --link-color: #1386ff;
+    --border-color: black;
   }
 }
 

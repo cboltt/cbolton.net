@@ -26,7 +26,7 @@
   display: inline-block;
   font-weight: bold;
   text-transform: lowercase;
-  color: var(--surface-color, white);
+  color: var(--surface-color);
   z-index: 1;
   text-shadow: -1.5px -1.5px 0 var(--content-color), 1.5px -1.5px 0 var(--content-color),
     -1.5px 1.5px 0 var(--content-color), 1.5px 1.5px 0 var(--content-color);

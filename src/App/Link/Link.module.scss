@@ -1,3 +1,5 @@
+@import 'src/styles/_definitions';
+
 .Link {
   text-decoration: none;
 
@@ -11,10 +13,19 @@
     &:before {
       content: '👉' / '';
     }
+
+    .Label {
+      text-decoration: underline;
+    }
   }
 }
 
 .Label {
   color: var(--link-color, blue);
   text-decoration: underline;
+  text-underline-offset: 1px;
+
+  @include for-three-column-up {
+    text-decoration: none;
+  }
 }

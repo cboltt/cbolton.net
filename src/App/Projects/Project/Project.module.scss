@@ -13,36 +13,45 @@
 
 .Project {
   display: grid;
-  color: inherit;
-  grid-template-columns: 42px 1fr;
-  gap: 1rem;
+  padding: 3rem 1rem 2rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  transition: transform 150ms ease-in-out;
+
+  text-align: center;
+  border: 2px solid darkgrey;
+  border-radius: 1rem;
 
   @include for-two-column-up {
-    grid-template-columns: 64px 1fr;
+    grid-template-columns: 1fr;
   }
 
-  // @media only screen and (min-width: $mobile-breakpoint) {
-  //   &:hover:nth-child(n) {
-  //     .Icon {
-  //       animation-name: spin, depth;
-  //       animation-timing-function: linear;
-  //       animation-iteration-count: infinite;
-  //       animation-duration: 2s;
-  //     }
-  //     .Title {
-  //       // border-bottom: 3px solid black;
-  //       text-decoration: underline;
-  //     }
-  //   }
-  // }
+  @include for-three-column-up {
+    &:hover {
+      border-color: var(--content-color, black);
+      transform: scale(1.05);
+
+      .Icon {
+        // animation-name: spin, depth;
+        // animation-timing-function: linear;
+        // animation-iteration-count: infinite;
+        // animation-duration: 1.7s;
+
+        animation-name: swing;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-duration: 0.5s;
+      }
+    }
+  }
 }
 
 .Icon {
-  font-size: 42px;
-  width: 42px;
+  font-size: 64px;
+  height: 64px;
   font-family: 'Icomoon';
   text-align: center;
-  margin-top: 5px;
+  margin: auto;
   text-shadow: -2px -2px 0 #121212, 2px -2px 0 #121212, -2px 2px 0 #121212, 3px 3px 10px #121212,
     2px 2px 0 #121212;
 
@@ -52,9 +61,14 @@
   // animation-duration: 0.5s;
 
   @include for-two-column-up {
-    font-size: 64px;
-    width: 64px;
+    font-size: 86px;
+    height: 86px;
   }
+}
+
+.Content {
+  display: grid;
+  gap: 0.25rem;
 }
 
 .Title {
@@ -89,21 +103,20 @@
 
 @keyframes depth {
   0% {
-    text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 3px 3px 10px #333,
-      2px 2px 0 #333;
+    text-shadow: -2px -2px 0 #121212, 2px -2px 0 #121212, -2px 2px 0 #121212, 3px 3px 10px #121212,
+      2px 2px 0 #121212;
   }
   25% {
-    text-shadow: 1px 0 #444, 2px 0 #444, 3px 0 #444, 4px 0 #444, 5px 0 #444;
   }
   50% {
-    text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 3px 3px 10px #333,
-      2px 2px 0 #333;
+    text-shadow: -2px -2px 0 #121212, 2px -2px 0 #121212, -2px 2px 0 #121212, 3px 3px 10px #121212,
+      2px 2px 0 #121212;
   }
   75% {
-    text-shadow: -1px 0 #444, -2px 0 #444, -3px 0 #444, -4px 0 #444, -5px 0 #444;
+    text-shadow: -1px 0 #222, -2px 0 #222, -3px 0 #222, -4px 0 #222, -5px 0 #222;
   }
   100% {
-    text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 3px 3px 10px #333,
-      2px 2px 0 #333;
+    text-shadow: -2px -2px 0 #121212, 2px -2px 0 #121212, -2px 2px 0 #121212, 3px 3px 10px #121212,
+      2px 2px 0 #121212;
   }
 }

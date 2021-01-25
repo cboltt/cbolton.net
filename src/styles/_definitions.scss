@@ -57,6 +57,12 @@ $background-gradient: linear-gradient(0deg, #2b1de8, #1ddde8);
 }
 
 @mixin for-three-column-up {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin for-four-column-up {
   @media (min-width: 1200px) {
     @content;
   }

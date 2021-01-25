@@ -8,7 +8,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.3rem;
   font-size: 13vw;
 
   @include for-two-column-up {
@@ -16,7 +16,11 @@
   }
 
   @include for-three-column-up {
-    font-size: 3vw;
+    font-size: 5vw;
+  }
+
+  @include for-four-column-up {
+    font-size: 4vw;
   }
 }
 
@@ -43,6 +47,8 @@
   background-size: 100%;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
   // animation: rainbow 30s ease infinite;
 }
 

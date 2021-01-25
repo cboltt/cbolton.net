@@ -1,0 +1,20 @@
+{
+  "title":"cbolton.net",
+  "links": [
+    {
+      "label": "Work",
+      "accessibilityLabel": "View my work experience on Linkedin",
+      "url": "https://www.linkedin.com/in/cboltt"
+    },
+    {
+      "label": "Writing",
+      "accessibilityLabel": "View my writing on Medium",
+      "url": "http://medium.com/@cboltt"
+    },
+    {
+      "label": "Code",
+      "accessibilityLabel": "View my software projects on Github",
+      "url": "http://github.com/cboltt"
+    }
+  ]
+}

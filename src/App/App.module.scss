@@ -1,8 +1,8 @@
 @import 'src/styles/_definitions';
 
-.Main {
+.App {
   margin: 2rem auto;
-  padding: 0;
+  padding: 0 1rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -12,8 +12,4 @@
   @include for-three-column-up {
     gap: 4rem;
   }
-}
-
-.Heading {
-  @include visually-hidden;
 }

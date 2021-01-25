@@ -1,3 +1,5 @@
+@import 'src/styles/_definitions';
+
 html,
 body {
   margin: 0;
@@ -10,4 +12,8 @@ h3,
 p,
 span {
   color: var(--content-color, black);
+}
+
+.visually-hidden {
+  @include visually-hidden;
 }

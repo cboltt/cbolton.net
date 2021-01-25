@@ -15,10 +15,12 @@ interface Props {
 
 export default function Projects({projects}: Props) {
   return (
-    <div className={styles.Projects}>
+    <section className={styles.Projects}>
+      <h2 className="visually-hidden">My projects</h2>
+
       {projects.map((project) => (
         <Project key={project.title} {...project} />
       ))}
-    </div>
+    </section>
   );
 }

@@ -6,13 +6,7 @@ import styles from './Header.module.scss';
 
 type Props = {
   title: string;
-  description: string;
   links: {label: string; accessibilityLabel: string; url: string}[];
-  anchors: {
-    emoji: string;
-    label: string;
-    anchor: string;
-  }[];
 };
 
 export default function Header({title, links}: Props) {

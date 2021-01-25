@@ -1,5 +1,24 @@
+@import 'src/styles/_definitions';
+
+$project-width: 1fr;
+
 .Projects {
+  padding: 0 0.5rem;
   position: relative;
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: $project-width;
+  gap: 2rem;
+
+  @include for-two-column-up {
+    grid-template-columns: repeat(2, $project-width);
+  }
+
+  @include for-three-column-up {
+    padding: 0;
+    grid-template-columns: repeat(3, $project-width);
+  }
+
+  @include for-four-column-up {
+    grid-template-columns: repeat(4, $project-width);
+  }
 }

@@ -1,23 +1,39 @@
-@import 'src/styles/_variables';
+@import 'src/styles/_definitions';
 
-h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
+.SemanticTitle {
+  @include visually-hidden;
 }
 
-.LetterBox {
-  display: inline-block;
+.Title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  letter-spacing: 0.3rem;
+  font-size: 13vw;
+
+  @include for-two-column-up {
+    font-size: 7vw;
+  }
+
+  @include for-three-column-up {
+    font-size: 5vw;
+  }
+
+  @include for-four-column-up {
+    font-size: 4vw;
+  }
 }
 
 .Letter {
+  position: relative;
   display: inline-block;
   font-weight: bold;
-  text-transform: uppercase;
-  color: white;
+  text-transform: lowercase;
+  color: var(--surface-color, white);
   z-index: 1;
-  position: relative;
-  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  text-shadow: -1.5px -1.5px 0 var(--content-color, black),
+    1.5px -1.5px 0 var(--content-color, black), -1.5px 1.5px 0 var(--content-color, black),
+    1.5px 1.5px 0 var(--content-color, black);
 }
 
 .Letter:after {
@@ -28,15 +44,12 @@ h1 {
   z-index: -1;
   text-shadow: none;
   background-image: $background-gradient;
-  background-size: 1800% 1800%;
+  background-size: 100%;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: rainbow 15s ease infinite;
-
-  @media only screen and (min-width: $header-breakpoint) {
-    top: 6px;
-    left: 6px;
-  }
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  // animation: rainbow 30s ease infinite;
 }
 
 @keyframes rainbow {

@@ -1,68 +1,15 @@
-@import 'src/styles/_variables';
+@import 'src/styles/_definitions';
 
 .App {
-  margin: 32px auto 0;
-  position: relative;
-  z-index: 1;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
   max-width: $layout-breakpoint;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 
-  @media only screen and (min-width: $layout-breakpoint) {
-    margin: 64px auto 0;
-  }
-}
-
-.Section {
-  margin-left: 8px;
-  text-align: left;
-
-  @media only screen and (min-width: $layout-breakpoint) {
-    margin-left: 0;
-    text-align: center;
-  }
-}
-
-.Heading {
-  margin: 32px 0 8px;
-  font-family: Raleway, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  position: relative;
-  border: solid 3px black;
-  background: white;
-  transition: all 100ms ease;
-  padding: 4px;
-  display: inline-block;
-
-  @media only screen and (min-width: $header-breakpoint) {
-    font-size: 24px;
-  }
-}
-
-.Heading:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: -6px;
-  bottom: -6px;
-  left: 0;
-
-  background-image: $background-gradient;
-  background-size: 1800% 1800%;
-  animation: rainbow 15s ease infinite;
-}
-
-@keyframes rainbow {
-  0% {
-    background-position: 0% 82%;
-  }
-  50% {
-    background-position: 100% 19%;
-  }
-  100% {
-    background-position: 0% 82%;
+  @include for-three-column-up {
+    gap: 4rem;
   }
 }

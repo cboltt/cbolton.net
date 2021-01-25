@@ -13,7 +13,3 @@ p,
 span {
   color: var(--content-color, black);
 }
-
-.visually-hidden {
-  @include visually-hidden;
-}

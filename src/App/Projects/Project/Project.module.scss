@@ -1,27 +1,16 @@
 @import 'src/styles/_definitions';
 
-@font-face {
-  font-family: 'Icomoon';
-  font-display: 'swap';
-  font-weight: 400;
-  font-style: normal;
-  src: local('Helvetica Neue');
-  src: url('./fonts/icomoon.eot');
-  src: url('./fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/icomoon.woff') format('woff'), url('./fonts/icomoon.ttf') format('truetype');
-}
-
 .Project {
-  display: grid;
   padding: 3rem 1rem 2rem;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  transition: transform 150ms ease-in-out;
-  background: var(--surface-color, white);
-
-  text-align: center;
   border: 3px solid var(--surface-accent-color, #eee);
   border-radius: 1rem;
+  background: var(--surface-color, white);
+  text-align: center;
+  transition: transform 150ms ease-in-out;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 
   @include for-two-column-up {
     grid-template-columns: 1fr;
@@ -32,12 +21,8 @@
       border-color: var(--link-color, black);
       transform: scale(1.05);
 
-      .Icon {
-        // animation-name: spin, depth;
-        // animation-timing-function: linear;
-        // animation-iteration-count: infinite;
-        // animation-duration: 1.7s;
-
+      // targets <Icon />
+      > span:first-child {
         animation-name: swing;
         animation-timing-function: linear;
         animation-iteration-count: 1;
@@ -45,21 +30,6 @@
       }
     }
   }
-}
-
-.Icon {
-  font-size: 86px;
-  height: 86px;
-  font-family: 'Icomoon';
-  text-align: center;
-  margin: auto;
-  text-shadow: -2px -2px 0 #121212, 2px -2px 0 #121212, -2px 2px 0 #121212, 3px 3px 10px #121212,
-    2px 2px 0 #121212;
-
-  // animation-name: swing;
-  // animation-timing-function: linear;
-  // animation-iteration-count: 1;
-  // animation-duration: 0.5s;
 }
 
 .Content {
@@ -85,34 +55,5 @@
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-
-@keyframes spin {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(-360deg);
-  }
-}
-
-@keyframes depth {
-  0% {
-    text-shadow: -2px -2px 0 #121212, 2px -2px 0 #121212, -2px 2px 0 #121212, 3px 3px 10px #121212,
-      2px 2px 0 #121212;
-  }
-  25% {
-  }
-  50% {
-    text-shadow: -2px -2px 0 #121212, 2px -2px 0 #121212, -2px 2px 0 #121212, 3px 3px 10px #121212,
-      2px 2px 0 #121212;
-  }
-  75% {
-    text-shadow: -1px 0 #222, -2px 0 #222, -3px 0 #222, -4px 0 #222, -5px 0 #222;
-  }
-  100% {
-    text-shadow: -2px -2px 0 #121212, 2px -2px 0 #121212, -2px 2px 0 #121212, 3px 3px 10px #121212,
-      2px 2px 0 #121212;
   }
 }

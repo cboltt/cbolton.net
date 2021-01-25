@@ -1,0 +1,22 @@
+@import 'src/styles/_definitions';
+
+@font-face {
+  font-family: 'Icomoon';
+  font-display: 'swap';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Helvetica');
+  src: url('./fonts/icomoon.eot');
+  src: url('./fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.woff') format('woff'), url('./fonts/icomoon.ttf') format('truetype');
+}
+
+.Icon {
+  font-size: 86px;
+  height: 86px;
+  font-family: 'Icomoon';
+  text-align: center;
+  margin: auto;
+  text-shadow: -2px -2px 0 #121212, 2px -2px 0 #121212, -2px 2px 0 #121212, 3px 3px 10px #121212,
+    2px 2px 0 #121212;
+}

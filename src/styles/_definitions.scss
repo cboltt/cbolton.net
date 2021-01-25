@@ -1,8 +1,8 @@
-// COLORS
+// VARIABLES
 :root {
   font-size: 20px;
-  --surface-color: white;
-  --surface-accent-color: #eee;
+  --surface-color: #fff;
+  --surface-accent-color: #efefef;
   --content-color: black;
   --link-color: blue;
 
@@ -14,25 +14,11 @@
   }
 }
 
-// BREAKPOINTS
-$layout-breakpoint: 1400px;
-$header-breakpoint: 1000px;
-$mobile-breakpoint: 768px;
+// WIDTHS
+$layout-max-width: 1400px;
 
+// GRADIENTS
 $background-gradient: linear-gradient(0deg, #2b1de8, #1ddde8);
-
-// $background-gradient: linear-gradient(
-//   0deg,
-//   #ff2400,
-//   #e81d1d,
-//   #e8b71d,
-//   #e3e81d,
-//   #1de840,
-//   #1ddde8,
-//   #2b1de8,
-//   #dd00f3,
-//   #dd00f3
-// );
 
 // MIXINS
 @mixin visually-hidden {
@@ -68,4 +54,9 @@ $background-gradient: linear-gradient(0deg, #2b1de8, #1ddde8);
   @media (min-width: 1200px) {
     @content;
   }
+}
+
+// UTIL CLASSES
+.visually-hidden {
+  @include visually-hidden;
 }

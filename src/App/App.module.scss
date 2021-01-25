@@ -2,10 +2,12 @@
 
 .App {
   margin: 3rem auto;
+  max-width: $layout-max-width;
+
   display: grid;
   grid-template-columns: 1fr;
   gap: 9rem;
-  max-width: $layout-breakpoint;
+
   font-family: Helvetica, sans-serif;
 
   @include for-three-column-up {

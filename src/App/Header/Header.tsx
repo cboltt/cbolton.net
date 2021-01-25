@@ -4,10 +4,14 @@ import {Link} from '../components';
 import {Title} from './components';
 import styles from './Header.module.scss';
 
-type Props = {
+interface Props {
   title: string;
-  links: {label: string; accessibilityLabel: string; url: string}[];
-};
+  links: {
+    label: string;
+    accessibilityLabel: string;
+    url: string;
+  }[];
+}
 
 export default function Header({title, links}: Props) {
   return (

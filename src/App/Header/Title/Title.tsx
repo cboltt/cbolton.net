@@ -2,9 +2,9 @@ import React from 'react';
 
 import styles from './Title.module.scss';
 
-type Props = {
+interface Props {
   children: string;
-};
+}
 
 export default function Title({children}: Props) {
   const lettersMarkup = children.split('').map((letter, index) => (
@@ -15,7 +15,7 @@ export default function Title({children}: Props) {
 
   return (
     <>
-      <h1 className={styles.SemanticTitle}>{children}</h1>
+      <h1 className="visually-hidden">{children}</h1>
       <div className={styles.Title} role="presentation" aria-hidden="true">
         {lettersMarkup}
       </div>

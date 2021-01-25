@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.cbbf6572.chunk.css",
-    "main.js": "/static/js/main.5d9b8181.chunk.js",
-    "main.js.map": "/static/js/main.5d9b8181.chunk.js.map",
+    "main.css": "/static/css/main.1a7c69c7.chunk.css",
+    "main.js": "/static/js/main.f747acf2.chunk.js",
+    "main.js.map": "/static/js/main.f747acf2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.dd7c92e3.js",
     "runtime-main.js.map": "/static/js/runtime-main.dd7c92e3.js.map",
-    "static/js/2.7239aaf6.chunk.js": "/static/js/2.7239aaf6.chunk.js",
-    "static/js/2.7239aaf6.chunk.js.map": "/static/js/2.7239aaf6.chunk.js.map",
+    "static/js/2.734fd97f.chunk.js": "/static/js/2.734fd97f.chunk.js",
+    "static/js/2.734fd97f.chunk.js.map": "/static/js/2.734fd97f.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.cbbf6572.chunk.css.map": "/static/css/main.cbbf6572.chunk.css.map",
-    "static/js/2.7239aaf6.chunk.js.LICENSE.txt": "/static/js/2.7239aaf6.chunk.js.LICENSE.txt",
-    "static/media/Project.module.scss": "/static/media/icomoon.e151b4bb.ttf"
+    "static/css/main.1a7c69c7.chunk.css.map": "/static/css/main.1a7c69c7.chunk.css.map",
+    "static/js/2.734fd97f.chunk.js.LICENSE.txt": "/static/js/2.734fd97f.chunk.js.LICENSE.txt",
+    "static/media/Icon.module.scss": "/static/media/icomoon.e151b4bb.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.dd7c92e3.js",
-    "static/js/2.7239aaf6.chunk.js",
-    "static/css/main.cbbf6572.chunk.css",
-    "static/js/main.5d9b8181.chunk.js"
+    "static/js/2.734fd97f.chunk.js",
+    "static/css/main.1a7c69c7.chunk.css",
+    "static/js/main.f747acf2.chunk.js"
   ]
 }

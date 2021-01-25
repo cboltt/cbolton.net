@@ -3,22 +3,39 @@
 $project-width: 1fr;
 
 .Projects {
-  padding: 0 0.5rem;
+  padding: 3rem 1rem 1rem;
   position: relative;
   display: grid;
   grid-template-columns: $project-width;
-  gap: 2rem;
+  gap: 1.5rem;
+  background: var(--surface-accent-color, #eee);
+
+  & > div:nth-child(-n + 1) {
+    margin-top: -10rem;
+  }
 
   @include for-two-column-up {
     grid-template-columns: repeat(2, $project-width);
+
+    & > div:nth-child(-n + 2) {
+      margin-top: -10rem;
+    }
   }
 
   @include for-three-column-up {
-    padding: 0;
     grid-template-columns: repeat(3, $project-width);
+    border-radius: 1rem;
+
+    & > div:nth-child(-n + 3) {
+      margin-top: -8rem;
+    }
   }
 
   @include for-four-column-up {
     grid-template-columns: repeat(4, $project-width);
+
+    & > div:nth-child(-n + 4) {
+      margin-top: -8rem;
+    }
   }
 }

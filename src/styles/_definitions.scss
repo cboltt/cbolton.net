@@ -2,11 +2,13 @@
 :root {
   font-size: 20px;
   --surface-color: white;
+  --surface-accent-color: #eee;
   --content-color: black;
   --link-color: blue;
 
   @media (prefers-color-scheme: dark) {
     --surface-color: #202020;
+    --surface-accent-color: #121212;
     --content-color: white;
     --link-color: #1386ff;
   }

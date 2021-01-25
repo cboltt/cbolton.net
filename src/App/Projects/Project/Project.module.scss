@@ -17,9 +17,10 @@
   grid-template-columns: 1fr;
   gap: 2rem;
   transition: transform 150ms ease-in-out;
+  background: var(--surface-color, white);
 
   text-align: center;
-  border: 2px solid darkgrey;
+  border: 3px solid var(--surface-accent-color, #eee);
   border-radius: 1rem;
 
   @include for-two-column-up {
@@ -28,7 +29,7 @@
 
   @include for-three-column-up {
     &:hover {
-      border-color: var(--content-color, black);
+      border-color: var(--link-color, black);
       transform: scale(1.05);
 
       .Icon {

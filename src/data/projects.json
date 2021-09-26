@@ -1,10 +1,20 @@
 [
   {
+    "icon": "💛",
+    "title": "C19 Response Coalition",
+    "description": "Multilingual COVID-19 support, sourced by community members",
+    "url": "https://www.c19help.ca",
+    "color": "#52D19A",
+    "archive_url": "https://web.archive.org/web/20210128115738/https://www.trybiome.com/"
+  },
+  {
     "icon": "B",
     "title": "Biome Search",
     "description": "Unified search across all of your favourite business apps",
     "url": "https://www.trybiome.com/",
-    "color": "#52D19A"
+    "color": "#52D19A",
+    "archive_url": "https://web.archive.org/web/20210128115738/https://www.trybiome.com/",
+    "archived": true
   },
   {
     "icon": "🗺",
@@ -48,13 +58,16 @@
     "icon": "💪",
     "title": "YWCA Culture Shift",
     "description": "Confronting gender discrimination across media, tech, and society",
-    "url": "https://web.archive.org/web/20210116140257/https://ywcavan.org/programs/combating-sexualization/cultureshift/culture-shift-advisory-council"
+    "url": "https://ywcavan.org/programs/combating-sexualization/cultureshift/culture-shift-advisory-council",
+    "archive_url": "https://web.archive.org/web/20210116140257/https://ywcavan.org/programs/combating-sexualization/cultureshift/culture-shift-advisory-council",
+    "archived": true
   },
   {
     "icon": "🏛",
     "title": "Commerce Student Society",
     "description": "Writing policy for UBC's largest undergraduate society",
-    "url": "http://cus.ca/wp-content/uploads/2018/01/Community-Report.pdf"
+    "url": "http://cus.ca/wp-content/uploads/2018/01/Community-Report.pdf",
+    "hidden": true
   },
   {
     "icon": "W",

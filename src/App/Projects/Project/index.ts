@@ -1,3 +1,4 @@
-import Project from './Project';
+import {Project, Props} from './Project';
 
-export {Project as default};
+export {Project};
+export type {Props};

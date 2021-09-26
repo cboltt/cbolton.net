@@ -1,16 +1,10 @@
 import React from 'react';
 import styles from './Projects.module.scss';
 
-import {Project} from './components';
+import {Project, Props as ProjectProps} from './components';
 
 interface Props {
-  projects: {
-    icon: string;
-    title: string;
-    description: string;
-    url: string;
-    color?: string;
-  }[];
+  projects: ProjectProps[];
 }
 
 export default function Projects({projects}: Props) {

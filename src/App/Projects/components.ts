@@ -1,1 +1,2 @@
-export {default as Project} from './Project';
+export {Project} from './Project';
+export type {Props} from './Project';

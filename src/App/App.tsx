@@ -11,6 +11,12 @@ export default function App() {
     <main className={styles.App}>
       <Header {...headerData} />
       <Projects projects={projectData} />
+      <footer>
+        <p className={styles.Footer}>
+          Each project is proudly made with a lot of love and coffee{' '}
+          <span role="presentation">❤️ ☕️</span>
+        </p>
+      </footer>
     </main>
   );
 }

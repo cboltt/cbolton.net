@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+  scroll-snap-align: start;
 
   @include for-three-column-up {
     padding-left: 1rem;

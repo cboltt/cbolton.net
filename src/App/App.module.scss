@@ -3,6 +3,8 @@
 .App {
   margin: 3rem auto;
   max-width: $layout-max-width;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 3rem;
 
   display: grid;
   grid-template-columns: 1fr;

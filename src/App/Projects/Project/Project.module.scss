@@ -8,6 +8,8 @@
   text-align: center;
   transition: transform 150ms ease-in-out;
 
+  scroll-snap-align: start;
+
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;

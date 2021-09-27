@@ -13,7 +13,7 @@
   border-radius: 1rem;
   background: var(--surface-color, white);
   text-align: center;
-  transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out, border 300ms ease-in;
 
   scroll-snap-align: start;
 

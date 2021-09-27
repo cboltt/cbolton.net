@@ -32,7 +32,7 @@ export function Project({
 }: Props) {
   const isMouseUser = matchMedia('(pointer:fine)').matches;
   const [ref, visible] = useInView({
-    delay: 150,
+    delay: 0,
     threshold: 0.5,
     initialInView: index === 0,
     skip: isMouseUser,

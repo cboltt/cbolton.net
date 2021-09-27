@@ -40,6 +40,12 @@ $background-gradient: linear-gradient(0deg, #2b1de8, #1ddde8);
   }
 }
 
+@mixin for-only-one-column {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
 @mixin for-two-column-up {
   @media (min-width: 600px) {
     @content;

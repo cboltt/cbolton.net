@@ -21,12 +21,14 @@
   grid-template-columns: 1fr;
   gap: 2rem;
 
-  &.highlighted {
-    border-color: var(--link-color);
+  @include for-only-one-column {
+    &.highlighted {
+      border-color: var(--link-color);
 
-    // targets <Icon />
-    > span:first-child {
-      @include iconAnimation;
+      // targets <Icon />
+      > span:first-child {
+        @include iconAnimation;
+      }
     }
   }
 

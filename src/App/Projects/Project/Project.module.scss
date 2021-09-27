@@ -32,7 +32,7 @@
     }
   }
 
-  @media (pointer: fine) {
+  @media (hover: hover) {
     &:hover {
       border-color: var(--link-color);
       transform: scale(1.05);

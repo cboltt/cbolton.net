@@ -8,6 +8,8 @@
   overflow: hidden;
   scroll-snap-align: start;
 
+  padding-top: 3rem;
+
   @include for-three-column-up {
     padding-left: 1rem;
     padding-right: 1rem;

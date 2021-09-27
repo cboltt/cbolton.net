@@ -13,8 +13,7 @@ export default function App() {
       <Projects projects={projectData} />
       <footer>
         <p className={styles.Footer}>
-          Each project is proudly made with a lot of love and coffee{' '}
-          <span role="presentation">❤️ ☕️</span>
+          Each project is made with a lot of love and coffee <span role="presentation">❤️ ☕️</span>
         </p>
       </footer>
     </main>

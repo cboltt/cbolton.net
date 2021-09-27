@@ -33,7 +33,7 @@ export function Project({
   const isMouseUser = matchMedia('(pointer:fine)').matches;
   const [ref, visible] = useInView({
     delay: 0,
-    threshold: 0.15,
+    threshold: 1,
     initialInView: index === 0,
     skip: isMouseUser,
   });

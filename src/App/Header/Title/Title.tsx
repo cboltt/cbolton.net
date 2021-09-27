@@ -8,7 +8,7 @@ interface Props {
 
 export default function Title({children}: Props) {
   const lettersMarkup = children.split('').map((letter, index) => (
-    <span key={index} className={styles.Letter} data-shadow={letter}>
+    <span key={`${letter}-${index}`} className={styles.Letter} data-shadow={letter}>
       {letter}
     </span>
   ));

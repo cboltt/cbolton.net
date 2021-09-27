@@ -1,11 +1,11 @@
-import React from 'react';
-
+import {useEffect} from 'react';
+import {useInView} from 'react-intersection-observer';
 import {Link} from '../../components';
 import {Icon} from './components';
 
 import styles from './Project.module.scss';
 
-export interface Props {
+export type ProjectType = {
   icon: string;
   color?: string;
   title: string;
@@ -14,27 +14,52 @@ export interface Props {
   archive_url?: string;
   archived?: boolean;
   hidden?: boolean;
+};
+interface Props {
+  project: ProjectType;
+  index: number;
+  highlighted: boolean;
+  onVisible(index: number): void;
+  onNotVisible(index: number): void;
 }
 
 export function Project({
-  hidden,
-  icon,
-  color,
-  title,
-  description,
-  url,
-  archived,
-  archive_url,
+  project: {hidden, icon, color, title, description, url, archived, archive_url},
+  index,
+  highlighted,
+  onVisible,
+  onNotVisible,
 }: Props) {
+  const isMouseUser = matchMedia('(pointer:fine)').matches;
+  const [ref, visible] = useInView({
+    delay: 0,
+    threshold: 0.25,
+    initialInView: index === 0,
+    skip: isMouseUser,
+  });
+
+  useEffect(() => {
+    if (visible) {
+      onVisible(index);
+    } else {
+      onNotVisible(index);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index, visible]);
+
   if (hidden) {
     return null;
   }
 
   const hostname = new URL(url).hostname.replace('www.', '');
   const link = archived && archive_url ? archive_url : url;
+  const className = [
+    styles.Project,
+    highlighted && !isMouseUser ? styles.highlighted : undefined,
+  ].join(' ');
 
   return (
-    <div className={styles.Project}>
+    <div ref={ref} className={className}>
       <Icon {...{icon, color}} />
       <div className={styles.Content}>
         <h3 className={styles.Title}>{title}</h3>

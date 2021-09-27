@@ -1,4 +1,4 @@
-import {Project, Props} from './Project';
+import {Project, ProjectType} from './Project';
 
 export {Project};
-export type {Props};
+export type {ProjectType};

@@ -1,5 +1,12 @@
 @import 'src/styles/_definitions';
 
+@mixin iconAnimation {
+  animation-name: swing;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
+}
+
 .Project {
   padding: 3rem 1rem 2rem;
   border: 2px solid var(--border-color);
@@ -14,20 +21,28 @@
   grid-template-columns: 1fr;
   gap: 2rem;
 
-  @include for-two-column-up {
-    grid-template-columns: 1fr;
-  }
-
-  &:hover {
+  &.highlighted {
     border-color: var(--link-color);
-    transform: scale(1.05);
 
     // targets <Icon />
     > span:first-child {
-      animation-name: swing;
-      animation-timing-function: linear;
-      animation-iteration-count: 1;
-      animation-duration: 0.5s;
+      @include iconAnimation;
+    }
+  }
+
+  @media (pointer: fine) {
+    &:hover {
+      border-color: var(--link-color);
+      transform: scale(1.05);
+
+      // targets <Icon />
+      > span:first-child {
+        @include iconAnimation;
+      }
+
+      & + .highlighted {
+        border: 2px solid var(--border-color);
+      }
     }
   }
 }

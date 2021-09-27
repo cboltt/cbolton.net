@@ -1,7 +1,7 @@
 @import 'src/styles/_definitions';
 
 .Project {
-  padding: 3rem 1rem 2rem;
+  padding: 5rem 1rem 2rem;
   border: 2px solid var(--border-color);
   border-radius: 1rem;
   background: var(--surface-color, white);
@@ -15,7 +15,8 @@
   gap: 2rem;
 
   @include for-only-one-column {
-    min-height: 40vh;
+    min-height: 45vh;
+    gap: 0;
 
     &.highlighted {
       border-color: var(--link-color);
@@ -59,7 +60,7 @@
 
 .Title {
   margin: 0;
-  margin-bottom: 0.25rem;
+  align-self: center;
 }
 
 .Description {

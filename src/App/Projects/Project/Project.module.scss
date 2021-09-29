@@ -8,7 +8,7 @@
   text-align: center;
   transition: transform 150ms ease-in-out, border 300ms ease-in;
 
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -84,10 +84,10 @@
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(0, 6px);
+    transform: translate(-1px, 4px);
   }
   75% {
-    transform: translate(0, -5px);
+    transform: translate(1px, -3px);
   }
   100% {
     transform: translate(0, 0);
@@ -105,21 +105,27 @@
 
 @keyframes depth {
   0% {
-    text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 3px 3px 10px #333,
-      2px 2px 0 #333;
+    text-shadow: -2px -2px 0 var(--shadow-light-color), 2px -2px 0 var(--shadow-light-color),
+      -2px 2px 0 var(--shadow-light-color), 3px 3px 10px var(--shadow-light-color),
+      2px 2px 0 var(--shadow-light-color);
   }
   25% {
-    text-shadow: 1px 0 #444, 2px 0 #444, 3px 0 #444, 4px 0 #444, 5px 0 #444;
+    text-shadow: 1px 0 var(--shadow-dark-color), 2px 0 var(--shadow-dark-color),
+      3px 0 var(--shadow-dark-color), 4px 0 var(--shadow-dark-color), 5px 0 var(--shadow-dark-color);
   }
   50% {
-    text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 3px 3px 10px #333,
-      2px 2px 0 #333;
+    text-shadow: -2px -2px 0 var(--shadow-light-color), 2px -2px 0 var(--shadow-light-color),
+      -2px 2px 0 var(--shadow-light-color), 3px 3px 10px var(--shadow-light-color),
+      2px 2px 0 var(--shadow-light-color);
   }
   75% {
-    text-shadow: -1px 0 #444, -2px 0 #444, -3px 0 #444, -4px 0 #444, -5px 0 #444;
+    text-shadow: -1px 0 var(--shadow-dark-color), -2px 0 var(--shadow-dark-color),
+      -3px 0 var(--shadow-dark-color), -4px 0 var(--shadow-dark-color),
+      -5px 0 var(--shadow-dark-color);
   }
   100% {
-    text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 3px 3px 10px #333,
-      2px 2px 0 #333;
+    text-shadow: -2px -2px 0 var(--shadow-light-color), 2px -2px 0 var(--shadow-light-color),
+      -2px 2px 0 var(--shadow-light-color), 3px 3px 10px var(--shadow-light-color),
+      2px 2px 0 var(--shadow-light-color);
   }
 }

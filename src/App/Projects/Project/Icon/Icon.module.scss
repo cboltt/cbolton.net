@@ -18,5 +18,7 @@
   text-align: center;
   margin: auto;
   overflow: visible;
-  text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 3px 3px 10px #333, 2px 2px 0 #333;
+  text-shadow: -2px -2px 0 var(--shadow-light-color), 2px -2px 0 var(--shadow-light-color),
+    -2px 2px 0 var(--shadow-light-color), 3px 3px 10px var(--shadow-light-color),
+    2px 2px 0 var(--shadow-light-color);
 }

@@ -1,33 +1,33 @@
 @import 'src/styles/_definitions';
 
-.Header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  scroll-snap-align: start;
-
-  padding-top: 3rem;
-
-  @include for-three-column-up {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    flex-direction: row;
-    overflow: visible;
-  }
+.Container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $layout-max-width;
+  position: relative;
+  z-index: 2;
 }
 
-.Title {
-  margin-bottom: 1rem;
+.Header {
+  padding: 10vh $gutter-width 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
 
-  @include for-three-column-up {
-    margin-bottom: 0;
+  @include for-two-column-up {
+    padding-top: 3rem;
+    flex-direction: row;
   }
 }
 
 .Nav {
+  width: fit-content;
   display: grid;
-  gap: 1.5rem;
+  gap: $gutter-width;
   grid-template-columns: repeat(3, max-content);
+
+  @include for-two-column-up {
+  }
 }

@@ -1,26 +1,60 @@
 @import 'src/styles/_definitions';
 
+.Page {
+  min-height: 100vh;
+  width: 100vw;
+}
+
 .App {
-  margin: 3rem auto;
-  max-width: $layout-max-width;
-  scroll-snap-type: y mandatory;
-  scroll-padding-top: 3rem;
+  border-top: $gutter-width / 2 solid var(--link-color);
+  margin: 0 auto 0 auto;
+  max-width: 100vw;
 
   display: grid;
   grid-template-columns: 1fr;
-  gap: 9rem;
+  gap: 2rem;
 
   font-family: Helvetica, sans-serif;
+}
 
-  @include for-three-column-up {
-    padding: 0 1rem;
+.Intro {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $layout-max-width;
+  position: relative;
+
+  @include for-two-column-up {
+    height: 5vh;
   }
+
+  & > p {
+    margin: 0 $gutter-width;
+    font-size: 350%;
+    font-weight: lighter;
+    font-style: italic;
+    z-index: 2;
+    position: absolute;
+    right: 40%;
+    top: 0;
+    color: #fff;
+  }
+}
+
+.Background {
+  position: absolute;
+  top: -3rem;
+  right: 0;
+
+  width: auto;
+  height: 35vh;
 }
 
 .Footer {
   text-align: center;
-  margin-top: -6rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  background: var(--link-color);
+  padding: $gutter-width $gutter-width $gutter-width * 2;
+  margin: 0;
   font-size: 0.9rem;
+  color: var(--surface-color);
+  font-style: italic;
 }

@@ -6,9 +6,6 @@ body {
   padding: 0;
   background: var(--surface-color);
   max-height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-padding-top: 1rem;
 
   @include for-two-column-up {
     max-height: auto;

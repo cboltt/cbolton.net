@@ -6,18 +6,18 @@
   justify-content: center;
   letter-spacing: 0.3rem;
 
-  font-size: 13vw;
+  font-size: 10vw;
 
   @include for-two-column-up {
-    font-size: 11vw;
-  }
-
-  @include for-three-column-up {
     font-size: 5vw;
   }
 
+  @include for-three-column-up {
+    font-size: 3vw;
+  }
+
   @include for-four-column-up {
-    font-size: 4vw;
+    font-size: 2.5vw;
   }
 }
 

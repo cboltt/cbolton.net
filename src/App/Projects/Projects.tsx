@@ -4,10 +4,11 @@ import styles from './Projects.module.scss';
 import {Project, ProjectType} from './components';
 
 interface Props {
+  heading: string;
   projects: ProjectType[];
 }
 
-export default function Projects({projects}: Props) {
+export default function Projects({heading, projects}: Props) {
   const [visibleProjects, setVisibleProjects] = useState(new Set([0]));
 
   const handleOnVisible = (project: number) => {
@@ -24,10 +25,14 @@ export default function Projects({projects}: Props) {
 
   const highlightedProject = Math.min(...Array.from(visibleProjects));
 
+  const showBorder = projects.length > 3;
+  const className = [styles.Projects, showBorder ? styles.withBorder : undefined].join(' ');
+
   return (
-    <section>
-      <h2 className="visually-hidden">My Projects</h2>
-      <div className={styles.Projects}>
+    <section className={styles.Container}>
+      <h2 className={styles.Heading}>{heading}</h2>
+      <div className={className}>
+        <div />
         {projects.map((project, index) => {
           return (
             <Project
@@ -40,6 +45,7 @@ export default function Projects({projects}: Props) {
             />
           );
         })}
+        <div className={styles.EndBlock} />
       </div>
     </section>
   );

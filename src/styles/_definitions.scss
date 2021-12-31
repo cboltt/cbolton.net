@@ -2,7 +2,7 @@
 :root {
   font-size: 18px;
   --surface-color: white;
-  --surface-accent-color: #fafafa;
+  --surface-accent-color: white;
   --content-color: black;
   --link-color: blue;
   --border-color: #ddd;
@@ -22,6 +22,7 @@
 
 // WIDTHS
 $layout-max-width: 1400px;
+$gutter-width: 1.5rem;
 
 // GRADIENTS
 $background-gradient: linear-gradient(0deg, #2b1de8, #1ddde8);

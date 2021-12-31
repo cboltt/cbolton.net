@@ -65,7 +65,7 @@ export function Project({
         <h3 className={styles.Title}>{title}</h3>
         <p className={styles.Description}>{description}</p>
       </div>
-      <Link label={hostname} accessibilityLabel={`Visit ${title}`} url={link} />
+      <Link label={hostname} accessibilityLabel={`Go to ${title} in a new tab`} url={link} />
     </div>
   );
 }

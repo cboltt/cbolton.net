@@ -5,13 +5,13 @@
 
   &:before {
     margin-right: 2px;
-    content: '🔗' / '';
+    content: '🔗';
   }
 
   &:hover,
   &:focus {
     &:before {
-      content: '👉' / '';
+      content: '👉';
     }
 
     .Label {

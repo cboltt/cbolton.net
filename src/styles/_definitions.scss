@@ -4,10 +4,10 @@
   --surface-color: white;
   --surface-accent-color: white;
   --content-color: black;
-  --link-color: blue;
+  --link-color: #0000ff;
   --border-color: #ddd;
-  --shadow-light-color: #333;
-  --shadow-dark-color: #313131;
+  --shadow-light-color: #ddd;
+  --shadow-dark-color: #aaa;
 
   @media (prefers-color-scheme: dark) {
     --surface-color: #202020;

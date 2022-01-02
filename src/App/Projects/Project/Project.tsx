@@ -31,10 +31,11 @@ export function Project({
   onNotVisible,
 }: Props) {
   const isMouseUser = matchMedia('(pointer:fine)').matches;
+  const isFirst = index === 0;
   const [ref, visible] = useInView({
     delay: 150,
     threshold: 0.5,
-    initialInView: index === 0,
+    initialInView: isFirst,
     skip: isMouseUser,
   });
 
@@ -56,6 +57,7 @@ export function Project({
   const className = [
     styles.Project,
     highlighted && !isMouseUser ? styles.highlighted : undefined,
+    isFirst ? styles.isFirst : undefined,
   ].join(' ');
 
   return (

@@ -1,6 +1,6 @@
 @import 'src/styles/_definitions';
 
-$project-width: calc(#{$layout-max-width} / 5.3);
+$project-width: calc(#{$layout-max-width} / 5.85);
 
 .Project {
   width: $project-width;
@@ -30,14 +30,14 @@ $project-width: calc(#{$layout-max-width} / 5.3);
         animation-name: depth, float;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
-        animation-duration: 3.5s;
+        animation-duration: 2.5s;
         animation-delay: 150ms;
         transform-style: preserve-3d;
       }
     }
   }
 
-  @media (hover: hover) {
+  @include for-two-column-up {
     &:hover {
       border-color: var(--link-color);
       transform: scale(1.05);
@@ -109,27 +109,28 @@ $project-width: calc(#{$layout-max-width} / 5.3);
 
 @keyframes depth {
   0% {
-    text-shadow: -2px -2px 0 var(--shadow-light-color), 2px -2px 0 var(--shadow-light-color),
-      -2px 2px 0 var(--shadow-light-color), 3px 3px 10px var(--shadow-light-color),
-      2px 2px 0 var(--shadow-light-color);
+    text-shadow: -2px -2px 2px var(--shadow-light-color), 2px -2px 2px var(--shadow-light-color),
+      -2px 2px 2px var(--shadow-light-color), 3px 3px 10px var(--shadow-light-color),
+      2px 2px 2px var(--shadow-light-color);
   }
   25% {
-    text-shadow: 1px 0 var(--shadow-dark-color), 2px 0 var(--shadow-dark-color),
-      3px 0 var(--shadow-dark-color), 4px 0 var(--shadow-dark-color), 5px 0 var(--shadow-dark-color);
+    text-shadow: 1px 0 2px var(--shadow-dark-color), 2px 0 2px var(--shadow-dark-color),
+      3px 0 2px var(--shadow-dark-color), 4px 0 2px var(--shadow-dark-color),
+      5px 0 2px var(--shadow-dark-color);
   }
   50% {
-    text-shadow: -2px -2px 0 var(--shadow-light-color), 2px -2px 0 var(--shadow-light-color),
-      -2px 2px 0 var(--shadow-light-color), 3px 3px 10px var(--shadow-light-color),
-      2px 2px 0 var(--shadow-light-color);
+    text-shadow: -2px -2px 2px var(--shadow-light-color), 2px -2px 2px var(--shadow-light-color),
+      -2px 2px 2px var(--shadow-light-color), 3px 3px 10px var(--shadow-light-color),
+      2px 2px 2px var(--shadow-light-color);
   }
   75% {
-    text-shadow: -1px 0 var(--shadow-dark-color), -2px 0 var(--shadow-dark-color),
-      -3px 0 var(--shadow-dark-color), -4px 0 var(--shadow-dark-color),
-      -5px 0 var(--shadow-dark-color);
+    text-shadow: -1px 0 2px var(--shadow-dark-color), -2px 0 2px var(--shadow-dark-color),
+      -3px 0 2px var(--shadow-dark-color), -4px 0 2px var(--shadow-dark-color),
+      -5px 0 2px var(--shadow-dark-color);
   }
   100% {
-    text-shadow: -2px -2px 0 var(--shadow-light-color), 2px -2px 0 var(--shadow-light-color),
-      -2px 2px 0 var(--shadow-light-color), 3px 3px 10px var(--shadow-light-color),
-      2px 2px 0 var(--shadow-light-color);
+    text-shadow: -2px -2px 2px var(--shadow-light-color), 2px -2px 2px var(--shadow-light-color),
+      -2px 2px 2px var(--shadow-light-color), 3px 3px 10px var(--shadow-light-color),
+      2px 2px 2px var(--shadow-light-color);
   }
 }

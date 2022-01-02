@@ -1,7 +1,5 @@
 @import 'src/styles/_definitions';
 
-$project-width: calc(#{$layout-max-width} / 4.8);
-
 .Container {
   margin: 0 auto;
   max-width: $layout-max-width;
@@ -51,13 +49,9 @@ $project-width: calc(#{$layout-max-width} / 4.8);
 }
 
 .EndBlock {
-  scroll-snap-align: start;
-}
-
-.MobileEndSpacer {
   width: 10vw;
 
-  @include for-two-column-up {
+  @include for-four-column-up {
     width: 0;
   }
 }

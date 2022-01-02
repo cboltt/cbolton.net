@@ -64,7 +64,7 @@ export default function Projects({heading, projects}: Props) {
             />
           );
         })}
-        <div ref={endBlockRef} className={styles.MobileEndSpacer} />
+        <div ref={endBlockRef} className={styles.EndBlock} />
       </div>
     </section>
   );

@@ -26,7 +26,7 @@ export default function App() {
             />
           </svg> */}
         </section>
-        <Projects heading="Reflections" projects={projectData.reflections} />
+        <Projects heading="Writing" projects={projectData.reflections} />
         <Projects heading="Projects" projects={projectData.projects} />
         <Projects heading="Teams" projects={projectData.teams} />
         <footer>

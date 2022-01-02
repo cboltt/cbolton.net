@@ -3,6 +3,7 @@
 .Page {
   min-height: 100vh;
   width: 100vw;
+  background-color: var(--surface-color, white);
 }
 
 .App {
@@ -50,11 +51,12 @@
 }
 
 .Footer {
+  border-bottom: $gutter-width / 2 solid var(--link-color);
   text-align: center;
-  background: var(--link-color);
-  padding: $gutter-width $gutter-width $gutter-width * 2;
+  background: var(--surface-accent-color);
+  padding: $gutter-width * 2;
   margin: 0;
   font-size: 0.9rem;
-  color: var(--surface-color);
   font-style: italic;
+  line-height: 1.5;
 }

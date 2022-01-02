@@ -18,17 +18,18 @@ $project-width: calc(#{$layout-max-width} / 4.8);
 }
 
 .Projects {
-  max-width: $layout-max-width;
   width: calc(100vw - 2px);
+  max-width: $layout-max-width;
   padding: $gutter-width 0;
+  border-left: 1px solid var(--surface-color);
+  border-right: 1px solid var(--surface-color);
+  transition: border-color 200ms ease;
 
   display: grid;
   gap: $gutter-width;
-
-  grid-template-columns: 0 $project-width;
   grid-template-rows: 1fr;
   grid-auto-flow: column;
-  grid-auto-columns: $project-width;
+  grid-auto-columns: min-content;
 
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -37,20 +38,26 @@ $project-width: calc(#{$layout-max-width} / 4.8);
   @include for-two-column-up {
     scroll-snap-type: none;
   }
-}
 
-@include for-three-column-up {
-  .EndBlock {
-    display: none;
+  @include for-four-column-up {
+    &.withStartBorder {
+      border-left-color: var(--border-color);
+    }
+
+    &.withEndBorder {
+      border-right-color: var(--border-color);
+    }
   }
 }
-@include for-four-column-up {
-  &.withBorder {
-    border-left: 1px solid var(--border-color);
-    border-right: 1px solid var(--border-color);
 
-    & > div:nth-last-child(2) {
-      margin-right: 0.5rem;
-    }
+.EndBlock {
+  scroll-snap-align: start;
+}
+
+.MobileEndSpacer {
+  width: 10vw;
+
+  @include for-two-column-up {
+    width: 0;
   }
 }

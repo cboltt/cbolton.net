@@ -31,7 +31,7 @@ export default function App() {
         <Projects heading="Teams" projects={projectData.teams} />
         <footer>
           <p className={styles.Footer}>
-            Thanks for reading! –Chris
+            Thanks for reading! <br /> –Chris
             {/* <span role="presentation"> ❤️</span> */}
           </p>
         </footer>

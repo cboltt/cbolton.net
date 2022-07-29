@@ -3,30 +3,51 @@
 .Container {
   margin: 0 auto;
   max-width: $layout-max-width;
+
+  @include for-only-one-column {
+    &:nth-child(2) {
+      margin-top: -0.5 * $gutter-width;
+    }
+  }
 }
 
 .Heading {
-  font-size: 3.5rem;
+  font-size: 1rem;
   margin: 0;
-  padding-left: $gutter-width;
-  text-shadow: -2px -2px 0 var(--border-color), 2px -2px 0 var(--border-color),
-    -2px 2px 0 var(--border-color), 2px 2px 0 var(--border-color);
-  // text-shadow: 3px 00px var(--link-color);
-  color: var(--surface-color);
-  font-weight: 500;
-  letter-spacing: 0.175rem;
+  padding: 0.5rem;
+
+  color: var(--content-color);
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  background-color: var(--surface-accent-color);
+  text-transform: uppercase;
+  border: 0 solid var(--border-color);
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--content-color);
+  }
 
   @include for-two-column-up {
-    font-size: 500%;
+
+    font-size: 120%;
   }
 
   @include for-three-column-up {
-    font-size: 700%;
+    font-size: 150%;
   }
+
+  @include for-four-column-up {
+    border-left-width: 2px;
+    border-right-width: 2px;
+  }
+
+
 }
 
 .Projects {
-  margin-top: -1.75 * $gutter-width;
+  margin-top: 0;
   width: calc(100vw - 2px);
   max-width: $layout-max-width;
   padding: $gutter-width 0;
@@ -45,12 +66,8 @@
   scroll-padding-left: $gutter-width;
 
   @include for-two-column-up {
-    margin-top: -1.5 * $gutter-width;
+    margin-top: 0.5 * $gutter-width;
     scroll-snap-type: none;
-  }
-
-  @include for-three-column-up {
-    margin-top: -2.5 * $gutter-width;
   }
 
   @include for-four-column-up {

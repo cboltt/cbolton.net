@@ -3,15 +3,16 @@
 .Link {
   text-decoration: none;
 
-  &:before {
-    margin-right: 2px;
+  &:after {
+    margin-left: 6px;
     content: '🔗';
+    font-size: 60%;
   }
 
   &:hover,
   &:focus {
-    &:before {
-      content: '👉';
+    &:after {
+      content: '➡️';
     }
 
     .Label {

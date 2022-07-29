@@ -7,10 +7,11 @@ $project-width: calc(#{$layout-max-width} / 5.85);
   padding: 3rem 1rem 2rem;
   z-index: 2;
   border: 2px solid var(--border-color);
-  border-radius: 1rem;
+  // border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 2px var(--shadow-light-color);
   background: var(--surface-accent-color, white);
   text-align: center;
-  transition: transform 150ms ease-in-out, border 300ms ease-in;
+  transition: all 150ms ease-in-out, border 300ms ease-in;
 
   scroll-snap-align: start;
 
@@ -41,6 +42,7 @@ $project-width: calc(#{$layout-max-width} / 5.85);
     &:hover {
       border-color: var(--link-color);
       transform: scale(1.05);
+      box-shadow: 0.5rem 0.5rem 6px var(--shadow-light-color);
 
       // targets <Icon />
       > span:first-child {

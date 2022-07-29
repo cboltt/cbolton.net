@@ -3,10 +3,10 @@
 .Title {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: flex-start;
   letter-spacing: 0.3rem;
 
-  font-size: 12vw;
+  font-size: 6vw;
 
   @include for-two-column-up {
     font-size: 5vw;
@@ -18,6 +18,23 @@
 
   @include for-four-column-up {
     font-size: 3vw;
+  }
+}
+
+.Row {
+  margin-bottom: -6px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  // Get rid of all but first row on desktop
+  @include for-two-column-up {
+    display: none;
+
+    &:last-child {
+      display: block;
+    }
   }
 }
 

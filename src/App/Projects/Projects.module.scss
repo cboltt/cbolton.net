@@ -12,16 +12,17 @@
 }
 
 .Heading {
-  font-size: 1rem;
+  font-size: 140%;
   margin: 0;
   padding: 0.5rem;
+  padding-left: $gutter-width / 2;
 
   color: var(--content-color);
-  font-weight: 800;
+  font-weight: 400;
   letter-spacing: 0.1rem;
-  background-color: var(--surface-accent-color);
-  text-transform: uppercase;
-  border: 0 solid var(--border-color);
+  background-color: var(--surface-color);
+  // text-transform: uppercase;
+  // border: 0 solid var(--border-color);
   border-top-width: 2px;
   border-bottom-width: 2px;
 
@@ -30,7 +31,6 @@
   }
 
   @include for-two-column-up {
-
     font-size: 120%;
   }
 
@@ -65,8 +65,12 @@
   scroll-snap-type: x mandatory;
   scroll-padding-left: $gutter-width;
 
+  > div:nth-child(2) {
+    margin-left: calc(-1 * #{$gutter-width} / 1.5);
+  }
+
   @include for-two-column-up {
-    margin-top: 0.5 * $gutter-width;
+    margin-top: 0;
     scroll-snap-type: none;
   }
 

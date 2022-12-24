@@ -4,18 +4,22 @@
   min-height: 100vh;
   width: 100vw;
   background-color: var(--surface-color, white);
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .App {
   border-top: $gutter-width / 2 solid var(--link-color);
   margin: 0 auto 0 auto;
   max-width: 100vw;
+  width: 100%;
 
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-
-  font-family: Helvetica, sans-serif;
 }
 
 .Intro {
@@ -52,7 +56,7 @@
 
 .Footer {
   border-bottom: $gutter-width / 2 solid var(--link-color);
-  text-align: right;
+  text-align: center;
   background: var(--surface-accent-color);
   padding: $gutter-width * 2;
   margin: 0;

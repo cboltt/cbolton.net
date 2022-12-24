@@ -22,7 +22,7 @@ export default function Header({title, links}: Props) {
         </div>
         <nav className={styles.Nav} aria-label="Related sites">
           {links.map((link) => (
-            <Link key={link.url} {...link} />
+            <Link rel="me" key={link.url} {...link} />
           ))}
         </nav>
       </header>

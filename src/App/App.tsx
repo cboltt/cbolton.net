@@ -29,13 +29,13 @@ export default function App() {
         <Projects heading="Writing" projects={projectData.reflections} />
         <Projects heading="Projects" projects={projectData.projects} />
         <Projects heading="Teams" projects={projectData.teams} />
-        <footer>
-          <p className={styles.Footer}>
-            Thanks for reading! –Chris
-            {/* <span role="presentation"> ❤️</span> */}
-          </p>
-        </footer>
       </main>
+      <footer>
+        <p className={styles.Footer}>
+          Thanks for reading! –Chris
+          {/* <span role="presentation"> ❤️</span> */}
+        </p>
+      </footer>
     </div>
   );
 }

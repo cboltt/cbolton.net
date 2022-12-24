@@ -61,13 +61,15 @@ export function Project({
   ].join(' ');
 
   return (
-    <div ref={ref} className={className}>
-      <Icon {...{icon, color}} />
+    <div ref={ref} className={className} tabIndex={0}>
+      {/* <Icon {...{icon, color}} /> */}
+      <h3 className={styles.Title}>{title}</h3>
       <div className={styles.Content}>
-        <h3 className={styles.Title}>{title}</h3>
         <p className={styles.Description}>{description}</p>
+        <div className={styles.Link}>
+          <Link label={hostname} accessibilityLabel={`Go to ${title} in a new tab`} url={link} />
+        </div>
       </div>
-      <Link label={hostname} accessibilityLabel={`Go to ${title} in a new tab`} url={link} />
     </div>
   );
 }

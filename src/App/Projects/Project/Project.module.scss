@@ -1,27 +1,26 @@
 @import 'src/styles/_definitions';
 
-$project-width: calc(#{$layout-max-width} / 5.85);
+$project-width: calc(#{$layout-max-width} / 4.7);
 
 .Project {
   width: $project-width;
-  padding: 3rem 1rem 2rem;
+  padding: 0;
+  border-radius: 0.75rem;
   z-index: 2;
   border: 2px solid var(--border-color);
   // border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 2px var(--shadow-light-color);
   background: var(--surface-accent-color, white);
-  text-align: center;
+  text-align: left;
   transition: all 150ms ease-in-out, border 300ms ease-in;
 
   scroll-snap-align: start;
 
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @include for-only-one-column {
-    min-height: 40vh;
-    gap: 0;
 
     &.highlighted {
       border-color: var(--link-color);
@@ -39,6 +38,7 @@ $project-width: calc(#{$layout-max-width} / 5.85);
   }
 
   @include for-two-column-up {
+    &:focus-within,
     &:hover {
       border-color: var(--link-color);
       transform: scale(1.05);
@@ -52,6 +52,14 @@ $project-width: calc(#{$layout-max-width} / 5.85);
         animation-duration: 0.5s;
       }
 
+      .Title {
+        display: none;
+      }
+
+      .Content {
+        display: grid;
+      }
+
       & + .highlighted {
         border: 2px solid var(--border-color);
       }
@@ -59,18 +67,36 @@ $project-width: calc(#{$layout-max-width} / 5.85);
   }
 }
 
-.Content {
-  display: grid;
-  gap: 0.25rem;
+.Title, .Content {
+  margin: 0;
 }
 
 .Title {
-  margin: 0;
-  align-self: center;
+  font-size: 180%;
+  padding: 3rem 1rem;
+
+  @include for-two-column-up {
+    font-size: 165%;
+  }
+}
+
+.Content {
+  display: grid;
+  gap: 1rem;
+  padding: 0rem 1rem 2rem;
+
+  @include for-two-column-up {
+    display: none;
+    padding: 2rem 1rem;
+  }
 }
 
 .Description {
   margin: 0;
+}
+
+.Link {
+
 }
 
 @keyframes swing {

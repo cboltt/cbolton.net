@@ -7,9 +7,9 @@
       "url": "https://www.linkedin.com/in/cboltt"
     },
     {
-      "label": "Twitter",
-      "accessibilityLabel": "View my Twitter profile",
-      "url": "https://twitter.com/cboltt"
+      "label": "Mastodon",
+      "accessibilityLabel": "View my Mastodon profile",
+      "url": "https://macaw.social/@cboltt"
     },
     {
       "label": "Github",

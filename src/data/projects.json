@@ -2,14 +2,14 @@
   "teams": [
     {
       "icon": "N",
-      "title": "nwHacks",
+      "title": "UBC nwHacks Hackathon",
       "description": "Delivering technical workshops to hundreds of hackers",
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:6589939569251229696/",
       "color": "#0AE3C6"
     },
     {
       "icon": "W",
-      "title": "UBC BizTech",
+      "title": "UBC BizTech Club",
       "description": "Bringing hands-on learning and career opportunities to 400 members",
       "url": "https://drive.google.com/file/d/0B9KSbToM5yv8NjZuMzllUkxIbEU/view",
       "color": "#ffffff"
@@ -53,8 +53,8 @@
     },
     {
       "icon": "👯‍♀️",
-      "title": "Leading the BizTech Team",
-      "description": "Leading a team of 20 execs to run 19 events, all while still having fun",
+      "title": "Student Club Adventures",
+      "description": "Leading a team of 22 students and running 20 events, all while still having fun",
       "url": "https://medium.com/@cbolton97/making-the-dream-work-e6c883839076"
     }
   ],

@@ -54,6 +54,7 @@ export function Project({
 
   const hostname = new URL(url).hostname.replace('www.', '');
   const link = archived && archive_url ? archive_url : url;
+  const linkLabel = archived ? `[Archived] ${hostname}` : hostname;
   const className = [
     styles.Project,
     highlighted && !isMouseUser ? styles.highlighted : undefined,
@@ -67,7 +68,7 @@ export function Project({
       <div className={styles.Content}>
         <p className={styles.Description}>{description}</p>
         <div className={styles.Link}>
-          <Link label={hostname} accessibilityLabel={`Go to ${title} in a new tab`} url={link} />
+          <Link label={linkLabel} accessibilityLabel={`Go to ${title} in a new tab`} url={link} />
         </div>
       </div>
     </div>

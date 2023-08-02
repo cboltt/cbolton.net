@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Third-Party Cookie Detection</title>
+  </head>
+  <body>
+    <script>
+      document.cookie="testCookie=true; Max-Age=3600; SameSite=None; Secure";
+      
+      if (window.parent) {
+        if (/testCookie=true/.test(document.cookie)) {
+          window.parent.postMessage('true', '*');
+        } else {
+          window.parent.postMessage('false', '*');
+        }
+        
+        // Reset the cookie 
+        document.cookie = 'testCookie=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+      }
+    </script>
+  </body>
+</html>

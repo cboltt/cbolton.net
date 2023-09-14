@@ -19,11 +19,32 @@
 
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1rem;
+
+  @include for-two-column-up {
+    gap: 2rem;
+  }
 }
 
 .Intro {
   margin: 0 auto;
+  width: 100%;
+  max-width: $layout-max-width;
+
+  & > p:first-child {
+    font-style: italic;
+  }
+
+  & > p {
+    padding: 0 $gutter-width / 2;
+    font-size: 110%;
+    line-height: 1.5rem;
+    max-width: 70ch;
+  }
+}
+
+.Visual {
+  margin: -100px auto 0;
   width: 100%;
   max-width: $layout-max-width;
   position: relative;

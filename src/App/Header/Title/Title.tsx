@@ -18,8 +18,6 @@ export default function Title({children}: Props) {
       <h1 className="visually-hidden">{children}</h1>
       <div className={styles.Title} role="presentation" aria-hidden="true">
         <div className={styles.Row}>{lettersMarkup}</div>
-        <div className={styles.Row}>{lettersMarkup}</div>
-        <div className={styles.Row}>{lettersMarkup}</div>
       </div>
     </>
   );

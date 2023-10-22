@@ -33,13 +33,22 @@
 
   & > p:first-child {
     font-style: italic;
+    margin-bottom: 0; 
   }
 
-  & > p {
+  & .Columns {
+
+    @include for-three-column-up {
+      display: flex;
+      gap: $gutter-width / 8;
+    }
+  }
+
+  & p {
     padding: 0 $gutter-width / 2;
     font-size: 110%;
     line-height: 1.5rem;
-    max-width: 70ch;
+    max-width: 40ch;
   }
 }
 

@@ -13,14 +13,17 @@ export default function App() {
         <Header {...headerData} />
         <section className={styles.Intro}>
           <p>Hey there! My name is Chris.</p>
-          <p>
-            Right now, I'm working at Microsoft, helping to build a faster and more fluid version of
-            Teams. Previously, I was at Twitter, working in Trust and Safety engineering.
-          </p>
-          <p>
-            I'm eager to use my skills to build inclusive and meaningful experiences, on and off the
-            web. You can reach me directly at <strong>cb@cbolton.net</strong>.
-          </p>
+          <div className={styles.Columns}>
+            <p>
+              Right now, I'm working at Microsoft, helping to build a faster and more fluid version
+              of Teams. Previously, I was at Twitter, working in Trust and Safety engineering.
+            </p>
+            <p>
+              I'm eager to use my skills to build inclusive and meaningful experiences, on and off
+              the web. If you know of a project that might be a good fit, please email me at{' '}
+              <strong>cb@cbolton.net</strong>.
+            </p>
+          </div>
         </section>
         {/* <section className={styles.Visual}>
           <svg

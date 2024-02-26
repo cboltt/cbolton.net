@@ -9,7 +9,7 @@
 }
 
 .Header {
-  padding: 3vh $gutter-width / 2 0;
+  padding: 3vh calc($gutter-width / 2) 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -20,7 +20,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10vh $gutter-width / 2 0;
+    padding: 10vh calc($gutter-width / 2) 0;
     padding-top: 3rem;
   }
 }
@@ -28,7 +28,7 @@
 .Nav {
   width: fit-content;
   display: grid;
-  gap: $gutter-width / 1.5;
+  gap: calc($gutter-width / 1.5);
   grid-template-columns: repeat(3, max-content);
   text-align: center;
 

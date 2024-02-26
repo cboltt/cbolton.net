@@ -8,14 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     htmlPrerender({
-      /**
-       * Required: Output directory of `vite build`.
-       */
       staticDir: path.join(__dirname, "dist"),
-
-      /**
-       * Required: List of routes to pre-render.
-       */
       routes: ["/"],
     }),
   ],

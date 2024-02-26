@@ -1,10 +1,9 @@
-import React from 'react';
-import styles from './App.module.scss';
+import styles from "./App.module.scss";
 
-import {Header, Projects} from './components';
+import { Header, Projects } from "./components";
 
-import headerData from '../data/header.json';
-import projectData from '../data/projects.json';
+import headerData from "../data/header.json";
+import projectData from "../data/projects.json";
 
 export default function App() {
   return (
@@ -15,12 +14,14 @@ export default function App() {
           <p>Hey there! My name is Chris.</p>
           <div className={styles.Columns}>
             <p>
-              Right now, I'm working at Microsoft, helping to build a faster and more fluid version
-              of Teams. Previously, I was at Twitter, working in Trust and Safety engineering.
+              Right now, I'm working at Microsoft, helping to build a faster and
+              more fluid version of Teams. Previously, I was at Twitter, working
+              in Trust and Safety engineering.
             </p>
             <p>
-              I'm eager to use my skills to build inclusive and meaningful experiences, on and off
-              the web. If you know of a project that might be a good fit, please email me at{' '}
+              I'm eager to use my skills to build inclusive and meaningful
+              experiences, on and off the web. If you know of a project that
+              might be a good fit, please email me at{" "}
               <strong>cb@cbolton.net</strong>.
             </p>
           </div>

@@ -1,9 +1,7 @@
-import {useEffect} from 'react';
-import {useInView} from 'react-intersection-observer';
-import {Link} from '../../components';
-import {Icon} from './components';
-
-import styles from './Project.module.scss';
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { Link } from "../../components";
+import styles from "./Project.module.scss";
 
 export type ProjectType = {
   icon: string;
@@ -24,13 +22,13 @@ interface Props {
 }
 
 export function Project({
-  project: {hidden, icon, color, title, description, url, archived, archive_url},
+  project: { hidden, title, description, url, archived, archive_url },
   index,
   highlighted,
   onVisible,
   onNotVisible,
 }: Props) {
-  const isMouseUser = matchMedia('(pointer:fine)').matches;
+  const isMouseUser = matchMedia("(pointer:fine)").matches;
   const isFirst = index === 0;
   const [ref, visible] = useInView({
     delay: 150,
@@ -52,14 +50,14 @@ export function Project({
     return null;
   }
 
-  const hostname = new URL(url).hostname.replace('www.', '');
+  const hostname = new URL(url).hostname.replace("www.", "");
   const link = archived && archive_url ? archive_url : url;
   const linkLabel = archived ? `[Archived] ${hostname}` : hostname;
   const className = [
     styles.Project,
     highlighted && !isMouseUser ? styles.highlighted : undefined,
     isFirst ? styles.isFirst : undefined,
-  ].join(' ');
+  ].join(" ");
 
   return (
     <div ref={ref} className={className} tabIndex={0}>
@@ -68,7 +66,11 @@ export function Project({
       <div className={styles.Content}>
         <p className={styles.Description}>{description}</p>
         <div className={styles.Link}>
-          <Link label={linkLabel} accessibilityLabel={`Go to ${title} in a new tab`} url={link} />
+          <Link
+            label={linkLabel}
+            accessibilityLabel={`Go to ${title} in a new tab`}
+            url={link}
+          />
         </div>
       </div>
     </div>

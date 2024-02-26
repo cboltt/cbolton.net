@@ -1,8 +1,6 @@
-import React from 'react';
-
-import {Link} from '../components';
-import {Title} from './components';
-import styles from './Header.module.scss';
+import { Link } from "../components";
+import { Title } from "./components";
+import styles from "./Header.module.scss";
 
 interface Props {
   title: string;
@@ -13,7 +11,7 @@ interface Props {
   }[];
 }
 
-export default function Header({title, links}: Props) {
+export default function Header({ title, links }: Props) {
   return (
     <div className={styles.Container}>
       <header className={styles.Header}>

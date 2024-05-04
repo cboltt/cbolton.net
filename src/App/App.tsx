@@ -14,10 +14,7 @@ export default function App() {
           <p>Hey there! My name is Chris.</p>
           <div className={styles.Columns}>
             <p>
-              Right now, I'm working at Microsoft, helping to build a faster and
-              more fluid version of Teams. Previously, I was at Twitter, working
-              in Trust and Safety engineering.
-            </p>
+              Right now, I'm working at Pinecone, helping build the UX for the world's best vector database. Previously, I was at Microsoft (Teams), Twitter (Trust and Safety), and Shopify (Product Ops).
             <p>
               I'm eager to use my skills to build inclusive and meaningful
               experiences, on and off the web. If you know of a project that

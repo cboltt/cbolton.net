@@ -5,12 +5,12 @@
   --surface-accent-color: white;
   --content-color: black;
   --link-color: #0000ff;
-  --border-color: #888;
+  --border-color: #eee;
   --shadow-light-color: #eee;
   --shadow-dark-color: #aaa;
 
   @media (prefers-color-scheme: dark) {
-    --surface-color: #202020;
+    --surface-color: #101010;
     --surface-accent-color: #121212;
     --content-color: white;
     --link-color: #1386ff;
@@ -22,7 +22,7 @@
 
 // WIDTHS
 $layout-max-width: 1400px;
-$gutter-width: 1.5rem;
+$gutter-width: 0.5rem;
 
 // GRADIENTS
 $background-gradient: linear-gradient(0deg, #2b1de8, #1ddde8);

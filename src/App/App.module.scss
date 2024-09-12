@@ -1,96 +1,99 @@
 @import 'src/styles/_definitions';
 
 .Page {
-  min-height: 100vh;
+  min-height: 100dvh;
   width: 100vw;
   background-color: var(--surface-color, white);
   font-family: Helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  line-height: 1.4rem;
   width: 100%;
+  background-color: var(--link-color);
 }
 
 .App {
-  border-top: calc($gutter-width / 2) solid var(--link-color);
-  margin: 0 auto 0 auto;
-  max-width: 100vw;
-  width: 100%;
-
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 1rem;
+  background-color: var(--surface-color, white);
+  border: 0.5rem solid var(--link-color);
+  border-radius: 1rem;
+  margin: 0;
+  height: 100vh;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "Content";
 
-  @include for-two-column-up {
-    gap: 2rem;
-  }
+    @include for-two-column-up {
+      grid-template-columns: 3fr auto 2fr;
+      grid-template-rows: 3fr auto 4fr;
+      grid-template-areas: 
+        ". . ."
+        ". Content ."
+        ". . .";
+    }
+
 }
 
 .Intro {
-  margin: 0 auto;
-  width: 100%;
-  max-width: $layout-max-width;
+  grid-area: Content;
+  position: relative;
+  max-width: 53ch;
 
-  & > p:first-child {
-    font-style: italic;
-    margin-bottom: 0; 
+  article {
+    position: relative;
+    z-index: 1;
   }
 
-  & .Columns {
-
-    @include for-three-column-up {
-      display: flex;
-      gap: calc($gutter-width / 8);
-    }
-  }
-
-  & p {
-    padding: 0 calc($gutter-width / 2);
-    font-size: 110%;
-    line-height: 1.5rem;
-    max-width: 40ch;
+  :first-child {
+    margin-top: 0;
   }
 }
 
-.Visual {
-  margin: -100px auto 0;
-  width: 100%;
-  max-width: $layout-max-width;
+
+.Bolt {
   position: relative;
+  width: 40%;
+  margin: 0 auto;
+
+  svg {
+    stroke-width: 0.5;
+    width: 100%;
+    height: 100%;
+    stroke: var(--border-color);
+
+    path:last-child {
+      stroke: var(--link-color);
+      animation: trace 2s ease-in-out forwards;
+      animation-delay: 500ms;
+    }
+
+  }
 
   @include for-two-column-up {
-    height: 5vh;
-  }
-
-  & > p {
-    margin: 0 $gutter-width;
-    font-size: 350%;
-    font-weight: lighter;
-    font-style: italic;
-    z-index: 2;
+    margin: 0;
     position: absolute;
-    right: 40%;
-    top: 0;
-    color: #fff;
+    top: -160px;
+    left: -220px;
+    width: 300px;
+    height: 300px;
+
+    svg {
+      stroke-width: 0.3;
+    }
   }
 }
 
-.Background {
-  position: absolute;
-  top: -3rem;
-  right: 0;
-
-  width: auto;
-  height: 35vh;
+@keyframes trace {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
-.Footer {
-  border-bottom: calc($gutter-width / 2) solid var(--link-color);
-  text-align: center;
-  background: var(--surface-accent-color);
-  padding: $gutter-width * 2;
-  margin: 0;
-  font-size: 0.9rem;
-  font-style: italic;
-  line-height: 1.5;
+.Nav {
+  display: flex;
+  gap: 1rem;
 }

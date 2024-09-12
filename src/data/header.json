@@ -7,11 +7,6 @@
       "url": "https://www.linkedin.com/in/cboltt"
     },
     {
-      "label": "Mastodon",
-      "accessibilityLabel": "View my Mastodon profile",
-      "url": "https://macaw.social/@cboltt"
-    },
-    {
       "label": "Github",
       "accessibilityLabel": "View my software projects on Github",
       "url": "http://github.com/cboltt"

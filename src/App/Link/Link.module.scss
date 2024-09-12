@@ -3,27 +3,27 @@
 .Link {
   text-decoration: none;
 
-  &:after {
-    margin-left: 6px;
+  &:before {
+    margin-right: 6px;
     content: '🔗';
-    font-size: 60%;
+    font-size: 70%;
   }
 
   &:hover,
   &:focus {
-    &:after {
+    &:before {
       content: '➡️';
     }
 
     .Label {
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 }
 
 .Label {
   color: var(--link-color);
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 1px;
 
   @include for-three-column-up {

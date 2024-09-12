@@ -1,7 +1,7 @@
 @import 'src/styles/_definitions';
 
 .Page {
-  min-height: 100dvh;
+  height: 100vh;
   width: 100vw;
   background-color: var(--surface-color, white);
   font-family: Helvetica, sans-serif;
@@ -36,6 +36,7 @@
 }
 
 .Intro {
+  margin: 0 auto;
   grid-area: Content;
   position: relative;
   max-width: 53ch;
@@ -53,8 +54,9 @@
 
 .Bolt {
   position: relative;
-  width: 40%;
+  width: 35%;
   margin: 0 auto;
+  animation: hover 2s cubic-bezier(0.45, 0.05, 0.55, 0.95)infinite; 
 
   svg {
     stroke-width: 0.5;
@@ -77,6 +79,7 @@
     left: -220px;
     width: 300px;
     height: 300px;
+    animation: hover 3s cubic-bezier(0.45, 0.05, 0.55, 0.95)infinite; 
 
     svg {
       stroke-width: 0.3;
@@ -93,6 +96,14 @@
   }
 }
 
+@keyframes hover {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
 .Nav {
   display: flex;
   gap: 1rem;

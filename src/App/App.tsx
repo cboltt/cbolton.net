@@ -22,7 +22,7 @@ export default function App() {
               world's best vector database.
             </p>
             <p>
-              I've been a member of world-class software teams since I was in
+              I've been a member of world-class engineering teams since I was in
               high school. My most recent experiences include Microsoft (Teams),
               Twitter (Trust and Safety), and Shopify (Product Ops).
             </p>

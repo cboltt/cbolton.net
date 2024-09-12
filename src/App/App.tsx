@@ -18,8 +18,8 @@ export default function App() {
                 Hey there! My name is Chris and I'm a senior software engineer
                 based in New York City.{" "}
               </strong>
-              Currently, I'm building the web experience of Pinecone, the
-              world's best vector database.
+              Currently, I'm building the web experience of Pinecone, a
+              high-performance vector database for AI applications.
             </p>
             <p>
               I've been a member of world-class engineering teams since I was in

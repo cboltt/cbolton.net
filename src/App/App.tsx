@@ -8,11 +8,11 @@ export default function App() {
   return (
     <div className={styles.Page}>
       <main className={styles.App}>
-        <section className={styles.Intro}>
+        <section className={styles.Content}>
           <div className={styles.Bolt}>
             <Bolt />
           </div>
-          <article>
+          <article className={styles.Intro}>
             <p>
               <strong>
                 Hey there! My name is Chris and I'm a senior software engineer

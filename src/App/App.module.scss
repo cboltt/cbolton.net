@@ -1,62 +1,73 @@
 @import 'src/styles/_definitions';
 
 .Page {
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
-  background-color: var(--surface-color, white);
+  position: relative;
   font-family: Helvetica, sans-serif;
   line-height: 1.4rem;
-  width: 100%;
   background-color: var(--link-color);
 }
 
 .App {
-  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
   box-sizing: border-box;
   padding: 1rem;
   background-color: var(--surface-color, white);
   border: 0.5rem solid var(--link-color);
   border-radius: 1rem;
   margin: 0;
-  height: 100vh;
+
   display: grid;
+  grid-template-columns: auto;
   grid-template-rows: auto;
-  grid-template-areas: 
-    "Content";
+  grid-template-areas: "content";
+  place-items: start center;
 
     @include for-two-column-up {
-      grid-template-columns: 3fr auto 2fr;
-      grid-template-rows: 3fr auto 4fr;
-      grid-template-areas: 
-        ". . ."
-        ". Content ."
-        ". . .";
+      place-items: center;
+      grid-template-columns: 4fr auto 3fr;
+      grid-template-areas: ". content .";
     }
 
 }
 
-.Intro {
-  margin: 0 auto;
-  grid-area: Content;
-  position: relative;
+.Content {
+  grid-area: content;
   max-width: 53ch;
 
-  article {
-    position: relative;
-    z-index: 1;
-  }
+  @include for-two-column-up {
+    display: grid;
+    grid-template-areas: "stack";
 
-  :first-child {
+  }
+}
+
+.Intro {
+  grid-area: stack;
+
+  p:first-child {
     margin-top: 0;
   }
 }
 
 
 .Bolt {
-  position: relative;
-  width: 35%;
+  grid-area: stack;
+  place-self: flex-start;
+  animation: hover 2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; 
   margin: 0 auto;
-  animation: hover 2s cubic-bezier(0.45, 0.05, 0.55, 0.95)infinite; 
+  max-width: 125px;
+
+  @include for-two-column-up {
+    animation: hover 3s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; 
+    margin-left: -30%;
+    margin-top: -20%;
+    max-width: 200px;
+  }
 
   svg {
     stroke-width: 0.5;
@@ -68,21 +79,6 @@
       stroke: var(--link-color);
       animation: trace 2s ease-in-out forwards;
       animation-delay: 500ms;
-    }
-
-  }
-
-  @include for-two-column-up {
-    margin: 0;
-    position: absolute;
-    top: -160px;
-    left: -220px;
-    width: 300px;
-    height: 300px;
-    animation: hover 3s cubic-bezier(0.45, 0.05, 0.55, 0.95)infinite; 
-
-    svg {
-      stroke-width: 0.3;
     }
   }
 }

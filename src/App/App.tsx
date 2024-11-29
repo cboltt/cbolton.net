@@ -9,9 +9,6 @@ export default function App() {
     <div className={styles.Page}>
       <main className={styles.App}>
         <section className={styles.Content}>
-          <div className={styles.Bolt}>
-            <Bolt />
-          </div>
           <article className={styles.Intro}>
             <p>
               <strong>
@@ -24,8 +21,8 @@ export default function App() {
             high-performance vector database for AI applications.</p>
             <p>
               I've been a member of world-class engineering teams since I was in
-              high school. My most recent experiences include Microsoft (Teams),
-              Twitter (Trust and Safety), and Shopify (Product Ops).
+              high school. My most recent engineering roles have been at Microsoft (Teams),
+              Twitter (Trust and Safety), and Shopify (Product Operations).
             </p>
             <p>If you're interested in working with me, please reach out.</p>
             <nav className={styles.Nav} aria-label="Related sites">
@@ -34,6 +31,9 @@ export default function App() {
               ))}
             </nav>
           </article>
+          <div className={styles.Bolt}>
+            <Bolt />
+          </div>
         </section>
       </main>
     </div>

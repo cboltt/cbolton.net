@@ -20,64 +20,60 @@
   border: 0.5rem solid var(--link-color);
   border-radius: 1rem;
   margin: 0;
+  overflow-x: hidden;
 
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-template-areas: "content";
-  place-items: start center;
-
-    @include for-two-column-up {
-      place-items: center;
-      grid-template-columns: 4fr auto 3fr;
-      grid-template-areas: ". content .";
-    }
-
+  place-items: center;
 }
 
 .Content {
   grid-area: content;
-  max-width: 46ch;
-
-  @include for-two-column-up {
-    display: grid;
-    grid-template-areas: "stack";
-
-  }
+  max-width: 48ch;
 }
 
 .Intro {
-  grid-area: stack;
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  background-color: var(--surface-accent-color);
+  box-shadow: 0 0 1rem var(--shadow-light-color);
+
 
   p:first-child {
     margin-top: 0;
-  }
-
-  strong {
-    font-weight: 500;
   }
 }
 
 
 .Bolt {
-  grid-area: stack;
-  place-self: flex-start;
   animation: hover 2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; 
   margin: 0 auto;
-  max-width: 125px;
+  max-width: 150px;
+  margin-top: -6rem;
+  margin-right: -2.5rem;
+
 
   @include for-two-column-up {
     animation: hover 3s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; 
-    margin-left: -35%;
-    margin-top: -20%;
+    margin-top: -6rem;
+    margin-right: -5rem;
     max-width: 200px;
   }
 
   svg {
+    transform: rotate(7deg);
     stroke-width: 0.5;
     width: 100%;
     height: 100%;
     stroke: var(--border-color);
+
+    path {
+      fill: var(--surface-accent-color);
+      box-shadow: 0 0 1rem var(--shadow-light-color);
+    }
 
     path:last-child {
       stroke: var(--link-color);

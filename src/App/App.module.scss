@@ -37,7 +37,7 @@
 
 .Content {
   grid-area: content;
-  max-width: 53ch;
+  max-width: 46ch;
 
   @include for-two-column-up {
     display: grid;
@@ -52,6 +52,10 @@
   p:first-child {
     margin-top: 0;
   }
+
+  strong {
+    font-weight: 500;
+  }
 }
 
 
@@ -64,7 +68,7 @@
 
   @include for-two-column-up {
     animation: hover 3s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; 
-    margin-left: -30%;
+    margin-left: -35%;
     margin-top: -20%;
     max-width: 200px;
   }

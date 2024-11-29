@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   background: var(--link-color);
-  max-height: 100vh;
+  max-height: 100lvh;
 
   @include for-two-column-up {
     max-height: auto;

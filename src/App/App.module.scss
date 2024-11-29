@@ -15,7 +15,7 @@
   width: 100%;
   overflow: auto;
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 2rem;
   background-color: var(--surface-color, white);
   border: 0.5rem solid var(--link-color);
   border-radius: 1rem;
@@ -26,7 +26,12 @@
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-template-areas: "content";
-  place-items: center;
+  place-items: start center;
+
+
+  @include for-two-column-up {
+    place-items: center;
+  }
 }
 
 .Content {

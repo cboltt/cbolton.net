@@ -3,20 +3,12 @@
 .Link {
   text-decoration: none;
 
-  &:before {
-    margin-right: 6px;
-    content: '🔗';
-    font-size: 70%;
-  }
-
   &:hover,
   &:focus {
-    &:before {
-      content: '➡️';
-    }
 
     .Label {
-      text-decoration: none;
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
   }
 }

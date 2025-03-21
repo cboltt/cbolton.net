@@ -11,7 +11,7 @@
 
 .App {
   position: relative;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   overflow: auto;
   box-sizing: border-box;
@@ -36,7 +36,7 @@
 
 .Content {
   grid-area: content;
-  max-width: 53ch;
+  max-width: 52ch;
 }
 
 .Intro {

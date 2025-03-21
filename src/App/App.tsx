@@ -17,7 +17,7 @@ export default function App() {
               </strong>
              
             </p>
-            <p>I'm currently building the web experience of <Link url="https://www.pinecone.io" label="Pinecone"/>,<br />a
+            <p>I'm currently building the web experience of <Link url="https://www.pinecone.io" label="Pinecone"/>, a
             high-performance vector database for AI apps.</p>
             <p>I'm also a 2025 <Link url="https://www.faspe-ethics.org/about-us/" label="FASPE"/> Design and Technology Fellow.</p>
             <p>

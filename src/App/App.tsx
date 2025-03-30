@@ -17,11 +17,10 @@ export default function App() {
               </strong>
              
             </p>
-            <p>At the moment, I'm building the web experience of <Link url="https://www.pinecone.io" label="Pinecone"/>, a
-            high-performance vector database for AI applications.</p>
-            <p>I've also been named a Design and Technology Fellow at <Link url="https://www.faspe-ethics.org/about-us/" label="FASPE"/> (2025 cohort).</p>
+            <p>I'm building the web experience of <Link url="https://www.pinecone.io" label="Pinecone"/>, a
+            high-performance vector database for AI applications. I am also a Design and Technology Fellow at <Link url="https://www.faspe-ethics.org/about-us/" label="FASPE"/>.</p>
             <p>
-             With over a decade of product development experience, I take pride in building fast, accessible, and intuitive user experiences.</p>
+             With over a decade of product development experience, I take pride in building fast, accessible, and intuitive user interfaces.</p>
             <p>My most recent engineering roles have been at Microsoft (Teams),
               Twitter (Trust and Safety), and Shopify (Product Ops / Knowledge Management).
             </p>

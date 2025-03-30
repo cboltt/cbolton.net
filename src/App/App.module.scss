@@ -36,13 +36,19 @@
 
 .Content {
   grid-area: content;
-  max-width: 52ch;
+  max-width: 53ch;
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include for-two-column-up {
+    flex-direction: column;
+  }
 }
 
 .Intro {
-  p:first-child {
-    margin-top: 0;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 
   @include for-two-column-up {
     padding: 2rem;
@@ -59,8 +65,8 @@
   animation: hover 2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; 
   margin: 0 auto;
   max-width: 150px;
-  margin-top: -4rem;
-  margin-right: -2rem;
+  margin-left: auto;
+  margin-right: auto;
 
 
   @include for-two-column-up {

@@ -17,14 +17,13 @@ export default function App() {
               </strong>
              
             </p>
-            <p>I'm currently building the web experience of <Link url="https://www.pinecone.io" label="Pinecone"/>, a
-            high-performance vector database for AI apps.</p>
-            <p>I'm also a 2025 <Link url="https://www.faspe-ethics.org/about-us/" label="FASPE"/> Design and Technology Fellow.</p>
+            <p>At the moment, I'm building the web experience of <Link url="https://www.pinecone.io" label="Pinecone"/>, a
+            high-performance vector database for AI applications.</p>
+            <p>I've also been named a Design and Technology Fellow at <Link url="https://www.faspe-ethics.org/about-us/" label="FASPE"/> (2025 cohort).</p>
             <p>
-             Contributing to exceptional product teams since I was in
-              high school, I take pride in building fast, accessible, and intuitive user experiences.</p>
+             With over a decade of product development experience, I take pride in building fast, accessible, and intuitive user experiences.</p>
             <p>My most recent engineering roles have been at Microsoft (Teams),
-              Twitter (Trust and Safety), and Shopify (Product Operations).
+              Twitter (Trust and Safety), and Shopify (Product Ops / Knowledge Management).
             </p>
             <p>If you're interested in working with me, please reach out.</p>
             <nav className={styles.Nav} aria-label="Related sites">

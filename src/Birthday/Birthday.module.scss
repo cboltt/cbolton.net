@@ -1,0 +1,113 @@
+@import 'src/styles/_definitions';
+
+.Page {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4rem;
+  background-color: var(--link-color);
+}
+
+.App {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 2rem;
+  background-color: var(--surface-accent-color, white);
+  border: 0.5rem solid var(--link-color);
+  border-radius: 1rem;
+  margin: 0;
+  overflow-x: hidden;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "content";
+  place-items: start center;
+}
+
+.Images {
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .MarqueeContent {
+    display: flex;
+    gap: 1rem;
+    animation: marquee 10s linear infinite;
+    white-space: nowrap;
+    padding-right: 1rem;
+    min-width: 100%;
+    
+  }
+
+  img {
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.Content {
+  grid-area: content;
+  text-align: center;
+  overflow: visible;
+  font-family: 'Comic Relief', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+
+
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.Cow {
+  margin: 0 auto;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+
+
+  svg {
+    width: 100%;
+    height: 100%;
+
+    overflow: visible;
+    path, circle {
+      fill: var(--link-color);
+      stroke-width: 12;
+    }
+    
+  }
+}

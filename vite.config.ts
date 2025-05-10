@@ -9,7 +9,15 @@ export default defineConfig({
     react(),
     htmlPrerender({
       staticDir: path.join(__dirname, "dist"),
-      routes: ["/"],
+      routes: ["/", "/28"],
     }),
   ],
+  build: {
+    rollupOptions: {
+      input: {
+        main: "index.html",
+        "28": "28.html",
+      },
+    },
+  },
 });

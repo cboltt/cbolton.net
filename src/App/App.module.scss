@@ -4,8 +4,8 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  font-family: Helvetica, sans-serif;
-  line-height: 1.4rem;
+  font-family: monospace;
+  line-height: 1.3rem;
   background-color: var(--link-color);
 }
 
@@ -15,10 +15,10 @@
   width: 100%;
   overflow: auto;
   box-sizing: border-box;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: var(--surface-color, white);
-  border: 0.5rem solid var(--link-color);
-  border-radius: 1rem;
+  border: 4px solid var(--content-color);
+  border-radius: 0;
   margin: 0;
   overflow-x: hidden;
 
@@ -37,84 +37,47 @@
 
 .Content {
   grid-area: content;
-  max-width: 61ch;
+  max-width: 52ch;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 
   @include for-two-column-up {
     flex-direction: column;
   }
 }
 
+.Header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.Title {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--content-color);
+  border: 4px solid var(--content-color);
+  padding:  1rem;
+  margin: 0;
+  background: var(--surface-accent-color);
+  box-shadow: 6px 6px 0 0 var(--content-color);
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
 .Intro {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding-top: 1rem;
-
-  @include for-two-column-up {
-    padding: 5rem 4rem;
-    border: 3px solid var(--border-color);
-    border-radius: .75rem;
-    box-shadow: 0 0 0.5rem var(--shadow-light-color);
-    background-color: var(--surface-accent-color);
-
-  }
+  gap: 1.5rem;
+  margin: 1rem 0;
+  padding: 3rem 2rem;
+  border: 4px solid var(--content-color);
+  border-radius: 0;
+  background-color: var(--surface-accent-color);
+  box-shadow: 6px 6px 0 0 var(--content-color);
 }
 
-
-.Bolt {
-  animation: hover 2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; 
-  margin: 0 auto;
-  max-width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-
-
-  @include for-two-column-up {
-    animation: hover 3s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; 
-    margin-top: -6rem;
-    margin-right: -5rem;
-    max-width: 200px;
-  }
-
-  svg {
-    transform: rotate(7deg);
-    stroke-width: 0.5;
-    width: 100%;
-    height: 100%;
-    stroke: var(--border-color);
-
-    path {
-      fill: var(--surface-accent-color);
-      box-shadow: 0 0 1rem var(--shadow-light-color);
-    }
-
-    path:last-child {
-      stroke: var(--link-color);
-      animation: trace 2s ease-in-out forwards;
-      animation-delay: 500ms;
-    }
-  }
-}
-
-@keyframes trace {
-  0% {
-    stroke-dashoffset: 100;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes hover {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-2px);
-  }
-}
 .Nav {
   display: flex;
   gap: 1rem;

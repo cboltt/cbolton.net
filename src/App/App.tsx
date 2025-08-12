@@ -1,7 +1,6 @@
 import styles from "./App.module.scss";
 
 import headerData from "../data/header.json";
-import Bolt from "./Bolt";
 import Link from "./Link";
 
 export default function App() {
@@ -9,6 +8,9 @@ export default function App() {
     <div className={styles.Page}>
       <main className={styles.App}>
         <section className={styles.Content}>
+          <header className={styles.Header}>
+            <h1 className={styles.Title}>{headerData.title}</h1>
+          </header>
           <article className={styles.Intro}>
             <p>
               <strong>
@@ -18,10 +20,11 @@ export default function App() {
             </p>
             <p>
               I'm building the web experience of{" "}
-              <Link url="https://www.pinecone.io" label="Pinecone" />, a
+              <Link inline url="https://www.pinecone.io" label="Pinecone" />, a
               high-performance vector database for AI applications. I am also a
               Design and Technology Fellow at{" "}
               <Link
+                inline
                 url="https://www.faspe-ethics.org/about-us/"
                 label="FASPE"
               />
@@ -36,16 +39,13 @@ export default function App() {
               Twitter (Trust and Safety), and Shopify (Product Ops / Knowledge
               Management).
             </p>
-            <p>If you're interested in working with me, please reach out.</p>
+            <p>If you're interested in working with me, please reach out:</p>
             <nav className={styles.Nav} aria-label="Related sites">
               {headerData.links.map((link) => (
                 <Link rel="me" key={link.url} {...link} />
               ))}
             </nav>
           </article>
-          <div className={styles.Bolt}>
-            <Bolt />
-          </div>
         </section>
       </main>
     </div>

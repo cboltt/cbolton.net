@@ -1,11 +1,19 @@
 @import 'src/styles/_definitions';
 
 .Link {
-  text-decoration: none;
+  text-decoration: underline;
+  color: var(--link-color);
+  display: inline-block;
+  border: 2px solid var(--content-color);
+  padding: 0.25rem 0.5rem;
+  background: var(--surface-color);
+  box-shadow: 4px 4px 0 0 var(--content-color);
 
   &:hover,
   &:focus {
-
+    background: var(--surface-accent-color);
+    transform: translate(-1px, -1px);
+    box-shadow: 6px 6px 0 0 var(--content-color);
     .Label {
       text-decoration: underline;
       text-underline-offset: 3px;
@@ -13,10 +21,23 @@
   }
 }
 
+.Inline {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
 .Label {
   color: var(--link-color);
   text-decoration: none;
   text-underline-offset: 1px;
+  font-weight: 700;
 
   @include for-three-column-up {
     text-decoration: none;

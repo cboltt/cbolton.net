@@ -37,7 +37,7 @@
 
 .Content {
   grid-area: content;
-  max-width: 53ch;
+  max-width: 61ch;
   display: flex;
   flex-direction: column-reverse;
 
@@ -53,10 +53,10 @@
   padding-top: 1rem;
 
   @include for-two-column-up {
-    padding: 2rem;
-    border: 1px solid var(--border-color);
-    border-radius: 1rem;
-    box-shadow: 0 0 1rem var(--shadow-light-color);
+    padding: 5rem 4rem;
+    border: 3px solid var(--border-color);
+    border-radius: .75rem;
+    box-shadow: 0 0 0.5rem var(--shadow-light-color);
     background-color: var(--surface-accent-color);
 
   }

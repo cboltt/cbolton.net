@@ -6,7 +6,7 @@
   position: relative;
   font-family: monospace;
   line-height: 1.3rem;
-  background-color: var(--link-color);
+  background-color: var(--content-color);
 }
 
 .App {
@@ -54,16 +54,22 @@
 
 .Title {
   display: inline-block;
-  font-size: 2rem;
   font-weight: 700;
   color: var(--content-color);
   border: 4px solid var(--content-color);
-  padding:  1rem;
+  padding: 1.5rem;
   margin: 0;
   background: var(--surface-accent-color);
   box-shadow: 6px 6px 0 0 var(--content-color);
   text-transform: uppercase;
   letter-spacing: 0.25em;
+  font-size: 1.75rem;
+
+  @include for-two-column-up {
+    font-size: 2rem;
+    padding: 1;
+
+  }
 }
 
 .Intro {
@@ -71,11 +77,18 @@
   flex-direction: column;
   gap: 1.5rem;
   margin: 1rem 0;
-  padding: 3rem 2rem;
+  padding: 2rem 1.5rem;
   border: 4px solid var(--content-color);
   border-radius: 0;
   background-color: var(--surface-accent-color);
   box-shadow: 6px 6px 0 0 var(--content-color);
+  font-size: 0.9rem;
+
+
+  @include for-two-column-up {
+    font-size: 1rem;
+    padding: 3rem 2rem;
+  }
 }
 
 .Nav {

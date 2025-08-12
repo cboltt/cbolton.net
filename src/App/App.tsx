@@ -21,7 +21,7 @@ export default function App() {
             <p>
               I'm building the web experience of{" "}
               <Link inline url="https://www.pinecone.io" label="Pinecone" />, a
-              high-performance vector database for AI applications. I am also a
+              high performance vector database for AI applications. I am also a
               Design and Technology Fellow at{" "}
               <Link
                 inline

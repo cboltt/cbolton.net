@@ -69,6 +69,7 @@ $content-padding-desktop: 5rem 3rem;
   padding: $content-padding-mobile;
   background-color: var(--surface-color);
   border: 2px solid var(--content-color);
+  border-radius: 0.5rem;
   box-shadow: 0 4px 30px var(--shadow-dark-color);
   pointer-events: auto;
 

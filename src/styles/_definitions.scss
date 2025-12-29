@@ -1,14 +1,22 @@
-// VARIABLES
+// =============================================================================
+// CSS Variables (Theme)
+// =============================================================================
+
 :root {
   font-size: 16px;
+
+  // Colors
   --surface-color: white;
   --surface-accent-color: white;
   --content-color: black;
   --link-color: #0000ff;
   --border-color: #eee;
+
+  // Shadows
   --shadow-light-color: #eee;
   --shadow-dark-color: #aaa;
 
+  // Dark mode overrides
   @media (prefers-color-scheme: dark) {
     --surface-color: #181818;
     --surface-accent-color: #181818;
@@ -20,25 +28,18 @@
   }
 }
 
-// WIDTHS
+// =============================================================================
+// SCSS Variables
+// =============================================================================
+
 $layout-max-width: 1400px;
 $gutter-width: 0.5rem;
-
-// GRADIENTS
 $background-gradient: linear-gradient(0deg, #2b1de8, #1ddde8);
 
-// MIXINS
-@mixin visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
+// =============================================================================
+// Breakpoint Mixins
+// =============================================================================
 
-// BREAKPOINTS
 @mixin for-one-column-up {
   @media (min-width: 375px) {
     @content;
@@ -69,7 +70,24 @@ $background-gradient: linear-gradient(0deg, #2b1de8, #1ddde8);
   }
 }
 
-// UTIL CLASSES
+// =============================================================================
+// Utility Mixins
+// =============================================================================
+
+@mixin visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+// =============================================================================
+// Utility Classes
+// =============================================================================
+
 .visually-hidden {
   @include visually-hidden;
 }

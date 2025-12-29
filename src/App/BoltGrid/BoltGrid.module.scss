@@ -1,0 +1,112 @@
+@import "src/styles/_definitions";
+
+// =============================================================================
+// Configuration
+// =============================================================================
+
+$bolt-size-min: 48px;
+$bolt-gap-mobile: 0.75rem;
+$bolt-gap-desktop: 1rem;
+$bolt-color: #888;
+$bolt-hover-scale: 1.15;
+
+// =============================================================================
+// Grid Layout
+// =============================================================================
+
+.BoltGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($bolt-size-min, 1fr));
+  gap: $bolt-gap-mobile;
+  width: 100%;
+  height: 100%;
+  align-content: start;
+  overflow: hidden;
+  background: var(--surface-color);
+
+  @include for-two-column-up {
+    gap: $bolt-gap-desktop;
+  }
+}
+
+// =============================================================================
+// Individual Bolt
+// =============================================================================
+
+.BoltWrapper {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform-origin: center center;
+
+  // Active hover or random highlight
+  &:hover,
+  &.highlighted {
+    animation:
+      jitter 0.15s ease-in-out infinite,
+      pulseScale 0.4s ease-out forwards;
+    z-index: 10;
+
+    .Bolt {
+      color: var(--link-color);
+      transform: scale($bolt-hover-scale);
+    }
+  }
+
+  // Trail effect (fading out after hover)
+  &.trail {
+    .Bolt {
+      color: var(--link-color);
+      opacity: 0.6;
+      transform: scale(1.05);
+    }
+  }
+}
+
+.Bolt {
+  width: 100%;
+  height: 100%;
+  color: $bolt-color;
+  transition:
+    filter 0.2s ease,
+    transform 0.2s ease-out,
+    color 0.2s ease,
+    opacity 0.3s ease;
+}
+
+// =============================================================================
+// Animations
+// =============================================================================
+
+@keyframes jitter {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate(-2px, 1px) rotate(-3deg);
+  }
+  40% {
+    transform: translate(2px, -1px) rotate(2deg);
+  }
+  60% {
+    transform: translate(-1px, 2px) rotate(-2deg);
+  }
+  80% {
+    transform: translate(1px, -2px) rotate(3deg);
+  }
+}
+
+@keyframes pulseScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}

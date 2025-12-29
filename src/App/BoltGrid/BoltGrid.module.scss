@@ -44,9 +44,7 @@ $bolt-hover-scale: 1.15;
   // Active hover or random highlight
   &:hover,
   &.highlighted {
-    animation:
-      jitter 0.15s ease-in-out infinite,
-      pulseScale 0.4s ease-out forwards;
+    animation: wobble 0.4s ease-in-out infinite;
     z-index: 10;
 
     .Bolt {
@@ -80,33 +78,15 @@ $bolt-hover-scale: 1.15;
 // Animations
 // =============================================================================
 
-@keyframes jitter {
+@keyframes wobble {
   0%,
   100% {
-    transform: translate(0, 0) rotate(0deg);
+    transform: rotate(0deg);
   }
-  20% {
-    transform: translate(-2px, 1px) rotate(-3deg);
+  25% {
+    transform: rotate(-3deg);
   }
-  40% {
-    transform: translate(2px, -1px) rotate(2deg);
-  }
-  60% {
-    transform: translate(-1px, 2px) rotate(-2deg);
-  }
-  80% {
-    transform: translate(1px, -2px) rotate(3deg);
-  }
-}
-
-@keyframes pulseScale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1.05);
+  75% {
+    transform: rotate(3deg);
   }
 }
